@@ -111,7 +111,7 @@ body {
     height: 30px;
     width: 260px;
     margin: auto;
-    background-image: url(assets_project/header/search.svg);
+    background-image: url(icons/search.svg);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 25px;
