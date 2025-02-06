@@ -1,0 +1,210 @@
+:root {
+    --main-color-white: white;
+    --main-color-lightgray: #C9D7DA;
+    --main-color-darkgray: #282C31;
+    --main-color-black: black;
+    --main-color-yellow: #EDE734;
+    --font-size-footer-small: 12px;
+    --font-size-footer-base: 14px;
+    --font-size-footer-medium: 20px;
+    --font-size-footer-large: 32px;
+    --font-family: "AdihausDIN", "Helvetica", "Arial", sans-serif;
+    --font-family-cn: "AdihausDIN_cn", "Helvetica", "Arial", sans-serif;
+    --font-family-bold: "Adihausdin_bold", "Helvetica", "Arial", sans-serif;
+    --font-weight-bold: 700;
+    --line-height: 1.2;
+    --letter-spacing: 0.1em;
+    --footer-width: 90vw;
+}
+
+body {
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color-white);
+    font-family: var(--font-family);
+    padding: 0;
+    margin: 0;
+}
+
+.Footer-Main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--main-color-black);
+    color: var(--main-color-white);
+    font-family: var(--font-family-cn);
+
+    padding: 80px 0px ;
+    margin: 0;
+    width: 100vw;
+}
+
+.Footer-Main h1 {
+    text-align: center;
+    font-size: var(--font-size-footer-large);
+    width: var(--footer-width);
+    margin: 0px;
+}
+
+.Footer-Main p {
+    text-align: justify;
+    font-size: var(--font-size-footer-base);
+    letter-spacing: var(--letter-spacing);
+    line-height: var(--line-height);
+    width: var(--footer-width);
+}
+
+#Footer-Logo {
+    margin-top: 20px;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+}
+
+.Footer-Newsletter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+
+    background-color: var(--main-color-yellow);
+    color: var(--main-color-black);
+    font-family: var(--font-family);
+    font-size: var(--font-size-footer-medium);
+    font-weight: bolder;
+
+    gap: 30px;
+    padding: 25px 0px;
+    width: 100vw;
+}
+
+.Footer-Newsletter button {
+    background-color: var(--main-color-black);
+    color: var(--main-color-white);
+    font-size: var(--font-size-footer-base);
+    letter-spacing: var(--letter-spacing);
+    font-weight: bold;
+
+    border: 2px solid var(--main-color-black);
+    border-style: outset;
+    padding: 15px 20px; 
+
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+.Footer-Newsletter button:hover {
+    color: rgb(100, 100, 100);
+    }
+
+.Footer-Links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    overflow: hidden;
+    
+    margin: 20px 0px 40px;
+}
+
+.Footer-Links h3 {
+    margin: 10px 0 0 0;
+  }
+
+.Footer-Links ul{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    list-style: none;
+    
+    gap: 15px;
+    max-width: 150px;
+    min-width: 120px;
+}
+
+.Footer-Links ul li {
+    background-color: var(--main-color-white);
+    font-size: var(--font-size-footer-base);
+  }
+
+.Footer-Links a{
+    color: var(--main-color-black);
+    text-decoration: none;
+  }
+
+.Footer-Links a:hover{
+    text-decoration: underline;
+  }
+
+.Footer-Desc{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+
+    color: var(--main-color-black);
+    font-size: var(--font-size-footer-base);
+    font-family: var(--font-family);
+}
+
+.Footer-Bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--main-color-darkgray);
+}
+
+.Footer-Bottom ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    text-align: center;
+
+    gap: 15px;
+    padding: 15px 0px;
+}
+
+.Footer-Bottom li{
+    border-right: 1px solid var(--main-color-lightgray);
+    font-size: var(--font-size-footer-small);
+    padding-right: 15px;
+}
+
+.Footer-Bottom li:nth-child(5){
+    border-right: 0px solid;
+}
+
+.Footer-Bottom a{
+    color: var(--main-color-lightgray);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 960px) {
+    .Footer-Newsletter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1365px) {
+    .Footer-Main p, .Footer-Main h1{
+        width: 40%;
+    }
+}
