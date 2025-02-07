@@ -4,9 +4,15 @@
             font-family: "AdihausDIN", "Helvetica", "Arial", sans-serif;
         }
         
+        p{
+            margin: 0;
+        }
+
+
         /* CONTENITORE GRIGIO SOTTO L'HEADER */
         .contenitore-grigio{
-            height: 25px;
+            
+            height: 14px;
             background-color: #eceff1;
             padding: 15px;
             text-align: center;
