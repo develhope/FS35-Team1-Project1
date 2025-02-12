@@ -10,7 +10,7 @@
     --font-size-footer-large: 32px;
     --font-family: "AdihausDIN", "Helvetica", "Arial", sans-serif;
     --font-family-cn: "AdihausDIN_cn", "Helvetica", "Arial", sans-serif;
-    --font-family-bold: "Adihausdin_bold", "Helvetica", "Arial", sans-serif;
+    --font-family-bold: "AdihausDIN_bold", "Helvetica", "Arial", sans-serif;
     --font-weight-bold: 700;
     --line-height: 1.2;
     --letter-spacing: 0.1em;
@@ -18,15 +18,14 @@
 }
 
 body {
-    overflow: auto;
-    padding: 0;
+    max-width: 100%;
     margin: 0;
-    width: 100vw;
 }
 
 footer {
     display: flex;
     flex-direction: column;
+    overflow: auto;
     background-color: var(--main-color-white);
     font-family: var(--font-family);
     padding: 0;
@@ -161,6 +160,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 100vw;
 
     background-color: var(--main-color-darkgray);
 }
@@ -193,6 +193,20 @@ footer {
 }
 
 @media screen and (max-width: 960px) {
+    .Footer-Newsletter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1156px) {
+    .Footer-Main p, .Footer-Main h1{
+        width: 40%;
+    }
     .Footer-Newsletter {
         display: flex;
         flex-direction: column;
