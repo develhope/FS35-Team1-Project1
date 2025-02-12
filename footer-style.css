@@ -204,9 +204,6 @@ footer {
 }
 
 @media screen and (max-width: 1156px) {
-    .Footer-Main p, .Footer-Main h1{
-        width: 40%;
-    }
     .Footer-Newsletter {
         display: flex;
         flex-direction: column;
@@ -219,6 +216,6 @@ footer {
 
 @media screen and (min-width: 1365px) {
     .Footer-Main p, .Footer-Main h1{
-        width: 40%;
+        width: 45%;
     }
 }
