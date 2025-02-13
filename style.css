@@ -960,6 +960,8 @@ body {
 /*fine bodycontainer.4*/
 
 /*Inizio footer*/
+
+
 :root {
   --main-color-white: white;
   --main-color-lightgray: #C9D7DA;
@@ -977,11 +979,6 @@ body {
   --line-height: 1.2;
   --letter-spacing: 0.1em;
   --footer-width: 90vw;
-}
-
-body {
-  max-width: 100%;
-  margin: 0;
 }
 
 footer {
