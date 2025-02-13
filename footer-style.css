@@ -25,7 +25,11 @@ body {
 footer {
     display: flex;
     flex-direction: column;
-    overflow: auto;
+    overflow: hidden;
+    transform: translate(-50% -50%);
+    justify-content: center;
+    align-items: center;
+    
     background-color: var(--main-color-white);
     font-family: var(--font-family);
     padding: 0;
@@ -35,7 +39,10 @@ footer {
 .Footer-Main {
     display: flex;
     flex-direction: column;
+    transform: translate(-50% -50%);
+    justify-content: center;
     align-items: center;
+    
 
     background-color: var(--main-color-black);
     color: var(--main-color-white);
@@ -161,6 +168,7 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100vw;
+    overflow: hidden;
 
     background-color: var(--main-color-darkgray);
 }
