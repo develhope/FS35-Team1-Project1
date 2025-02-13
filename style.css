@@ -902,3 +902,59 @@ body {
   padding-left: 16px;
 }
 /*fine bodycontainer.2*/
+/*inizio bodycontainer.4*/
+html,
+body {
+  height: 100vh;
+  padding: 0;
+  box-sizing: content-box;
+  /* overflow-x: hidden; */
+  /* overflow-x: hidden;
+    overflow-y: scroll; */
+}
+
+.container-card {
+  display: flex;
+  gap: 8px;
+  padding: 0 108px;
+  /* padding-left: 110px;
+    padding-right: 110px;
+    position: relative; */
+}
+
+.card {
+  height: fit-content;
+  box-sizing: border-box;
+  /* border: 1px solid rgb(0, 0, 0); */
+
+  /* overflow: hidden;
+  position: relative; */
+}
+
+.card:hover {
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.image img {
+  width: 300px;
+  height: auto;
+}
+
+.container-video video {
+  width: 300px;
+  height: 400px;
+}
+
+/* .container-video div .video{
+    height:399px;
+} */
+
+.container-video video:hover {
+  padding: 1px;
+}
+
+.card .footer {
+  height: 186px;
+  padding: 16px;
+}
+/*fine bodycontainer.4*/
