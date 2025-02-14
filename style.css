@@ -902,6 +902,29 @@ body {
   padding-left: 16px;
 }
 /*fine bodycontainer.2*/
+
+/*Inizio bodycontainer3*/
+.prezzo3 {
+  position: absolute;
+  top: 370px;
+  right: 330px;
+  width: 60px;
+  height: 30px;
+  border: none;
+  background-color: white;
+  transition: all 0.2s ease-in;
+}
+
+.prezzo3 p {
+  margin: 0px;
+  font-family: var(--font-family);
+}
+
+.card:hover .prezzo3 {
+  transform: translatey(-10px);
+}
+/*Fine bodycontainer3*/
+
 /*inizio bodycontainer.4*/
 html,
 body {
