@@ -1,26 +1,44 @@
 /* Header CSS*/
-
 :root {
-  --main-color-white: #ffffff;
-  --main-color-black: #000000;
   --main-colr-gray: #eceff1;
+  --main-color-white: white;
+  --main-color-lightgray: #C9D7DA;
+  --main-color-darkgray: #282C31;
+  --main-color-black: black;
+  --main-color-yellow: #EDE734;
   --font-size-base: 11px;
-  --font-family: Helvetica, Arial, sans-serif;
+  --font-size-footer-small: 12px;
+  --font-size-footer-base: 14px;
+  --font-size-footer-medium: 20px;
+  --font-size-footer-large: 32px;
+  --search-font: AdihausDIN;
+  --font-family: "AdihausDIN", "Helvetica", "Arial", sans-serif;
+  --font-family-cn: "AdihausDIN_cn", "Helvetica", "Arial", sans-serif;
+  --font-family-bold: "AdihausDIN_bold", "Helvetica", "Arial", sans-serif;
   --font-weight: 700;
   --line-height: 1.2;
   --letter-spacing: 0.1em;
-  --search-font: AdihausDIN;
+  --footer-width: 90vw;
 }
 
-/* Sviluppo del Header */
-
-body {
+body {  
   margin: 0;
   font-size: var(--font-size-base);
   font-family: var(--font-family);
   line-height: var(--line-height);
   letter-spacing: var(--letter-spacing);
+  overflow-x: hidden;
+  width: 100vw;
 }
+
+
+
+
+
+
+
+
+/* Sviluppo del Header */
 
 .header {
   cursor: pointer;
@@ -216,17 +234,24 @@ body {
     margin: 20px;
     justify-content: end;
     flex-wrap: nowrap;
-  }
-}
+  } 
+} 
 
 /* Fine Header CSS */
-/* BODY CON IL FONT FAMILY E MARGINI AZZERATI */
-body {
-  margin: 0;
-  font-family: "AdihausDIN", "Helvetica", "Arial", sans-serif;
-}
 
-p {
+
+
+
+
+
+
+
+
+
+
+/* INIZIO 1-BLOCCO-FOTO  E  INIZIO 2-BLOCCO-FOTO */
+
+.contenitore-grigio p {
   margin: 0;
 }
 
@@ -241,9 +266,12 @@ p {
 }
 
 /* dimensioni immagini riempire l'intera larghezza della pagina*/
-img {
+ .main-img {
   width: 100%;
+  display: block;
+  z-index: 1;
 }
+
 
 /* predisposizione del contenitore principale per far centrare e contenere le immagini in pagia */
 .container-principale {
@@ -301,7 +329,7 @@ img {
 
 /* modifiche cornice sotto il link acquista  */
 .cornice-pulsante-acquista {
-  width: 138px;
+  width: 149px;
   height: 48px;
   background-color: transparent;
   border: 1px solid white;
@@ -340,292 +368,16 @@ img {
   stroke-width: 1.5px;
 }
 
-@media (max-width: 960px) {
-  img {
-    width: 100%;
-    /* Ingrandisce le immagini */
-    transform: scale(1.5);
-    /* Ingrandisce ulteriormente le immagini */
-    transform-origin: center;
-    /* Mantiene il focus sull'immagine centrale */
-  }
 
-  .scritte-immagini {
-    position: relative;
-  }
 
-  /* modifiche della prima scritta  h2  */
-  .scritte-immagini h2 {
-    position: absolute;
-    bottom: 80px;
-    left: 80px;
-    width: max-content;
-    letter-spacing: 1px;
-    font-size: 18px;
-    padding: 10px 5px;
-    background-color: white;
-    margin: 0px;
-  }
 
-  /* modifiche seconda scritta paragrafo */
-  .scritte-immagini p {
-    position: absolute;
-    bottom: 20px;
-    left: 80px;
-    letter-spacing: 1px;
-    width: max-content;
-    font-size: 15px;
-    background-color: white;
-    margin-bottom: 30px;
-    margin-top: 7px;
-    padding: 2px;
-  }
 
-  /*modifiche link acquista terza scritta e posizionamento a solo  */
-  .pulsante-acquista a {
-    width: max-content;
-    font-weight: bold;
-    font-size: 15px;
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    padding: 15px 21px;
-    position: absolute;
-    bottom: -17px;
-    left: 80px;
-    z-index: 1;
-  }
 
-  /* modifiche cornice sotto il link acquista  */
-  .cornice-pulsante-acquista {
-    width: 138px;
-    height: 48px;
-    background-color: transparent;
-    border: 1px solid white;
-    position: absolute;
-    bottom: -21px;
-    left: 82px;
-  }
 
-  /* modifiche colore cornice al pasaggio del mouse sul link acquista */
-  .sezione-pulsante-acquista:hover .cornice-pulsante-acquista {
-    border: 1px solid grey;
-  }
-}
-
-@media screen and (max-width: 1500px) {
-  .play svg {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .scritte-immagini {
-    position: relative;
-  }
-
-  /* modifiche della prima scritta  h2  */
-  .scritte-immagini h2 {
-    position: absolute;
-    bottom: 50px;
-    left: 40px;
-    width: max-content;
-    letter-spacing: 1px;
-    font-size: 18px;
-    padding: 10px 5px;
-    background-color: white;
-    margin: 0px;
-  }
-
-  /* modifiche seconda scritta paragrafo */
-  .scritte-immagini p {
-    position: absolute;
-    bottom: -15px;
-    left: 40px;
-    letter-spacing: 1px;
-    width: max-content;
-    font-size: 15px;
-    background-color: white;
-    margin-bottom: 30px;
-    margin-top: 7px;
-    padding: 2px;
-  }
-
-  /*modifiche link acquista terza scritta e posizionamento a solo  */
-  .pulsante-acquista a {
-    width: max-content;
-    font-weight: bold;
-    font-size: 15px;
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    padding: 15px 21px;
-    position: absolute;
-    bottom: -50px;
-    left: 40px;
-    z-index: 1;
-  }
-
-  /* modifiche cornice sotto il link acquista  */
-  .cornice-pulsante-acquista {
-    width: 138px;
-    height: 48px;
-    background-color: transparent;
-    border: 1px solid white;
-    position: absolute;
-    bottom: -55px;
-    left: 42px;
-  }
-
-  /* modifiche colore cornice al pasaggio del mouse sul link acquista */
-  .sezione-pulsante-acquista:hover .cornice-pulsante-acquista {
-    border: 1px solid grey;
-  }
-}
-
-@media screen and (max-width: 580px) {
-  .scritte-immagini {
-    position: relative;
-  }
-
-  /* modifiche della prima scritta  h2  */
-  .scritte-immagini h2 {
-    position: absolute;
-    bottom: 60px;
-    left: 40px;
-    width: max-content;
-    letter-spacing: 1px;
-    font-size: 15px;
-    padding: 10px 5px;
-    background-color: white;
-    margin: 0px;
-  }
-
-  /* modifiche seconda scritta paragrafo */
-  .scritte-immagini p {
-    position: absolute;
-    bottom: 6px;
-    left: 40px;
-    letter-spacing: 1px;
-    width: max-content;
-    font-size: 12px;
-    background-color: white;
-    margin-bottom: 30px;
-    margin-top: 7px;
-    padding: 2px;
-  }
-
-  /*modifiche link acquista terza scritta e posizionamento a solo  */
-  .pulsante-acquista a {
-    width: max-content;
-    font-weight: bold;
-    font-size: 12px;
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    padding: 15px 21px;
-    position: absolute;
-    bottom: -30px;
-    left: 40px;
-    z-index: 1;
-  }
-
-  /* modifiche cornice sotto il link acquista  */
-  .cornice-pulsante-acquista {
-    width: 119px;
-    height: 44px;
-    background-color: transparent;
-    border: 1px solid white;
-    position: absolute;
-    bottom: -35px;
-    left: 42px;
-  }
-}
-/* inizio CSS blocco foto 2 */
-* {
-  font-family: Arial, Helvetica, sans-serif;
-}
-/* dimensione dell'immagine principale */
-img {
-  width: 100%;
-  display: block;
-  z-index: 1;
-}
-.contenitorePrincipale {
-  position: relative; /*necessario per il posizionamento delle scritte, relativa*/
-  margin: auto;
-  max-width: 100%;
-}
-/* posizionamento delle scritte con l'utilizzo di absolute e relative*/
-.contenitoreScritte {
-  position: absolute; /*grazie a relative, si posiziona in relazione all'immagine*/
-  top: 65%; /*centra la scritta sull'asse verticale*/
-  left: 5%; /*centra la scritta sull'asse orizzontale*/
-  padding: 5px;
-  z-index: 0;
-}
-/*caratteristiche delle scritte */
-h3,
-p {
-  background-color: white;
-  letter-spacing: 1px;
-  padding: 4px;
-  font-size: 15px;
-}
-/* caratteristico del solo h3 ADIDAS SPORT */
-h3 {
-  width: max-content;
-  padding: 8px;
-  font-size: large;
-}
-/*caratteristiche del bottone acquista*/
-.buttonAcquista {
-  position: relative; /*necessaria per poter posizionare il secondo bordo*/
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bolder;
-  font-size: 15px;
-  background-color: white;
-  padding: 16px 28px;
-  border: none;
-  border: 2px solid white;
-  cursor: pointer;
-  transition: 0.3s ease;
-  letter-spacing: 0.5px;
-}
-/* caratteristiche della freccia di Acquista*/
-span {
-  margin-left: 10px;
-  font-size: 20px;
-}
-
-/*creazione del secondo bordo sottostante al bottone acquista*/
-
-.buttonAcquista::after {
-  content: "";
-  position: absolute; /*per posizionare il secondo bordo relativo al bottone*/
-  width: 100%;
-  height: 100%;
-  border: 1px solid white; /*creazione del secondo bordo*/
-  left: 3%;
-  bottom: -7px;
-  z-index: -1; /*per far si che il bordo vada dietro al bottone*/
-}
-
-/*per far si che il colore del secondo bordo cambi al passaggio del cursore*/
-
-.buttonAcquista:hover::after {
-  border-color: #c5c5c5;
-}
-/*Fine CSS blocco foto 2*/
 
 /*Inizio css bodycontainer1*/
-:root {
-  --font-family: "AdihausDIN", arial, sans-serif;
-}
-
-body {
-  margin: 0 60px 0 60px;
-  font-family: var(--font-family);
+.container-1{
+  margin: 40px 60px ;
 }
 
 .bottoni button {
@@ -699,7 +451,7 @@ body {
 }
 
 .heart svg:hover {
-  background-image: url(split_svgs/wishlist-active.svg);
+  background-image: url(icons/wishlist-active.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -772,6 +524,18 @@ body {
   color: rgb(160, 160, 160);
 }
 /*fine bodycontainer1*/
+
+
+
+
+
+
+
+
+
+
+
+
 /*inizio bodycontainer.2*/
 .container-card {
   display: flex;
@@ -903,6 +667,20 @@ body {
 }
 /*fine bodycontainer.2*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Inizio bodycontainer3*/
 .prezzo3 {
   position: absolute;
@@ -925,16 +703,13 @@ body {
 }
 /*Fine bodycontainer3*/
 
+
+
+
+
+
+
 /*inizio bodycontainer.4*/
-html,
-body {
-  height: 100vh;
-  padding: 0;
-  box-sizing: content-box;
-  /* overflow-x: hidden; */
-  /* overflow-x: hidden;
-    overflow-y: scroll; */
-}
 
 .container-card {
   display: flex;
@@ -985,24 +760,7 @@ body {
 /*Inizio footer*/
 
 
-:root {
-  --main-color-white: white;
-  --main-color-lightgray: #C9D7DA;
-  --main-color-darkgray: #282C31;
-  --main-color-black: black;
-  --main-color-yellow: #EDE734;
-  --font-size-footer-small: 12px;
-  --font-size-footer-base: 14px;
-  --font-size-footer-medium: 20px;
-  --font-size-footer-large: 32px;
-  --font-family: "AdihausDIN", "Helvetica", "Arial", sans-serif;
-  --font-family-cn: "AdihausDIN_cn", "Helvetica", "Arial", sans-serif;
-  --font-family-bold: "AdihausDIN_bold", "Helvetica", "Arial", sans-serif;
-  --font-weight-bold: 700;
-  --line-height: 1.2;
-  --letter-spacing: 0.1em;
-  --footer-width: 90vw;
-}
+
 
 footer {
   display: flex;
