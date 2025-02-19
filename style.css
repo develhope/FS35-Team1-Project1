@@ -162,6 +162,7 @@ body {
 
 .hidden_container {
   display: none;
+  width:100vw;
 }
 
 #hidden_p {
@@ -173,7 +174,7 @@ body {
 
 /* Contenuti Media Query */
 
-/* @media screen and (max-width: 780px) {
+ @media screen and (max-width: 780px) {
   .black_line {
     color: var(--main-color-black);
     position: relative;
@@ -205,7 +206,7 @@ body {
 
   .hidden_container {
     display: flex;
-    gap: 100px;
+    /* gap: 100px; */
     justify-content: space-between;
     align-items: center;
   }
