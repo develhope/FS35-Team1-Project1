@@ -266,9 +266,8 @@ body {
 
 /* CONTENITORE GRIGIO SOTTO L'HEADER */
 .contenitore-grigio {
-  height: 14px;
   background-color: #eceff1;
-  padding: 15px;
+  padding: 6px;
   text-align: center;
   font-size: 12px;
   letter-spacing: 1px;
