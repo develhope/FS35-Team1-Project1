@@ -31,11 +31,19 @@ body {
   width: 100vw;
 }
 
-
-
-
-
-
+.display-flex {
+  display: flex;
+}
+.align-e-justifyContent-center {
+  justify-content: center;
+  align-items: center;
+}
+.nowrap {
+  flex-wrap: nowrap;
+}
+.p-relative {
+  position: relative;
+}
 
 
 /* Sviluppo del Header */
@@ -49,7 +57,6 @@ body {
   background-color: var(--main-color-black);
   height: 45px;
   width: 100%;
-  display: flex;
   color: var(--main-color-white);
   justify-content: center;
   align-items: center;
@@ -58,13 +65,11 @@ body {
 }
 
 .half_container {
-  display: flex;
   justify-content: end;
   flex-wrap: nowrap;
 }
 
 .lista_link_1 {
-  display: flex;
   list-style: none;
   gap: 10px;
   font-weight: 12px;
@@ -94,7 +99,6 @@ body {
 }
 
 .lista_link_2 {
-  display: flex;
   list-style: none;
   gap: 10px;
   height: 100%;
@@ -114,7 +118,6 @@ body {
 }
 
 .icon_container {
-  display: flex;
   width: 50px;
   margin: auto;
   justify-content: center;
@@ -205,14 +208,12 @@ body {
   }
 
   .hidden_container {
-    display: flex;
     /* gap: 100px; */
     justify-content: space-between;
     align-items: center;
   }
 
   .hamburger {
-    display: flex;
     gap: 30px;
     width: 48px;
     height: 48px;
@@ -231,7 +232,6 @@ body {
   }
 
   .hidden_icon {
-    display: flex;
     gap: 30px;
     width: 48px;
     height: 48px;
@@ -434,7 +434,6 @@ body {
 }
 
 .container {
-  display: flex;
   gap: 20px;
   overflow-x: auto;
   padding-top: 20px;
@@ -449,7 +448,6 @@ body {
 }
 
 .card1 {
-  display: flex;
   flex-direction: column;
   gap: 20px;
 }
@@ -511,7 +509,6 @@ body {
 
 .original {
   text-wrap: nowrap;
-  display: flex;
   flex-direction: row;
   gap: 5px;
 }
@@ -738,7 +735,6 @@ body {
 /*inizio bodycontainer.4*/
 
 .container-card-4 {
-  display: flex;
   gap: 8px;
   padding: 0 108px;
   margin-top: 40px;
@@ -797,7 +793,6 @@ body {
 /*Inizio footer*/
 
 footer {
-  display: flex;
   flex-direction: column;
   overflow: hidden;
   transform: translate(-50% -50%);
@@ -811,7 +806,6 @@ footer {
 }
 
 .Footer-Main {
-  display: flex;
   flex-direction: column;
   transform: translate(-50% -50%);
   justify-content: center;
@@ -850,7 +844,6 @@ footer {
 }
 
 .Footer-Newsletter{
-  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -888,7 +881,6 @@ footer {
   }
 
 .Footer-Links {
-  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: start;
@@ -927,7 +919,6 @@ footer {
 }
 
 .Footer-Desc{
-  display: flex;
   justify-content: center;
   align-items: left;
 
@@ -937,7 +928,6 @@ footer {
 }
 
 .Footer-Bottom{
-  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
