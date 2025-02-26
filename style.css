@@ -15,9 +15,18 @@
   --font-family: "AdihausDIN", "Helvetica", "Arial", sans-serif;
   --font-family-cn: "AdihausDIN_cn", "Helvetica", "Arial", sans-serif;
   --font-family-bold: "AdihausDIN_bold", "Helvetica", "Arial", sans-serif;
+  --font-size-footer-small: 12px;
+  --font-size-footer-base: 14px;
+  --font-size-footer-medium: 20px;
+  --font-size-footer-large: 32px;
+  --search-font: AdihausDIN;
+  --font-family: "AdihausDIN", "Helvetica", "Arial", sans-serif;
+  --font-family-cn: "AdihausDIN_cn", "Helvetica", "Arial", sans-serif;
+  --font-family-bold: "AdihausDIN_bold", "Helvetica", "Arial", sans-serif;
   --font-weight: 700;
   --line-height: 1.2;
   --letter-spacing: 0.1em;
+  --footer-width: 90vw;
   --footer-width: 90vw;
 }
 body {
@@ -135,10 +144,12 @@ body {
 /* Contenuti nascosti */
 .hidden_container {
   display: none;
+  width:100vw;
 }
 #hidden_p {
   display: none;
 }
+
 /* Contenuti Media Query */
 
 /* @media screen and (max-width: 780px) {
@@ -173,7 +184,7 @@ body {
 
   .hidden_container {
     display: flex;
-    gap: 100px;
+    /* gap: 100px; */
     justify-content: space-between;
     align-items: center;
   }
@@ -218,9 +229,8 @@ body {
 }
 /* CONTENITORE GRIGIO SOTTO L'HEADER */
 .contenitore-grigio {
-  height: 14px;
   background-color: #eceff1;
-  padding: 15px;
+  padding: 6px;
   text-align: center;
   font-size: 12px;
   letter-spacing: 1px;
@@ -276,6 +286,7 @@ body {
 }
 /* modifiche cornice sotto il link acquista  */
 .cornice-pulsante-acquista {
+  width: 149px;
   width: 149px;
   height: 48px;
   background-color: transparent;
@@ -368,6 +379,7 @@ body {
 }
 .heart svg:hover {
   background-image: url(icons/wishlist-active.svg);
+  background-image: url(icons/wishlist-active.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -455,10 +467,10 @@ body {
   margin-left: 108px;
   margin-right: 150px;
   margin-bottom: 30px;
+  margin-top: 40px;
 }
 .header-card p {
   font-size: 24px;
-  letter-spacing: 0.2em;
   margin: 5px 0px 0px;
   font-weight: 750;
 }
@@ -481,7 +493,7 @@ body {
   /* overflow-x: hidden;
     overflow-y: scroll; */
 }
-.card {
+.card-2 {
   height: 50%;
   box-sizing: border-box;
   /* overflow: hidden;
@@ -496,43 +508,43 @@ body {
   width: 300px;
   height: auto;
 }
-.card:hover .img-2 {
+.card-2:hover .img-2 {
   content: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_400,w_400/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_19_02_dmt_d_b0ce93b4bf.png");
   transition: opacity 0.3 ease;
   width: 300px;
   height: auto;
 }
-.card:hover .img-3 {
+.card-2:hover .img-3 {
   content: url("https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_21_02_dmt_d_23ed574f7e.png");
   transition: opacity 0.3 ease;
   width: 300px;
   height: auto;
 }
-.card:hover .img-4 {
+.card-2:hover .img-4 {
   content: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_400,w_400/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_6_02_dmt_d_b7a92ad234.png");
   transition: opacity 0.3 ease;
   width: 300px;
   height: auto;
 }
-.card:hover .img-5 {
+.card-2:hover .img-5 {
   content: url("https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_9_02_dmt_d_b82ef01761.png");
   transition: opacity 0.3 ease;
   width: 300px;
   height: auto;
 }
-.card:hover .img-6 {
+.card-2:hover .img-6 {
   content: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_400,w_400/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_8_02_dmt_d_50e781a407.png");
   transition: opacity 0.3 ease;
   width: 300px;
   height: auto;
 }
-.card:hover .img-7 {
+.card-2:hover .img-7 {
   content: url("https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_17_02_dmt_d_fab494d3bc.png");
   transition: opacity 0.3 ease;
   width: 300px;
   height: auto;
 }
-.card:hover .img-8 {
+.card-2:hover .img-8 {
   content: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_400,w_400/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_28_02_dmt_d_b900fcf87f.png");
   transition: opacity 0.3 ease;
   width: 300px;
@@ -569,12 +581,22 @@ body {
 }
 /*Fine bodycontainer3*/
 
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*inizio bodycontainer.4*/
 .container-card {
   gap: 8px;
   padding: 0 108px;
+  margin-top: 40px;
   /* padding-left: 110px;
     padding-right: 110px;
     position: relative; */
