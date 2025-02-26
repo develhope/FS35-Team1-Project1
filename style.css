@@ -31,11 +31,19 @@ body {
   width: 100vw;
 }
 
-
-
-
-
-
+.display-flex {
+  display: flex;
+}
+.align-e-justifyContent-center {
+  justify-content: center;
+  align-items: center;
+}
+.nowrap {
+  flex-wrap: nowrap;
+}
+.p-relative {
+  position: relative;
+}
 
 
 /* Sviluppo del Header */
@@ -49,27 +57,19 @@ body {
   background-color: var(--main-color-black);
   height: 45px;
   width: 100%;
-  display: flex;
   color: var(--main-color-white);
-  justify-content: center;
-  align-items: center;
   font-weight: var(--font-weight);
-  flex-wrap: nowrap;
 }
 
 .half_container {
-  display: flex;
   justify-content: end;
-  flex-wrap: nowrap;
 }
 
 .lista_link_1 {
-  display: flex;
   list-style: none;
   gap: 10px;
   font-weight: 12px;
   margin-right: 40px;
-  flex-wrap: nowrap;
 }
 
 .link1 {
@@ -94,7 +94,6 @@ body {
 }
 
 .lista_link_2 {
-  display: flex;
   list-style: none;
   gap: 10px;
   height: 100%;
@@ -114,10 +113,8 @@ body {
 }
 
 .icon_container {
-  display: flex;
   width: 50px;
   margin: auto;
-  justify-content: center;
 }
 
 #cerca {
@@ -172,8 +169,8 @@ body {
 
 
 
-/* Contenuti Media Query */
-
+  /* Contenuti Media Query  */
+/* 
  @media screen and (max-width: 780px) {
   .black_line {
     color: var(--main-color-black);
@@ -205,14 +202,12 @@ body {
   }
 
   .hidden_container {
-    display: flex;
-    /* gap: 100px; */
+     gap: 100px; 
     justify-content: space-between;
     align-items: center;
   }
 
   .hamburger {
-    display: flex;
     gap: 30px;
     width: 48px;
     height: 48px;
@@ -231,7 +226,6 @@ body {
   }
 
   .hidden_icon {
-    display: flex;
     gap: 30px;
     width: 48px;
     height: 48px;
@@ -239,24 +233,13 @@ body {
     justify-content: end;
     flex-wrap: nowrap;
   } 
-}  */
+}   */
 
 
 
 /* Fine Header CSS */
 
-
-
-
-
-
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
-
-
-
-
-
-
 
 /* INIZIO 1-BLOCCO-FOTO  E  INIZIO 2-BLOCCO-FOTO */
 
@@ -267,7 +250,7 @@ body {
 /* CONTENITORE GRIGIO SOTTO L'HEADER */
 .contenitore-grigio {
   background-color: #eceff1;
-  padding: 6px;
+  padding: 16px;
   text-align: center;
   font-size: 12px;
   letter-spacing: 1px;
@@ -288,10 +271,6 @@ body {
   position: relative;
 }
 
-/* contenitore che raggruppa le prime 2 scritte h2 e p e posizionamento nell'immagine  */
-.scritte-immagini {
-  position: relative;
-}
 
 /* modifiche della prima scritta  h2  */
 .scritte-immagini h2 {
@@ -351,17 +330,14 @@ body {
   border: 1px solid grey;
 }
 
-/* contenitore per l'svg play */
-.play {
-  position: relative;
-}
+
 
 /* modifiche svg play e posizionamento sulla parte destra alta della pagina */
 .play svg {
   width: 32px;
   height: 32px;
   position: absolute;
-  bottom: 590px;
+  bottom: 590px;   /*modificare  il relative*/
   left: 96%;
 }
 
@@ -376,18 +352,7 @@ body {
   stroke-width: 1.5px;
 }
 
-
-
-
-
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
 
 /*Inizio css bodycontainer1*/
 .container-1{
@@ -434,7 +399,6 @@ body {
 }
 
 .container {
-  display: flex;
   gap: 20px;
   overflow-x: auto;
   padding-top: 20px;
@@ -449,7 +413,6 @@ body {
 }
 
 .card1 {
-  display: flex;
   flex-direction: column;
   gap: 20px;
 }
@@ -511,7 +474,6 @@ body {
 
 .original {
   text-wrap: nowrap;
-  display: flex;
   flex-direction: row;
   gap: 5px;
 }
@@ -547,25 +509,13 @@ body {
 }
 /*fine bodycontainer1*/
 
-
-
-
-
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
-
-
-
-
-
-
 
 /*inizio bodycontainer.2*/
 .container-card-2 {
-  display: flex;
   gap: 10px;
   margin-left: 110px;
   margin-bottom: 50px;
-  position: relative;
   overflow-x: auto;
 }
 
@@ -586,7 +536,6 @@ body {
 }
 
 .header-card {
-  display: flex;
   justify-content: space-between;
   margin-left: 108px;
   margin-right: 150px;
@@ -617,15 +566,10 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* overflow-x: hidden; */
-  /* overflow-x: hidden;
-    overflow-y: scroll; */
 }
 .card-2 {
   height: 50%;
   box-sizing: border-box;
-  /* overflow: hidden;
-  position: relative; */
 }
 
 .card-2:hover {
@@ -691,20 +635,7 @@ body {
 }
 /*fine bodycontainer.2*/
 
-
-
-
-
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
 
 /*Inizio bodycontainer3*/
 .prezzo3 {
@@ -728,32 +659,19 @@ body {
 }
 /*Fine bodycontainer3*/
 
-
-
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
-
-
-
 
 /*inizio bodycontainer.4*/
 
 .container-card-4 {
-  display: flex;
   gap: 8px;
   padding: 0 108px;
   margin-top: 40px;
-  /* padding-left: 110px;
-    padding-right: 110px;
-    position: relative; */
 }
 
 .card {
   height: fit-content;
   box-sizing: border-box;
-  /* border: 1px solid rgb(0, 0, 0); */
-
-  /* overflow: hidden;
-  position: relative; */
 }
 
 .card:hover {
@@ -770,10 +688,6 @@ body {
   height: 400px;
 }
 
-/* .container-video div .video{
-    height:399px;
-} */
-
 .container-video video:hover {
   padding: 1px;
 }
@@ -784,26 +698,14 @@ body {
 }
 /*fine bodycontainer.4*/
 
-
-
-
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
-
-
-
-
-
 
 /*Inizio footer*/
 
 footer {
-  display: flex;
   flex-direction: column;
   overflow: hidden;
   transform: translate(-50% -50%);
-  justify-content: center;
-  align-items: center;
-  
   background-color: var(--main-color-white);
   font-family: var(--font-family);
   padding: 0;
@@ -811,17 +713,11 @@ footer {
 }
 
 .Footer-Main {
-  display: flex;
   flex-direction: column;
   transform: translate(-50% -50%);
-  justify-content: center;
-  align-items: center;
-  
-
   background-color: var(--main-color-black);
   color: var(--main-color-white);
   font-family: var(--font-family-cn);
-
   padding: 80px 0px ;
   margin: 0;
   width: 100vw;
@@ -850,19 +746,13 @@ footer {
 }
 
 .Footer-Newsletter{
-  display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  
-
   background-color: var(--main-color-yellow);
   color: var(--main-color-black);
   font-family: var(--font-family);
   font-size: var(--font-size-footer-medium);
   font-weight: bolder;
-
   gap: 30px;
   padding: 25px 0px;
   width: 100vw;
@@ -874,11 +764,9 @@ footer {
   font-size: var(--font-size-footer-base);
   letter-spacing: var(--letter-spacing);
   font-weight: bold;
-
   border: 2px solid var(--main-color-black);
   border-style: outset;
   padding: 15px 20px; 
-
   cursor: pointer;
   transition: all 200ms ease;
 }
@@ -888,7 +776,6 @@ footer {
   }
 
 .Footer-Links {
-  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: start;
@@ -927,7 +814,6 @@ footer {
 }
 
 .Footer-Desc{
-  display: flex;
   justify-content: center;
   align-items: left;
 
@@ -937,10 +823,7 @@ footer {
 }
 
 .Footer-Bottom{
-  display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   width: 100vw;
   overflow: hidden;
 
@@ -951,10 +834,8 @@ footer {
   list-style: none;
   display: flex;
   flex-direction: row;
-
   align-items: center;
   text-align: center;
-
   gap: 15px;
   padding: 15px 0px;
 }
