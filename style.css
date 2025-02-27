@@ -242,6 +242,27 @@ body {
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* INIZIO 1-BLOCCO-FOTO  E  INIZIO 2-BLOCCO-FOTO */
+:root {
+  --main-colr-gray: #eceff1;
+  --main-color-white: white;
+  --main-color-lightgray: #C9D7DA;
+  --main-color-darkgray: #282C31;
+  --main-color-black: black;
+  --main-color-yellow: #EDE734;
+  --font-size-base: 11px;
+  --font-size-footer-small: 12px;
+  --font-size-footer-base: 14px;
+  --font-size-footer-medium: 20px;
+  --font-size-footer-large: 32px;
+  --search-font: AdihausDIN;
+  --font-family: "AdihausDIN", "Helvetica", "Arial", sans-serif;
+  --font-family-cn: "AdihausDIN_cn", "Helvetica", "Arial", sans-serif;
+  --font-family-bold: "AdihausDIN_bold", "Helvetica", "Arial", sans-serif;
+  --font-weight: 700;
+  --line-height: 1.2;
+  --letter-spacing: 0.1em;
+  --footer-width: 90vw;
+}
 
 .contenitore-grigio p {
   margin: 0;
@@ -249,7 +270,7 @@ body {
 
 /* CONTENITORE GRIGIO SOTTO L'HEADER */
 .contenitore-grigio {
-  background-color: #eceff1;
+  background-color: var(--main-colr-gray);
   padding: 16px;
   text-align: center;
   font-size: 12px;
@@ -281,7 +302,7 @@ body {
   letter-spacing: 1px;
   font-size: 18px;
   padding: 10px 5px;
-  background-color: white;
+  background-color: var(--main-color-white);
   margin: 0px;
 }
 
@@ -293,7 +314,7 @@ body {
   letter-spacing: 1px;
   width: max-content;
   font-size: 15px;
-  background-color: white;
+  background-color: var(--main-color-white);
   margin-bottom: 30px;
   margin-top: 7px;
   padding: 2px;
@@ -306,7 +327,7 @@ body {
   font-size: 15px;
   text-decoration: none;
   color: black;
-  background-color: white;
+  background-color: var(--main-color-white);
   padding: 15px 21px;
   position: absolute;
   bottom: 78px;
@@ -319,7 +340,7 @@ body {
   width: 149px;
   height: 48px;
   background-color: transparent;
-  border: 1px solid white;
+  border: 1px solid var(--main-color-white);
   position: absolute;
   bottom: 73px;
   left: 82px;
@@ -327,7 +348,7 @@ body {
 
 /* modifiche colore cornice al pasaggio del mouse sul link acquista */
 .sezione-pulsante-acquista:hover .cornice-pulsante-acquista {
-  border: 1px solid grey;
+  border: 1px solid gray;
 }
 
 
@@ -343,12 +364,12 @@ body {
 
 /* modifiche colore dello sfondo dell'svg al passaggio del mouse */
 .play svg:hover {
-  background-color: #eceff1;
+  background-color: var(--main-colr-gray);
 }
 
 /* contorno bianco attorno alle lineette del play */
 .lineetta {
-  stroke: white;
+  stroke: var(--main-color-white);
   stroke-width: 1.5px;
 }
 
