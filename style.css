@@ -290,7 +290,7 @@ body {
   width: 32px;
   height: 32px;
   position: absolute;
-  bottom: 590px;   /*modificare  il relative*/
+  bottom: 90%;   /*modificare  il relative*/
   left: 96%;
 }
 /* modifiche colore dello sfondo dell'svg al passaggio del mouse */
