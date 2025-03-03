@@ -12,73 +12,61 @@
     />
   </head>
 
-  <body>
-    <!-- Inizio Header -->
-    <header>
-      <div class="header">
-        <!-- Banner con la spedizione gratuita -->
-        <div class="black_line">
-          SPEDIZIONE STANDARD GRATUITA CON ADICLUB
-          <p id="hidden_p">RESO E CAMBIO MERCE GRATUITI</p>
+<body>
+  <!-- Inizio Header -->
+  <header>
+    <div class="header">
+      <!-- Banner con la spedizione gratuita -->
+      <div class="black_line nowrap display-flex align-e-justifyContent-center">
+        SPEDIZIONE STANDARD GRATUITA CON ADICLUB
+        <p id="hidden_p">RESO E CAMBIO MERCE GRATUITI</p>
+      </div>
+
+      <!-- Lista superiore -->
+      <div class="half_container nowrap display-flex ">
+        <ul class="lista_link_1 nowrap display-flex ">
+          <li><a href="#" class="link1">aiuto</a></li>
+          <li><a href="#" class="link1">ordini e resi</a></li>
+          <li><a href="#" class="link1">iscriviti</a></li>
+          <li><a href="#" class="link1">adiclub</a></li>
+          <li><a href="#" class="link1">accedi</a></li>
+        </ul>
+      </div>
+
+      <div class="last_container align-e-justifyContent-center">
+        <!-- Logo del sito -->
+        <div class="container_logo">
+          <svg viewBox="100 100 50 32" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M 150.07 131.439 L 131.925 100 L 122.206 105.606 L 137.112 131.439 L 150.07 131.439 Z M 132.781 131.439 L 120.797 110.692 L 111.078 116.298 L 119.823 131.439 L 132.781 131.439 Z M 109.718 121.401 L 115.509 131.439 L 102.551 131.439 L 100 127.007 L 109.718 121.401 Z"
+              fill="black"></path>
+          </svg>
         </div>
 
-        <!-- Lista superiore -->
-        <div class="half_container">
-          <ul class="lista_link_1">
-            <li><a href="#" class="link1">aiuto</a></li>
-            <li><a href="#" class="link1">ordini e resi</a></li>
-            <li><a href="#" class="link1">iscriviti</a></li>
-            <li><a href="#" class="link1">adiclub</a></li>
-            <li><a href="#" class="link1">accedi</a></li>
-          </ul>
+        <!-- Navigazione principale -->
+        <ul class="lista_link_2 align-e-justifyContent-center display-flex ">
+          <li><a href="#" class="link2 bold">SCARPE</a></li>
+          <li><a href="#" class="link2 bold">UOMO</a></li>
+          <li><a href="#" class="link2 bold">DONNA</a></li>
+          <li><a href="#" class="link2 bold">BAMBINI</a></li>
+          <li><a href="#" class="link2">SPORT</a></li>
+          <li><a href="#" class="link2">LIFESTYLE</a></li>
+        </ul>
+
+        <!-- Barra di ricerca e icone -->
+        <div class="icon_container align-e-justifyContent-center display-flex ">
+          <input type="search" name="cerca" placeholder="Cerca" id="cerca" />
+          <a href="#"><img src="icons/profile.svg" alt="Profilo" class="svg" /></a>
+          <a href="#"><img src="icons/wishlist-inactive.svg" alt="Wishlist" class="svg" /></a>
+          <a href="#"><img src="icons/bag-inactive.svg" alt="Carrello" class="svg" /></a>
         </div>
 
-        <div class="last_container">
-          <!-- Logo del sito -->
-          <div class="container_logo">
-            <svg viewBox="100 100 50 32" xmlns="http://www.w3.org/2000/svg">
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M 150.07 131.439 L 131.925 100 L 122.206 105.606 L 137.112 131.439 L 150.07 131.439 Z M 132.781 131.439 L 120.797 110.692 L 111.078 116.298 L 119.823 131.439 L 132.781 131.439 Z M 109.718 121.401 L 115.509 131.439 L 102.551 131.439 L 100 127.007 L 109.718 121.401 Z"
-                fill="black"
-              ></path>
-            </svg>
+        <!-- Elementi visibili solo al restringimento della pagina  -->
+        <div class="hidden_container display-flex ">
+          <div class="hamburger display-flex ">
+            <img src="icons/hamburger.svg" alt="hamburger" />
+            <img src="icons/wishlist-inactive.svg" alt="whishlist" />
           </div>
-
-          <!-- Navigazione principale -->
-          <ul class="lista_link_2">
-            <li><a href="#" class="link2 bold">SCARPE</a></li>
-            <li><a href="#" class="link2 bold">UOMO</a></li>
-            <li><a href="#" class="link2 bold">DONNA</a></li>
-            <li><a href="#" class="link2 bold">BAMBINI</a></li>
-            <li><a href="#" class="link2">SPORT</a></li>
-            <li><a href="#" class="link2">LIFESTYLE</a></li>
-          </ul>
-
-          <!-- Barra di ricerca e icone -->
-          <div class="icon_container">
-            <input type="search" name="cerca" placeholder="Cerca" id="cerca" />
-            <a href="#"
-              ><img src="icons/profile.svg" alt="Profilo" class="svg"
-            /></a>
-            <a href="#"
-              ><img
-                src="icons/wishlist-inactive.svg"
-                alt="Wishlist"
-                class="svg"
-            /></a>
-            <a href="#"
-              ><img src="icons/bag-inactive.svg" alt="Carrello" class="svg"
-            /></a>
-          </div>
-
-          <!-- Elementi visibili solo al restringimento della pagina  -->
-          <div class="hidden_container">
-            <div class="hamburger">
-              <img src="icons/hamburger.svg" alt="hamburger" />
-              <img src="icons/wishlist-inactive.svg" alt="whishlist" />
-            </div>
 
             <div class="hidden_container_logo">
               <svg viewBox="100 100 50 32" xmlns="http://www.w3.org/2000/svg">
@@ -91,16 +79,18 @@
               </svg>
             </div>
 
-            <div class="hidden_icon">
-              <img src="icons/profile.svg" alt="profile_hidden" />
-              <img src="icons/search.svg" alt="search_hidden" />
-              <img src="icons/bag-inactive.svg" alt="bag_hidden" />
-            </div>
+          <div class="hidden_icon display-flex ">
+            <img src="icons/profile.svg" alt="profile_hidden" />
+            <img src="icons/search.svg" alt="search_hidden" />
+            <img src="icons/bag-inactive.svg" alt="bag_hidden" />
           </div>
         </div>
       </div>
-    </header>
-    <!-- Fine Header -->
+    </div>
+  </header>
+  <!-- Fine Header -->
+
+
 
     <!-- inizio 1-blocco-foto -->
     <div class="contenitore-grigio">
@@ -119,14 +109,14 @@
         fetchpriority="high"
       />
 
-      <div class="scritte-immagini">
-        <div>
-          <h2>ADIDAS ESSENTIALS</h2>
-        </div>
-        <div>
-          <p>Design essenziali,infinite possibilità per i tuoi look.</p>
-        </div>
+    <div class="scritte-immagini p-relative">
+      <div>
+        <h2>ADIDAS ESSENTIALS</h2>
       </div>
+      <div>
+        <p>Design essenziali,infinite possibilità per i tuoi look.</p>
+      </div>
+    </div>
 
       <section class="sezione-pulsante-acquista">
         <div class="pulsante-acquista">
@@ -171,442 +161,351 @@
     </div>
     <!-- fine blocco foto 2-->
 
-    <!--Inizio bodycontainer1-->
-    <div class="container-1">
-      <section class="bottoni">
-        <h3>LE MIGLIORI OFFERTE PER TE</h3>
+  <!--Inizio bodycontainer1-->
+  <div class="container-1">
+  <section class="bottoni">
+    <h3>LE MIGLIORI OFFERTE PER TE</h3>
+  </section>
+  <div class="container display-flex ">
+    <div class="card1 display-flex ">
+      <section class="cardcontainer">
+        <div class="card">
+          <img src="img/scarpe-x_plrphase.avif" alt="scarpa1" />
+          <button class="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
+              <title>wishlist-inactive</title>
+              <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+                d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z" />
+            </svg>
+          </button>
+          <button class="prezzo">
+            <p>€55</p>
+            <div class="original display-flex">
+              <p>€110</p>
+              <p>-50%</p>
+              <p>Prezzo originale</p>
+            </div>
+          </button>
+        </div>
+        <div class="textdescription">
+          <p>Scarpe X_PLRPHASE</p>
+          <p>Uomo Sportswear</p>
+        </div>
       </section>
-      <div class="container">
-        <div class="card1">
-          <section class="cardcontainer">
-            <div class="card">
-              <img src="img/scarpe-x_plrphase.avif" alt="scarpa1" />
-              <button class="heart">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
-                  <title>wishlist-inactive</title>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-width="2"
-                    d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z"
-                  />
-                </svg>
-              </button>
-              <button class="prezzo">
-                <p>€55</p>
-                <div class="original">
-                  <p>€110</p>
-                  <p>-50%</p>
-                  <p>Prezzo originale</p>
-                </div>
-              </button>
+    </div>
+    <div class="card1 display-flex ">
+      <section class="cardcontainer">
+        <div class="card">
+          <img src="img/Wings_for_Life_World_Run_Participant_T-shirt_Arancione_JI7632_01_laydown.avif" alt="scarpa1" />
+          <button class="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
+              <title>wishlist-inactive</title>
+              <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+                d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z" />
+            </svg>
+          </button>
+          <button class="prezzo">
+            <p>€14</p>
+            <div class="original display-flex ">
+              <p>€35</p>
+              <p>-60%</p>
+              <p>Prezzo originale</p>
             </div>
-            <div class="textdescription">
-              <p>Scarpe X_PLRPHASE</p>
-              <p>Uomo Sportswear</p>
-            </div>
-          </section>
+          </button>
         </div>
-        <div class="card1">
-          <section class="cardcontainer">
-            <div class="card">
-              <img
-                src="img/Wings_for_Life_World_Run_Participant_T-shirt_Arancione_JI7632_01_laydown.avif"
-                alt="scarpa1"
-              />
-              <button class="heart">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
-                  <title>wishlist-inactive</title>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-width="2"
-                    d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z"
-                  />
-                </svg>
-              </button>
-              <button class="prezzo">
-                <p>€14</p>
-                <div class="original">
-                  <p>€35</p>
-                  <p>-60%</p>
-                  <p>Prezzo originale</p>
-                </div>
-              </button>
-            </div>
-            <div class="textdescription">
-              <p>Wings for Life World Run Partecipant T-shirt</p>
-              <p>Uomo Running</p>
-            </div>
-          </section>
+        <div class="textdescription">
+          <p>Wings for Life World Run Partecipant T-shirt</p>
+          <p>Uomo Running</p>
         </div>
-        <div class="card1">
-          <section class="cardcontainer">
-            <div class="card">
-              <img
-                src="img/Tiro_Tracksuit_Bottoms_Turchese_IN0325_21_model.avif"
-                alt="scarpa1"
-              />
-              <button class="heart">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
-                  <title>wishlist-inactive</title>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-width="2"
-                    d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z"
-                  />
-                </svg>
-              </button>
-              <button class="prezzo">
-                <p>€25</p>
-                <div class="original">
-                  <p>€50</p>
-                  <p>-50%</p>
-                  <p>Prezzo originale</p>
-                </div>
-              </button>
+      </section>
+    </div>
+    <div class="card1 display-flex ">
+      <section class="cardcontainer">
+        <div class="card">
+          <img src="img/Tiro_Tracksuit_Bottoms_Turchese_IN0325_21_model.avif" alt="scarpa1" />
+          <button class="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
+              <title>wishlist-inactive</title>
+              <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+                d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z" />
+            </svg>
+          </button>
+          <button class="prezzo">
+            <p>€25</p>
+            <div class="original display-flex ">
+              <p>€50</p>
+              <p>-50%</p>
+              <p>Prezzo originale</p>
             </div>
-            <div class="textdescription">
-              <p>Tiro Tracksuit Bottoms</p>
-              <p>Uomo Calcio</p>
-            </div>
-          </section>
+          </button>
         </div>
-        <div class="card1">
-          <section class="cardcontainer">
-            <div class="card">
-              <img
-                src="img/Cappellino_Heathered_Badge_of_Sport_Nero_HA9198_01_standard.avif"
-                alt="scarpa1"
-              />
-              <button class="heart">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
-                  <title>wishlist-inactive</title>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-width="2"
-                    d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z"
-                  />
-                </svg>
-              </button>
-              <button class="prezzo">
-                <p>€11,50</p>
-                <div class="original">
-                  <p>€23</p>
-                  <p>-50%</p>
-                  <p>Prezzo originale</p>
-                </div>
-              </button>
-            </div>
-            <div class="textdescription">
-              <p>Cappellino Heathered Badge of Sport</p>
-              <p>Uomo golf</p>
-            </div>
-          </section>
+        <div class="textdescription">
+          <p>Tiro Tracksuit Bottoms</p>
+          <p>Uomo Calcio</p>
         </div>
-        <div class="card1">
-          <section class="cardcontainer">
-            <div class="card">
-              <img
-                src="img/Maglia_Tiro_Long_Sleeve_Blu_HY5537_21_model.avif"
-                alt="scarpa1"
-              />
-              <button class="heart">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
-                  <title>wishlist-inactive</title>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-width="2"
-                    d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z"
-                  />
-                </svg>
-              </button>
-              <button class="prezzo">
-                <p>€11,50</p>
-                <div class="original">
-                  <p>€23</p>
-                  <p>-50%</p>
-                  <p>Prezzo originale</p>
-                </div>
-              </button>
+      </section>
+    </div>
+    <div class="card1 display-flex ">
+      <section class="cardcontainer">
+        <div class="card">
+          <img src="img/Cappellino_Heathered_Badge_of_Sport_Nero_HA9198_01_standard.avif" alt="scarpa1" />
+          <button class="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
+              <title>wishlist-inactive</title>
+              <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+                d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z" />
+            </svg>
+          </button>
+          <button class="prezzo">
+            <p>€11,50</p>
+            <div class="original display-flex ">
+              <p>€23</p>
+              <p>-50%</p>
+              <p>Prezzo originale</p>
             </div>
-            <div class="textdescription">
-              <p>Maglia Tiro Long Sleeve</p>
-              <p>Sportswear</p>
-            </div>
-          </section>
+          </button>
         </div>
-        <div class="card1">
-          <section class="cardcontainer">
-            <div class="card">
-              <img
-                src="img/Zaino_adicolor_Archive_Blu_HN6820_01_standard.avif"
-                alt="scarpa1"
-              />
-              <button class="heart">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
-                  <title>wishlist-inactive</title>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-width="2"
-                    d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z"
-                  />
-                </svg>
-              </button>
-              <button class="prezzo">
-                <p>€19</p>
-                <div class="original">
-                  <p>€38</p>
-                  <p>-50%</p>
-                  <p>Prezzo originale</p>
-                </div>
-              </button>
-            </div>
-            <div class="textdescription">
-              <p>Zaino adicolor Archive</p>
-              <p>Originals</p>
-            </div>
-          </section>
+        <div class="textdescription">
+          <p>Cappellino Heathered Badge of Sport</p>
+          <p>Uomo golf</p>
         </div>
-        <div class="card1">
-          <section class="cardcontainer">
-            <div class="card">
-              <img
-                src="img/Track_pants_adicolor_Classics_SST_Blu_HK7353_01_laydown.avif"
-                alt="scarpa1"
-              />
-              <button class="heart">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
-                  <title>wishlist-inactive</title>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-width="2"
-                    d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z"
-                  />
-                </svg>
-              </button>
-              <button class="prezzo">
-                <p>€35</p>
-                <div class="original">
-                  <p>€70</p>
-                  <p>-50%</p>
-                  <p>Prezzo originale</p>
-                </div>
-              </button>
+      </section>
+    </div>
+    <div class="card1 display-flex ">
+      <section class="cardcontainer">
+        <div class="card">
+          <img src="img/Maglia_Tiro_Long_Sleeve_Blu_HY5537_21_model.avif" alt="scarpa1" />
+          <button class="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
+              <title>wishlist-inactive</title>
+              <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+                d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z" />
+            </svg>
+          </button>
+          <button class="prezzo">
+            <p>€11,50</p>
+            <div class="original display-flex ">
+              <p>€23</p>
+              <p>-50%</p>
+              <p>Prezzo originale</p>
             </div>
-            <div class="textdescription">
-              <p>Track pants adicolor Classic SST</p>
-              <p>Uomo Originals</p>
-            </div>
-          </section>
+          </button>
         </div>
-        <div class="card1">
-          <section class="cardcontainer">
-            <div class="card">
-              <img
-                src="img/Felpa_Pre-Match_Warm_Manchester_United_FC_Bianco_H56683_01_laydown.avif"
-                alt="scarpa1"
-              />
-              <button class="heart">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
-                  <title>wishlist-inactive</title>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-width="2"
-                    d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z"
-                  />
-                </svg>
-              </button>
-              <button class="prezzo">
-                <p>€55</p>
-                <div class="original">
-                  <p>€110</p>
-                  <p>-50%</p>
-                  <p>Prezzo originale</p>
-                </div>
-              </button>
-            </div>
-            <div class="textdescription">
-              <p>Felpa Pre-Match Warm Manchester United FC</p>
-              <p>Uomo Calcio</p>
-            </div>
-          </section>
+        <div class="textdescription">
+          <p>Maglia Tiro Long Sleeve</p>
+          <p>Sportswear</p>
         </div>
-        <div class="card1">
-          <section class="cardcontainer">
-            <div class="card">
-              <img
-                src="img/Giacca_imbottita_con_cappuccio_Essentials_Midweight_Marrone_IK3215_21_model.avif"
-                alt="scarpa1"
-              />
-              <button class="heart">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
-                  <title>wishlist-inactive</title>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-width="2"
-                    d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z"
-                  />
-                </svg>
-              </button>
-              <button class="prezzo">
-                <p>€85</p>
-                <div class="original">
-                  <p>€170</p>
-                  <p>-50%</p>
-                  <p>Prezzo originale</p>
-                </div>
-              </button>
+      </section>
+    </div>
+    <div class="card1 display-flex ">
+      <section class="cardcontainer">
+        <div class="card">
+          <img src="img/Zaino_adicolor_Archive_Blu_HN6820_01_standard.avif" alt="scarpa1" />
+          <button class="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
+              <title>wishlist-inactive</title>
+              <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+                d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z" />
+            </svg>
+          </button>
+          <button class="prezzo">
+            <p>€19</p>
+            <div class="original display-flex ">
+              <p>€38</p>
+              <p>-50%</p>
+              <p>Prezzo originale</p>
             </div>
-            <div class="textdescription">
-              <p>Giacca imbottita con cappuccio Essentials Midweight</p>
-              <p>Uomo Sportswear</p>
-            </div>
-          </section>
+          </button>
         </div>
-        <div class="card1">
-          <section class="cardcontainer">
-            <div class="card">
-              <img
-                src="img/Short_Designed_for_Training_Pro_Series_Strength_Rosso_IL1454_21_model.avif"
-                alt="scarpa1"
-              />
-              <button class="heart">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
-                  <title>wishlist-inactive</title>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-width="2"
-                    d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z"
-                  />
-                </svg>
-              </button>
-              <button class="prezzo">
-                <p>€35</p>
-                <div class="original">
-                  <p>€70</p>
-                  <p>-50%</p>
-                  <p>Prezzo originale</p>
-                </div>
-              </button>
-            </div>
-            <div class="textdescription">
-              <p>Short Designed for Training Pro Series Strenght</p>
-              <p>Fitness & Training</p>
-            </div>
-          </section>
+        <div class="textdescription">
+          <p>Zaino adicolor Archive</p>
+          <p>Originals</p>
         </div>
-        <div class="card1">
-          <section class="cardcontainer">
-            <div class="card">
-              <img
-                src="img/Giacca_da_rappresentanza_Condivo_22_Blu_HA6245_01_laydown.avif"
-                alt="scarpa1"
-              />
-              <button class="heart">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
-                  <title>wishlist-inactive</title>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-width="2"
-                    d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z"
-                  />
-                </svg>
-              </button>
-              <button class="prezzo">
-                <p>€37,50</p>
-                <div class="original">
-                  <p>€75</p>
-                  <p>-50%</p>
-                  <p>Prezzo originale</p>
-                </div>
-              </button>
+      </section>
+    </div>
+    <div class="card1 display-flex ">
+      <section class="cardcontainer">
+        <div class="card">
+          <img src="img/Track_pants_adicolor_Classics_SST_Blu_HK7353_01_laydown.avif" alt="scarpa1" />
+          <button class="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
+              <title>wishlist-inactive</title>
+              <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+                d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z" />
+            </svg>
+          </button>
+          <button class="prezzo">
+            <p>€35</p>
+            <div class="original display-flex ">
+              <p>€70</p>
+              <p>-50%</p>
+              <p>Prezzo originale</p>
             </div>
-            <div class="textdescription">
-              <p>Giacca da rappresentanza Convido 22</p>
-              <p>Uomo Calcio</p>
-            </div>
-          </section>
+          </button>
         </div>
-        <div class="card1">
-          <section class="cardcontainer">
-            <div class="card">
-              <img
-                src="img/Giacca_Anthem_Nashville_SC_Blu_HZ9118_01_laydown.avif"
-                alt="scarpa1"
-              />
-              <button class="heart">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
-                  <title>wishlist-inactive</title>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-width="2"
-                    d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z"
-                  />
-                </svg>
-              </button>
-              <button class="prezzo">
-                <p>€48</p>
-                <div class="original">
-                  <p>€120</p>
-                  <p>-60%</p>
-                  <p>Prezzo originale</p>
-                </div>
-              </button>
-            </div>
-            <div class="textdescription">
-              <p>Giacca Anthem Nashville SC</p>
-              <p>Uomo Calcio</p>
-            </div>
-          </section>
+        <div class="textdescription">
+          <p>Track pants adicolor Classic SST</p>
+          <p>Uomo Originals</p>
         </div>
+      </section>
+    </div>
+    <div class="card1 display-flex ">
+      <section class="cardcontainer">
+        <div class="card">
+          <img src="img/Felpa_Pre-Match_Warm_Manchester_United_FC_Bianco_H56683_01_laydown.avif" alt="scarpa1" />
+          <button class="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
+              <title>wishlist-inactive</title>
+              <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+                d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z" />
+            </svg>
+          </button>
+          <button class="prezzo">
+            <p>€55</p>
+            <div class="original display-flex ">
+              <p>€110</p>
+              <p>-50%</p>
+              <p>Prezzo originale</p>
+            </div>
+          </button>
+        </div>
+        <div class="textdescription">
+          <p>Felpa Pre-Match Warm Manchester United FC</p>
+          <p>Uomo Calcio</p>
+        </div>
+      </section>
+    </div>
+    <div class="card1 display-flex ">
+      <section class="cardcontainer">
+        <div class="card">
+          <img src="img/Giacca_imbottita_con_cappuccio_Essentials_Midweight_Marrone_IK3215_21_model.avif"
+            alt="scarpa1" />
+          <button class="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
+              <title>wishlist-inactive</title>
+              <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+                d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z" />
+            </svg>
+          </button>
+          <button class="prezzo">
+            <p>€85</p>
+            <div class="original display-flex ">
+              <p>€170</p>
+              <p>-50%</p>
+              <p>Prezzo originale</p>
+            </div>
+          </button>
+        </div>
+        <div class="textdescription">
+          <p>Giacca imbottita con cappuccio Essentials Midweight</p>
+          <p>Uomo Sportswear</p>
+        </div>
+      </section>
+    </div>
+    <div class="card1 display-flex ">
+      <section class="cardcontainer">
+        <div class="card">
+          <img src="img/Short_Designed_for_Training_Pro_Series_Strength_Rosso_IL1454_21_model.avif" alt="scarpa1" />
+          <button class="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
+              <title>wishlist-inactive</title>
+              <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+                d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z" />
+            </svg>
+          </button>
+          <button class="prezzo">
+            <p>€35</p>
+            <div class="original display-flex ">
+              <p>€70</p>
+              <p>-50%</p>
+              <p>Prezzo originale</p>
+            </div>
+          </button>
+        </div>
+        <div class="textdescription">
+          <p>Short Designed for Training Pro Series Strenght</p>
+          <p>Fitness & Training</p>
+        </div>
+      </section>
+    </div>
+    <div class="card1 display-flex ">
+      <section class="cardcontainer">
+        <div class="card">
+          <img src="img/Giacca_da_rappresentanza_Condivo_22_Blu_HA6245_01_laydown.avif" alt="scarpa1" />
+          <button class="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
+              <title>wishlist-inactive</title>
+              <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+                d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z" />
+            </svg>
+          </button>
+          <button class="prezzo">
+            <p>€37,50</p>
+            <div class="original display-flex ">
+              <p>€75</p>
+              <p>-50%</p>
+              <p>Prezzo originale</p>
+            </div>
+          </button>
+        </div>
+        <div class="textdescription">
+          <p>Giacca da rappresentanza Convido 22</p>
+          <p>Uomo Calcio</p>
+        </div>
+      </section>
+    </div>
+    <div class="card1 display-flex ">
+      <section class="cardcontainer">
+        <div class="card">
+          <img src="img/Giacca_Anthem_Nashville_SC_Blu_HZ9118_01_laydown.avif" alt="scarpa1" />
+          <button class="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
+              <title>wishlist-inactive</title>
+              <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+                d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z" />
+            </svg>
+          </button>
+          <button class="prezzo">
+            <p>€48</p>
+            <div class="original display-flex ">
+              <p>€120</p>
+              <p>-60%</p>
+              <p>Prezzo originale</p>
+            </div>
+          </button>
+        </div>
+        <div class="textdescription">
+          <p>Giacca Anthem Nashville SC</p>
+          <p>Uomo Calcio</p>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+  <!--Fine bodycontainer1-->
+
+
+
+
+
+
+
+  <!--Inizio body-container-2-->
+  <div>
+    <div class="header-card display-flex">
+      <h3>LASCIATI ISPIRARE</h3>
+      <div class="link">
+        <a href="link">VEDI TUTTI</a>
       </div>
     </div>
-    <!--Fine bodycontainer1-->
-
-    <!--Inizio body-container-2-->
-    <div>
-      <div class="header-card">
-        <h3>LASCIATI ISPIRARE</h3>
-        <div class="link">
-          <a href="link">VEDI TUTTI</a>
-        </div>
-      </div>
-      <div class="container-card-2">
-        <button class="arrow">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <title>arrow-left-long</title>
-            <path
-              fill="white"
-              stroke="currentColor"
-              stroke-miterlimit="10"
-              stroke-width="2"
-              d="m6.4 17-5-5 5-5M2 12h22"
-            />
-          </svg>
-        </button>
+    <div class="container-card-2 p-relative display-flex ">
+      <button class="arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <title>arrow-left-long</title>
+          <path fill="white" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+            d="m6.4 17-5-5 5-5M2 12h22" />
+        </svg>
+      </button>
 
         <div class="card-2">
           <section class="image">
@@ -736,369 +635,290 @@
     </div>
     <!--Fine body-container-2-->
 
-    <!--Inizio bodycontainer3-->
-    <div class="container-1">
-      <section class="bottoni">
-        <button>Nuovi arrivi</button>
-        <button>Il meglio di adidas</button>
-        <button>Coming soon</button>
+  <!--Inizio bodycontainer3-->
+  <div class="container-1">
+  <section class="bottoni">
+    <button>Nuovi arrivi</button>
+    <button>Il meglio di adidas</button>
+    <button>Coming soon</button>
+  </section>
+  <div class="container display-flex ">
+    <div class="card1 display-flex ">
+      <section class="cardcontainer">
+        <div class="card">
+          <img src="img/Scarpe_Campus_00s_Bianco_ID1435_01_00_standard.avif" alt="scarpa1">
+          <button class="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
+              <title>wishlist-inactive</title>
+              <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+                d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z" />
+            </svg>
+          </button>
+          <button class="prezzo3">
+            <p>€120</p>
+          </button>
+        </div>
+        <div class="textdescription">
+          <p>Scarpe Campus 00s</p>
+          <p>Originals</p>
+        </div>
       </section>
-      <div class="container">
-        <div class="card1">
-          <section class="cardcontainer">
-            <div class="card">
-              <img
-                src="img/Scarpe_Campus_00s_Bianco_ID1435_01_00_standard.avif"
-                alt="scarpa1"
-              />
-              <button class="heart">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
-                  <title>wishlist-inactive</title>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-width="2"
-                    d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z"
-                  />
-                </svg>
-              </button>
-              <button class="prezzo3">
-                <p>€120</p>
-              </button>
-            </div>
-            <div class="textdescription">
-              <p>Scarpe Campus 00s</p>
-              <p>Originals</p>
-            </div>
-          </section>
-        </div>
-        <div class="card1">
-          <section class="cardcontainer">
-            <div class="card">
-              <img
-                src="img/Scarpe_Campus_00s_Blu_JR8163_01_00_standard.avif"
-                alt="scarpa1"
-              />
-              <button class="heart">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
-                  <title>wishlist-inactive</title>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-width="2"
-                    d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z"
-                  />
-                </svg>
-              </button>
-              <button class="prezzo3">
-                <p>€120</p>
-              </button>
-            </div>
-            <div class="textdescription">
-              <p>Scarpe Campus 00s</p>
-              <p>Originals</p>
-            </div>
-          </section>
-        </div>
-        <div class="card1">
-          <section class="cardcontainer">
-            <div class="card">
-              <img
-                src="img/Scarpe_Campus_00s_Verde_JR8162_01_00_standard.avif"
-                alt="scarpa1"
-              />
-              <button class="heart">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
-                  <title>wishlist-inactive</title>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-width="2"
-                    d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z"
-                  />
-                </svg>
-              </button>
-              <button class="prezzo3">
-                <p>€120</p>
-              </button>
-            </div>
-            <div class="textdescription">
-              <p>Scarpe Campus 00s</p>
-              <p>Originals</p>
-            </div>
-          </section>
-        </div>
-        <div class="card1">
-          <section class="cardcontainer">
-            <div class="card">
-              <img
-                src="img/Scarpe_Campus_00s_Marrone_JS2760_01_00_standard.avif"
-                alt="scarpa1"
-              />
-              <button class="heart">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
-                  <title>wishlist-inactive</title>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-width="2"
-                    d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z"
-                  />
-                </svg>
-              </button>
-              <button class="prezzo3">
-                <p>€120</p>
-              </button>
-            </div>
-            <div class="textdescription">
-              <p>Scarpe Campus 00s</p>
-              <p>Originals</p>
-            </div>
-          </section>
-        </div>
-        <div class="card1">
-          <section class="cardcontainer">
-            <div class="card">
-              <img
-                src="img/Track_top_adicolor_Classics_Firebird_Rosso_JP2545_21_model.avif"
-                alt="scarpa1"
-              />
-              <button class="heart">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
-                  <title>wishlist-inactive</title>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-width="2"
-                    d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z"
-                  />
-                </svg>
-              </button>
-              <button class="prezzo3">
-                <p>€75</p>
-              </button>
-            </div>
-            <div class="textdescription">
-              <p>Track top adicolor Classics Firebird</p>
-              <p>Originals</p>
-            </div>
-          </section>
-        </div>
-        <div class="card1">
-          <section class="cardcontainer">
-            <div class="card">
-              <img
-                src="img/Track_pants_adicolor_Classics_Firebird_Rosso_JP2541_21_model.avif"
-                alt="scarpa1"
-              />
-              <button class="heart">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
-                  <title>wishlist-inactive</title>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-width="2"
-                    d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z"
-                  />
-                </svg>
-              </button>
-              <button class="prezzo3">
-                <p>€65</p>
-              </button>
-            </div>
-            <div class="textdescription">
-              <p>Track pants adicolor Classic Firebird</p>
-              <p>Originals</p>
-            </div>
-          </section>
-        </div>
-        <div class="card1">
-          <section class="cardcontainer">
-            <div class="card">
-              <img
-                src="img/Track_pants_adicolor_Classic_Firebird_Loose_Nero_JC8245_21_model.avif"
-                alt="scarpa1"
-              />
-              <button class="heart">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
-                  <title>wishlist-inactive</title>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-width="2"
-                    d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z"
-                  />
-                </svg>
-              </button>
-              <button class="prezzo3">
-                <p>€70</p>
-              </button>
-            </div>
-            <div class="textdescription">
-              <p>Track pants adicolor Classic Firebird Loose</p>
-              <p>Originals</p>
-            </div>
-          </section>
-        </div>
-        <div class="card1">
-          <section class="cardcontainer">
-            <div class="card">
-              <img
-                src="img/Pantaloni_adibreak_Nero_IU2519_21_model.avif"
-                alt="scarpa1"
-              />
-              <button class="heart">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
-                  <title>wishlist-inactive</title>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-width="2"
-                    d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z"
-                  />
-                </svg>
-              </button>
-              <button class="prezzo3">
-                <p>€75</p>
-              </button>
-            </div>
-            <div class="textdescription">
-              <p>Pantaloni adibreak</p>
-              <p>Originals</p>
-            </div>
-          </section>
-        </div>
-        <div class="card1">
-          <section class="cardcontainer">
-            <div class="card">
-              <img
-                src="img/Scarpe_Campus_00s_Nero_HQ8708_01_standard.avif"
-                alt="scarpa1"
-              />
-              <button class="heart">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
-                  <title>wishlist-inactive</title>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-width="2"
-                    d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z"
-                  />
-                </svg>
-              </button>
-              <button class="prezzo3">
-                <p>€120</p>
-              </button>
-            </div>
-            <div class="textdescription">
-              <p>Scarpe Campus 00s</p>
-              <p>Originals</p>
-            </div>
-          </section>
-        </div>
-        <div class="card1">
-          <section class="cardcontainer">
-            <div class="card">
-              <img
-                src="img/Scarpe_Campus_00s_Grigio_HQ8707_01_standard.avif"
-                alt="scarpa1"
-              />
-              <button class="heart">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
-                  <title>wishlist-inactive</title>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-width="2"
-                    d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z"
-                  />
-                </svg>
-              </button>
-              <button class="prezzo3">
-                <p>€120</p>
-              </button>
-            </div>
-            <div class="textdescription">
-              <p>Scarpe Campus 00s</p>
-              <p>Originals</p>
-            </div>
-          </section>
-        </div>
-        <div class="card1">
-          <section class="cardcontainer">
-            <div class="card">
-              <img
-                src="img/Track_top_adicolor_Classics_Firebird_Rosso_IR8079_21_model.avif"
-                alt="scarpa1"
-              />
-              <button class="heart">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
-                  <title>wishlist-inactive</title>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-width="2"
-                    d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z"
-                  />
-                </svg>
-              </button>
-              <button class="prezzo3">
-                <p>€75</p>
-              </button>
-            </div>
-            <div class="textdescription">
-              <p>Track top adicolor Classic Firebird</p>
-              <p>Originals</p>
-            </div>
-          </section>
-        </div>
-        <div class="card1">
-          <section class="cardcontainer">
-            <div class="card">
-              <img
-                src="img/Gonna_adicolor_adibreak_Maxi_Nero_JD0923_21_model.avif"
-                alt="scarpa1"
-              />
-              <button class="heart">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
-                  <title>wishlist-inactive</title>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-width="2"
-                    d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z"
-                  />
-                </svg>
-              </button>
-              <button class="prezzo3">
-                <p>€65</p>
-              </button>
-            </div>
-            <div class="textdescription">
-              <p>Gonna adicolor adibreak Maxi</p>
-              <p>Originals</p>
-            </div>
-          </section>
-        </div>
-      </div>
     </div>
-    <!--Fine bodycontainer3-->
+    <div class="card1 display-flex ">
+      <section class="cardcontainer">
+        <div class="card">
+          <img src="img/Scarpe_Campus_00s_Blu_JR8163_01_00_standard.avif" alt="scarpa1">
+          <button class="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
+              <title>wishlist-inactive</title>
+              <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+                d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z" />
+            </svg>
+          </button>
+          <button class="prezzo3">
+            <p>€120</p>
+          </button>
+        </div>
+        <div class="textdescription">
+          <p>Scarpe Campus 00s</p>
+          <p>Originals</p>
+        </div>
+      </section>
+    </div>
+    <div class="card1 display-flex ">
+      <section class="cardcontainer">
+        <div class="card">
+          <img src="img/Scarpe_Campus_00s_Verde_JR8162_01_00_standard.avif" alt="scarpa1">
+          <button class="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
+              <title>wishlist-inactive</title>
+              <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+                d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z" />
+            </svg>
+          </button>
+          <button class="prezzo3">
+            <p>€120</p>
+          </button>
+        </div>
+        <div class="textdescription">
+          <p>Scarpe Campus 00s</p>
+          <p>Originals</p>
+        </div>
+      </section>
+    </div>
+    <div class="card1 display-flex ">
+      <section class="cardcontainer">
+        <div class="card">
+          <img src="img/Scarpe_Campus_00s_Marrone_JS2760_01_00_standard.avif" alt="scarpa1">
+          <button class="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
+              <title>wishlist-inactive</title>
+              <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+                d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z" />
+            </svg>
+          </button>
+          <button class="prezzo3">
+            <p>€120</p>
+          </button>
+        </div>
+        <div class="textdescription">
+          <p>Scarpe Campus 00s</p>
+          <p>Originals</p>
+        </div>
+      </section>
+    </div>
+    <div class="card1 display-flex ">
+      <section class="cardcontainer">
+        <div class="card">
+          <img src="img/Track_top_adicolor_Classics_Firebird_Rosso_JP2545_21_model.avif" alt="scarpa1">
+          <button class="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
+              <title>wishlist-inactive</title>
+              <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+                d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z" />
+            </svg>
+          </button>
+          <button class="prezzo3">
+            <p>€75</p>
+          </button>
+        </div>
+        <div class="textdescription">
+          <p>Track top adicolor Classics Firebird</p>
+          <p>Originals</p>
+        </div>
+      </section>
+    </div>
+    <div class="card1 display-flex ">
+      <section class="cardcontainer">
+        <div class="card">
+          <img src="img/Track_pants_adicolor_Classics_Firebird_Rosso_JP2541_21_model.avif" alt="scarpa1">
+          <button class="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
+              <title>wishlist-inactive</title>
+              <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+                d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z" />
+            </svg>
+          </button>
+          <button class="prezzo3">
+            <p>€65</p>
+          </button>
+        </div>
+        <div class="textdescription">
+          <p>Track pants adicolor Classic Firebird</p>
+          <p>Originals</p>
+        </div>
+      </section>
+    </div>
+    <div class="card1 display-flex ">
+      <section class="cardcontainer">
+        <div class="card">
+          <img src="img/Track_pants_adicolor_Classic_Firebird_Loose_Nero_JC8245_21_model.avif" alt="scarpa1">
+          <button class="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
+              <title>wishlist-inactive</title>
+              <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+                d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z" />
+            </svg>
+          </button>
+          <button class="prezzo3">
+            <p>€70</p>
+          </button>
+        </div>
+        <div class="textdescription">
+          <p>Track pants adicolor Classic Firebird Loose</p>
+          <p>Originals</p>
+        </div>
+      </section>
+    </div>
+    <div class="card1 display-flex ">
+      <section class="cardcontainer">
+        <div class="card">
+          <img src="img/Pantaloni_adibreak_Nero_IU2519_21_model.avif" alt="scarpa1">
+          <button class="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
+              <title>wishlist-inactive</title>
+              <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+                d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z" />
+            </svg>
+          </button>
+          <button class="prezzo3">
+            <p>€75</p>
+          </button>
+        </div>
+        <div class="textdescription">
+          <p>Pantaloni adibreak</p>
+          <p>Originals</p>
+        </div>
+      </section>
+    </div>
+    <div class="card1">
+      <section class="cardcontainer">
+        <div class="card">
+          <img src="img/Scarpe_Campus_00s_Nero_HQ8708_01_standard.avif" alt="scarpa1">
+          <button class="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
+              <title>wishlist-inactive</title>
+              <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+                d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z" />
+            </svg>
+          </button>
+          <button class="prezzo3">
+            <p>€120</p>
+          </button>
+        </div>
+        <div class="textdescription">
+          <p>Scarpe Campus 00s</p>
+          <p>Originals</p>
+        </div>
+      </section>
+    </div>
+    <div class="card1 display-flex ">
+      <section class="cardcontainer">
+        <div class="card">
+          <img src="img/Scarpe_Campus_00s_Grigio_HQ8707_01_standard.avif" alt="scarpa1">
+          <button class="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
+              <title>wishlist-inactive</title>
+              <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+                d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z" />
+            </svg>
+          </button>
+          <button class="prezzo3">
+            <p>€120</p>
+          </button>
+        </div>
+        <div class="textdescription">
+          <p>Scarpe Campus 00s</p>
+          <p>Originals</p>
+        </div>
+      </section>
+    </div>
+    <div class="card1 display-flex ">
+      <section class="cardcontainer">
+        <div class="card">
+          <img src="img/Track_top_adicolor_Classics_Firebird_Rosso_IR8079_21_model.avif" alt="scarpa1">
+          <button class="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
+              <title>wishlist-inactive</title>
+              <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+                d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z" />
+            </svg>
+          </button>
+          <button class="prezzo3">
+            <p>€75</p>
+          </button>
+        </div>
+        <div class="textdescription">
+          <p>Track top adicolor Classic Firebird</p>
+          <p>Originals</p>
+        </div>
+      </section>
+    </div>
+    <div class="card1">
+      <section class="cardcontainer">
+        <div class="card">
+          <img src="img/Gonna_adicolor_adibreak_Maxi_Nero_JD0923_21_model.avif" alt="scarpa1">
+          <button class="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
+              <title>wishlist-inactive</title>
+              <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+                d="M7.38 6H4.42L2 10l8 8 8-8-2.41-4h-2.98L10 9 7.38 6z" />
+            </svg>
+          </button>
+          <button class="prezzo3">
+            <p>€65</p>
+          </button>
+        </div>
+        <div class="textdescription">
+          <p>Gonna adicolor adibreak Maxi</p>
+          <p>Originals</p>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+  <!--Fine bodycontainer3-->
 
-    <!--Inizio body-container-4-->
-    <div>
-      <div class="container-card-4">
+
+
+
+
+
+  <!--Inizio body-container-4-->
+  <div>
+    <div class="container-card-4 display-flex">
+      <!-- <button class="svg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <title>arrow-left-long</title>
+            <path
+              fill="white"
+              stroke="currentColor"
+              stroke-miterlimit="10"
+              stroke-width="2"
+              d="m6.4 17-5-5 5-5M2 12h22"
+            />
+          </svg>
+        </button> -->
 
         <!-- Prima Card -->
         <div class="card-4">
