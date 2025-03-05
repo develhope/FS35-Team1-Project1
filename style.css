@@ -142,70 +142,6 @@ body {
 #hidden_p {
   display: none;
 }
-  /* Contenuti Media Query  */
-/* 
- @media screen and (max-width: 780px) {
-  .black_line {
-    color: var(--main-color-black);
-    position: relative;
-  }
-  #hidden_p {
-    display: flex;
-    text-align: center;
-    flex-wrap: nowrap;
-    color: var(--main-color-white);
-    position: absolute;
-  }
-
-  .lista_link_1 {
-    display: none;
-  }
-
-  .lista_link_2 {
-    display: none;
-  }
-
-  .container_logo {
-    display: none;
-  }
-
-  .icon_container {
-    display: none;
-  }
-
-  .hidden_container {
-     gap: 100px; 
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .hamburger {
-    gap: 30px;
-    width: 48px;
-    height: 48px;
-    margin: 20px;
-    justify-content: start;
-    flex-wrap: nowrap;
-  }
-
-  .hidden_container_logo {
-    align-content: center;
-    width: 48px;
-    height: 48px;
-    margin: 20px 180px;
-    justify-content: center;
-    flex-wrap: nowrap;
-  }
-
-  .hidden_icon {
-    gap: 30px;
-    width: 48px;
-    height: 48px;
-    margin: 20px;
-    justify-content: end;
-    flex-wrap: nowrap;
-  } 
-}   */
 /* Fine Header CSS */
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
 /* INIZIO 1-BLOCCO-FOTO  E  INIZIO 2-BLOCCO-FOTO */
@@ -222,7 +158,7 @@ body {
 }
 /* dimensioni immagini riempire l'intera larghezza della pagina*/
  .main-img {
-  width: 100%;
+   width: 100%;
   display: block;
   z-index: 1;
 }
@@ -736,7 +672,7 @@ footer {
 }
 .Footer-Newsletter button:hover {
   color: rgb(100, 100, 100);
-  }
+}
 .Footer-Links {
   flex-direction: row;
   justify-content: center;
@@ -801,7 +737,352 @@ footer {
   color: var(--main-color-lightgray);
   text-decoration: none;
 }
-/*
+
+
+
+@media screen and (max-width: 768px){
+  
+
+
+
+
+
+
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*ALFONSO*/
+/* Contenuti Media Query  */
+
+@media screen and (max-width: 780px) {
+.black_line {
+  color: var(--main-color-black);
+  position: relative;
+}
+#hidden_p {
+  display: flex;
+  text-align: center;
+  flex-wrap: nowrap;
+  color: var(--main-color-white);
+  position: absolute;
+}
+
+.lista_link_1 {
+  display: none;
+}
+
+.lista_link_2 {
+  display: none;
+}
+
+.container_logo {
+  display: none;
+}
+
+.icon_container {
+  display: none;
+}
+
+.hidden_container {
+   gap: 100px; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger {
+  gap: 30px;
+  width: 48px;
+  height: 48px;
+  margin: 20px;
+  justify-content: start;
+  flex-wrap: nowrap;
+}
+
+.hidden_container_logo {
+  align-content: center;
+  width: 48px;
+  height: 48px;
+  margin: 20px 180px;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.hidden_icon {
+  gap: 30px;
+  width: 48px;
+  height: 48px;
+  margin: 20px;
+  justify-content: end;
+  flex-wrap: nowrap;
+} 
+}   
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+                      /*CRISTIAN E SILVIA*/
+                                        @media (max-width: 960px) {
+    
+                                          img {
+                                             
+                                              width: 100%; /* Ingrandisce le immagini */
+                                              transform: scale(1.5); /* Ingrandisce ulteriormente le immagini */
+                                              transform-origin: center; /* Mantiene il focus sull'immagine centrale */
+                                      
+                                           
+                                          }
+                                      
+                                          .scritte-immagini{
+                                              position: relative;
+                                           }
+                                      
+                                      
+                                           /* modifiche della prima scritta  h2  */
+                                           .scritte-immagini h2{
+                                               position: absolute;
+                                               bottom: 80px;
+                                               left: 80px;
+                                               width: max-content;
+                                               letter-spacing: 1px;
+                                               font-size: 18px;
+                                               padding: 10px 5px;
+                                               background-color: white;
+                                               margin: 0px;
+                                           }
+                                      
+                                      
+                                           /* modifiche seconda scritta paragrafo */
+                                           .scritte-immagini p{
+                                               position: absolute;
+                                               bottom: 20px;
+                                               left: 80px;
+                                               letter-spacing: 1px;
+                                               width: max-content;
+                                               font-size: 15px;
+                                               background-color: white;
+                                               margin-bottom: 30px;
+                                               margin-top: 7px;  
+                                               padding: 2px;
+                                           }
+                                      
+                                      
+                                           /*modifiche link acquista terza scritta e posizionamento a solo  */
+                                           .pulsante-acquista a{
+                                               width: max-content;
+                                               font-weight: bold;
+                                               font-size: 15px;
+                                               text-decoration: none;
+                                               color: black;
+                                               background-color: white;
+                                               padding:  15px 21px;
+                                               position: absolute;
+                                               bottom: -17px;
+                                               left: 80px;
+                                               z-index: 1;
+                                           }
+                                      
+                                      
+                                           /* modifiche cornice sotto il link acquista  */
+                                           .cornice-pulsante-acquista{
+                                           width: 138px;
+                                           height: 48px;
+                                           background-color: transparent;
+                                           border: 1px solid white;
+                                           position: absolute;
+                                           bottom: -21px;
+                                           left: 82px;
+                                           }
+                                      
+                                      
+                                           /* modifiche colore cornice al pasaggio del mouse sul link acquista */
+                                           .sezione-pulsante-acquista:hover  .cornice-pulsante-acquista {
+                                               border: 1px solid grey;
+                                           }
+                                      }
+                                      
+                                      
+                                      
+                                      
+                                      
+                                          @media screen and (max-width:767px){
+                                            
+                                          
+                                              .scritte-immagini{
+                                                  position: relative;
+                                               }
+                                          
+                                          
+                                               /* modifiche della prima scritta  h2  */
+                                               .scritte-immagini h2{
+                                                   position: absolute;
+                                                   bottom: 50px;
+                                                   left: 40px;
+                                                   width: max-content;
+                                                   letter-spacing: 1px;
+                                                   font-size: 18px;
+                                                   padding: 10px 5px;
+                                                   background-color: white;
+                                                   margin: 0px;
+                                               }
+                                          
+                                          
+                                               /* modifiche seconda scritta paragrafo */
+                                               .scritte-immagini p{
+                                                   position: absolute;
+                                                   bottom: -15px;
+                                                   left: 40px;
+                                                   letter-spacing: 1px;
+                                                   width: max-content;
+                                                   font-size: 15px;
+                                                   background-color: white;
+                                                   margin-bottom: 30px;
+                                                   margin-top: 7px;  
+                                                   padding: 2px;
+                                               }
+                                          
+                                          
+                                               /*modifiche link acquista terza scritta e posizionamento a solo  */
+                                               .pulsante-acquista a{
+                                                   width: max-content;
+                                                   font-weight: bold;
+                                                   font-size: 15px;
+                                                   text-decoration: none;
+                                                   color: black;
+                                                   background-color: white;
+                                                   padding:  15px 21px;
+                                                   position: absolute;
+                                                   bottom: -50px;
+                                                   left: 40px;
+                                                   z-index: 1;
+                                               }
+                                          
+                                          
+                                               /* modifiche cornice sotto il link acquista  */
+                                               .cornice-pulsante-acquista{
+                                               width: 138px;
+                                               height: 48px;
+                                               background-color: transparent;
+                                               border: 1px solid white;
+                                               position: absolute;
+                                               bottom: -55px;
+                                               left: 42px;
+                                               
+                                               }
+                                          
+                                          
+                                               /* modifiche colore cornice al pasaggio del mouse sul link acquista */
+                                               .sezione-pulsante-acquista:hover  .cornice-pulsante-acquista {
+                                                   border: 1px solid grey;
+                                               }
+                                          }
+                                      
+                                      
+                                          @media screen and (max-width:580px) {
+                                              .scritte-immagini{
+                                                  position: relative;
+                                               }
+                                          
+                                          
+                                               /* modifiche della prima scritta  h2  */
+                                               .scritte-immagini h2{
+                                                   position: absolute;
+                                                   bottom: 60px;
+                                                   left: 40px;
+                                                   width: max-content;
+                                                   letter-spacing: 1px;
+                                                   font-size: 15px;
+                                                   padding: 10px 5px;
+                                                   background-color: white;
+                                                   margin: 0px;
+                                               }
+                                          
+                                          
+                                               /* modifiche seconda scritta paragrafo */
+                                               .scritte-immagini p{
+                                                   position: absolute;
+                                                   bottom: 6px;
+                                                   left: 40px;
+                                                   letter-spacing: 1px;
+                                                   width: max-content;
+                                                   font-size: 12px;
+                                                   background-color: white;
+                                                   margin-bottom: 30px;
+                                                   margin-top: 7px;  
+                                                   padding: 2px;
+                                               }
+                                          
+                                          
+                                               /*modifiche link acquista terza scritta e posizionamento a solo  */
+                                               .pulsante-acquista a{
+                                                   width: max-content;
+                                                   font-weight: bold;
+                                                   font-size: 12px;
+                                                   text-decoration: none;
+                                                   color: black;
+                                                   background-color: white;
+                                                   padding:  15px 21px;
+                                                   position: absolute;
+                                                   bottom: -30px;
+                                                   left: 40px;
+                                                   z-index: 1;
+                                               }
+                                          
+                                          
+                                               /* modifiche cornice sotto il link acquista  */
+                                               .cornice-pulsante-acquista{
+                                               width: 119px;
+                                               height: 44px;
+                                               background-color: transparent;
+                                               border: 1px solid white;
+                                               position: absolute;
+                                               bottom: -35px;
+                                               left: 42px;
+                                               
+                                               }
+                                              
+                                          }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+                                        /*MATTIA*/
+
+
+
 @media screen and (max-width: 960px) {
   .Footer-Newsletter {
       display: flex;
@@ -829,5 +1110,5 @@ footer {
       width: 45%;
   }
 }
-*/
+
 /*Fine footer*/
