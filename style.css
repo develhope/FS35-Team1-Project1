@@ -20,8 +20,7 @@
   --letter-spacing: 0.1em;
   --footer-width: 90vw;
 }
-
-body {
+body {  
   margin: 0;
   font-size: var(--font-size-base);
   font-family: var(--font-family);
@@ -30,7 +29,6 @@ body {
   overflow-x: hidden;
   width: 100vw;
 }
-
 .display-flex {
   display: flex;
 }
@@ -48,14 +46,11 @@ body {
   position: relative;
 }
 
-
 /* Sviluppo del Header */
-
 .header {
   cursor: pointer;
   overflow: hidden;
 }
-
 .black_line {
   background-color: var(--main-color-black);
   height: 45px;
@@ -63,18 +58,15 @@ body {
   color: var(--main-color-white);
   font-weight: var(--font-weight);
 }
-
 .half_container {
   justify-content: end;
 }
-
 .lista_link_1 {
   list-style: none;
   gap: 10px;
   font-weight: 12px;
   margin-right: 40px;
 }
-
 .link1 {
   text-decoration: none;
   color: var(--main-color-black);
@@ -84,25 +76,21 @@ body {
   font-family: var(--font-family);
   font-weight: 200;
 }
-
 .last_container {
   display: grid;
   grid-template-columns: 2fr 3fr 2fr;
 }
-
 .container_logo {
   width: 60px;
   height: 60px;
   margin-left: 40px;
 }
-
 .lista_link_2 {
   list-style: none;
   gap: 10px;
   height: 100%;
   padding: 10px;
 }
-
 .link2 {
   font-family: var(--font-family);
   color: var(--main-color-black);
@@ -110,16 +98,13 @@ body {
   font-size: medium;
   text-decoration: none;
 }
-
 .bold {
   font-weight: bold;
 }
-
 .icon_container {
   width: 50px;
   margin: auto;
 }
-
 #cerca {
   background-color: var(--main-colr-gray);
   border: none;
@@ -132,7 +117,6 @@ body {
   background-size: 25px;
   max-width: 260px;
 }
-
 #cerca::placeholder {
   padding: 10px;
   color: var(--main-color-black);
@@ -140,684 +124,34 @@ body {
   font-weight: lighter;
   font-size: small;
 }
-
 .svg {
   width: 30px;
   height: 30px;
   padding: 5px;
   margin-left: 10px;
 }
-
 /* Contenuti Hover */
-
 .link1:hover {
   text-decoration: underline;
 }
-
 .link2:hover {
   text-decoration: underline;
 }
-
 /* Contenuti nascosti */
-
 .hidden_container {
   display: none;
   width: 100vw;
 }
-
 #hidden_p {
   display: none;
 }
-
-/* Fine Header CSS */
-
-/*-----------------------------------------------------------------------------------------------------------------------------------------*/
-
-/* INIZIO 1-BLOCCO-FOTO  E  INIZIO 2-BLOCCO-FOTO */
-
-.contenitore-grigio p {
-  margin: 0;
-}
-
-/* CONTENITORE GRIGIO SOTTO L'HEADER */
-.contenitore-grigio {
-  background-color: #eceff1;
-  padding: 16px;
-  text-align: center;
-  font-size: 12px;
-  letter-spacing: 1px;
-}
-
-/* dimensioni immagini riempire l'intera larghezza della pagina*/
-.main-img {
-  width: 100%;
-  display: block;
-  z-index: 1;
-}
-
-
-/* predisposizione del contenitore principale per far centrare e contenere le immagini in pagia */
-.container-principale {
-  max-width: 100%;
-  margin: auto;
-  position: relative;
-}
-
-
-/* modifiche della prima scritta  h2  */
-.scritte-immagini h2 {
-  position: absolute;
-  bottom: 175px;
-  left: 80px;
-  width: max-content;
-  letter-spacing: 1px;
-  font-size: 18px;
-  padding: 10px 5px;
-  background-color: white;
-  margin: 0px;
-}
-
-/* modifiche seconda scritta paragrafo */
-.scritte-immagini p {
-  position: absolute;
-  bottom: 115px;
-  left: 80px;
-  letter-spacing: 1px;
-  width: max-content;
-  font-size: 15px;
-  background-color: white;
-  margin-bottom: 30px;
-  margin-top: 7px;
-  padding: 2px;
-}
-
-/*modifiche link acquista terza scritta e posizionamento a solo  */
-.pulsante-acquista a {
-  width: max-content;
-  font-weight: bold;
-  font-size: 15px;
-  text-decoration: none;
-  color: black;
-  background-color: white;
-  padding: 15px 21px;
-  position: absolute;
-  bottom: 78px;
-  left: 80px;
-  z-index: 1;
-}
-
-/* modifiche cornice sotto il link acquista  */
-.cornice-pulsante-acquista {
-  width: 149px;
-  height: 48px;
-  background-color: transparent;
-  border: 1px solid white;
-  position: absolute;
-  bottom: 73px;
-  left: 82px;
-}
-
-/* modifiche colore cornice al pasaggio del mouse sul link acquista */
-.sezione-pulsante-acquista:hover .cornice-pulsante-acquista {
-  border: 1px solid grey;
-}
-
-
-
-/* modifiche svg play e posizionamento sulla parte destra alta della pagina */
-.play svg {
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  bottom: 590px;
-  /*modificare  il relative*/
-  left: 96%;
-}
-
-/* modifiche colore dello sfondo dell'svg al passaggio del mouse */
-.play svg:hover {
-  background-color: #eceff1;
-}
-
-/* contorno bianco attorno alle lineette del play */
-.lineetta {
-  stroke: white;
-  stroke-width: 1.5px;
-}
-
-/*-----------------------------------------------------------------------------------------------------------------------------------------*/
-
-/*Inizio css bodycontainer1*/
-.container-1 {
-  /* margin: 40px 60px ; */
-  margin-left: 110px;
-  margin-right: 110px;
-}
-
-.bottoni h3 {
-  margin-top: 40px;
-  font-size: 24px;
-  font-weight: 750;
-}
-
-.bottoni button {
-  border: 1px solid grey;
-  background-color: white;
-  font-size: 16px;
-  padding: 5px 10px;
-  cursor: pointer;
-  margin-right: 5px;
-  transition: all 0.2s ease;
-  font-family: var(--font-family);
-}
-
-.bottoni button:nth-child(1) {
-  background-color: black;
-  border: 1px solid black;
-  color: white;
-}
-
-.bottoni button:nth-child(1):hover {
-  background-color: rgb(29, 29, 29);
-  border: 1px solid rgb(74, 74, 74);
-  color: white;
-}
-
-.bottoni button:nth-last-child(2):hover {
-  background-color: rgb(238, 238, 238);
-}
-
-.bottoni button:nth-last-child(1):hover {
-  background-color: rgb(238, 238, 238);
-}
-
-.container {
-  gap: 20px;
-  overflow-x: auto;
-  padding-top: 20px;
-}
-
-.cardcontainer {
-  border: 0.5px solid white;
-}
-
-.cardcontainer:hover {
-  border: 0.5px solid black;
-}
-
-.card1 {
-  flex-direction: column;
-  gap: 20px;
-}
-
-.card {
-  position: relative;
-  width: 400px;
-  height: 400px;
-  transition: all 0.2s ease-in;
-}
-
-.card img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
-
-.heart svg {
-  width: 25px;
-  height: 25px;
-}
-
-.heart svg:hover {
-  background-image: url(icons/wishlist-active.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.heart {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  border: none;
-  background-color: none;
-}
-
-.prezzo {
-  position: absolute;
-  top: 350px;
-  right: 230px;
-  width: 160px;
-  height: 50px;
-  border: none;
-  background-color: white;
-  transition: all 0.2s ease-in;
-}
-
-.prezzo p {
-  margin: 0px;
-  font-family: var(--font-family);
-  text-align: left;
-}
-
-.prezzo p:nth-child(1) {
-  color: red;
-  font-size: 15px;
-}
-
-.original {
-  text-wrap: nowrap;
-  flex-direction: row;
-  gap: 5px;
-}
-
-.original p:nth-child(1) {
-  text-decoration: line-through;
-  color: black;
-  font-size: 14px;
-}
-
-.original p:nth-child(2) {
-  color: red;
-  font-size: 11px;
-  margin-top: 2px;
-}
-
-.original p:nth-child(3) {
-  font-size: 11px;
-  margin-top: 2px;
-}
-
-.card:hover .prezzo {
-  transform: translatey(-10px);
-}
-
-.textdescription {
-  font-size: 13px;
-  padding-left: 10px;
-}
-
-.textdescription p:nth-last-child(1) {
-  color: rgb(160, 160, 160);
-}
-
-/*fine bodycontainer1*/
-
-/*-----------------------------------------------------------------------------------------------------------------------------------------*/
-
-/*inizio bodycontainer.2*/
-.container-card-2 {
-  gap: 10px;
-  margin-left: 110px;
-  margin-bottom: 50px;
-  overflow-x: auto;
-}
-
-.link {
-  transform: translateY(50%);
-}
-
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 45px;
-  height: 45px;
-}
-
-.arrow svg:hover {
-  color: grey;
-}
-
-.header-card {
-  justify-content: space-between;
-  margin-left: 108px;
-  margin-right: 150px;
-  margin-bottom: 30px;
-  margin-top: 40px;
-}
-
-.header-card h3 {
-  font-size: 24px;
-  margin: 5px 0px 0px;
-  font-weight: 750;
-}
-
-.header-card .link a {
-  font-size: 15px;
-  color: black;
-}
-
-.header-card .link a:hover {
-  background-color: black;
-  color: white;
-  transition: all;
-}
-
-html,
-body {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.card-2 {
-  height: 50%;
-  box-sizing: border-box;
-}
-
-.card-2:hover {
-  border: 1px solid rgb(0, 0, 0);
-}
-
-.card-2:hover .img-1 {
-  content: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_400,w_400/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_13_02_dmt_d_48446d9d29.png");
-  transition: opacity 0.3 ease;
-  width: 300px;
-  height: auto;
-}
-
-.card-2:hover .img-2 {
-  content: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_400,w_400/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_19_02_dmt_d_b0ce93b4bf.png");
-  transition: opacity 0.3 ease;
-  width: 300px;
-  height: auto;
-}
-
-.card-2:hover .img-3 {
-  content: url("https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_21_02_dmt_d_23ed574f7e.png");
-  transition: opacity 0.3 ease;
-  width: 300px;
-  height: auto;
-}
-
-.card-2:hover .img-4 {
-  content: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_400,w_400/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_6_02_dmt_d_b7a92ad234.png");
-  transition: opacity 0.3 ease;
-  width: 300px;
-  height: auto;
-}
-
-.card-2:hover .img-5 {
-  content: url("https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_9_02_dmt_d_b82ef01761.png");
-  transition: opacity 0.3 ease;
-  width: 300px;
-  height: auto;
-}
-
-.card-2:hover .img-6 {
-  content: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_400,w_400/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_8_02_dmt_d_50e781a407.png");
-  transition: opacity 0.3 ease;
-  width: 300px;
-  height: auto;
-}
-
-.card-2:hover .img-7 {
-  content: url("https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_17_02_dmt_d_fab494d3bc.png");
-  transition: opacity 0.3 ease;
-  width: 300px;
-  height: auto;
-}
-
-.card-2:hover .img-8 {
-  content: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_400,w_400/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_28_02_dmt_d_b900fcf87f.png");
-  transition: opacity 0.3 ease;
-  width: 300px;
-  height: auto;
-}
-
-.image img {
-  width: 300px;
-  height: auto;
-}
-
-.card-2 .footer p {
-  padding-left: 16px;
-}
-
-/*fine bodycontainer.2*/
-
-/*-----------------------------------------------------------------------------------------------------------------------------------------*/
-
-/*Inizio bodycontainer3*/
-.prezzo3 {
-  position: absolute;
-  top: 370px;
-  right: 330px;
-  width: 60px;
-  height: 30px;
-  border: none;
-  background-color: white;
-  transition: all 0.2s ease-in;
-}
-
-.prezzo3 p {
-  margin: 0px;
-  font-family: var(--font-family);
-}
-
-.card:hover .prezzo3 {
-  transform: translatey(-10px);
-}
-
-/*Fine bodycontainer3*/
-
-/*-----------------------------------------------------------------------------------------------------------------------------------------*/
-
-/*inizio bodycontainer.4*/
-
-.container-card-4 {
-  gap: 8px;
-  padding: 0 108px;
-  margin-top: 40px;
-}
-
-.card {
-  height: fit-content;
-  box-sizing: border-box;
-}
-
-.card:hover {
-  border: 1px solid rgb(0, 0, 0);
-}
-
-.image img {
-  width: 300px;
-  height: auto;
-}
-
-.container-video video {
-  width: 300px;
-  height: 400px;
-}
-
-.container-video video:hover {
-  padding: 1px;
-}
-
-.card .footer {
-  height: 186px;
-  padding: 16px;
-}
-
-/*fine bodycontainer.4*/
-
-/*-----------------------------------------------------------------------------------------------------------------------------------------*/
-
-/*Inizio footer*/
-
-footer {
-  flex-direction: column;
-  overflow: hidden;
-  transform: translate(-50% -50%);
-  background-color: var(--main-color-white);
-  font-family: var(--font-family);
-  padding: 0;
-  margin: 0;
-}
-
-.Footer-Main {
-  flex-direction: column;
-  transform: translate(-50% -50%);
-  background-color: var(--main-color-black);
-  color: var(--main-color-white);
-  font-family: var(--font-family-cn);
-  padding: 80px 0px;
-  margin: 0;
-  width: 100vw;
-}
-
-.Footer-Main h1 {
-  text-align: center;
-  font-size: var(--font-size-footer-large);
-  width: var(--footer-width);
-  margin: 0px;
-}
-
-.Footer-Main p {
-  text-align: justify;
-  font-size: var(--font-size-footer-base);
-  letter-spacing: var(--letter-spacing);
-  line-height: var(--line-height);
-  width: var(--footer-width);
-}
-
-#Footer-Logo {
-  margin-top: 20px;
-  height: 55px;
-  width: 55px;
-  text-align: center;
-}
-
-.Footer-Newsletter {
-  flex-direction: row;
-  text-align: center;
-  background-color: var(--main-color-yellow);
-  color: var(--main-color-black);
-  font-family: var(--font-family);
-  font-size: var(--font-size-footer-medium);
-  font-weight: bolder;
-  gap: 30px;
-  padding: 25px 0px;
-  width: 100vw;
-}
-
-.Footer-Newsletter button {
-  background-color: var(--main-color-black);
-  color: var(--main-color-white);
-  font-size: var(--font-size-footer-base);
-  letter-spacing: var(--letter-spacing);
-  font-weight: bold;
-  border: 2px solid var(--main-color-black);
-  border-style: outset;
-  padding: 15px 20px;
-  cursor: pointer;
-  transition: all 200ms ease;
-}
-
-.Footer-Newsletter button:hover {
-  color: rgb(100, 100, 100);
-}
-
-.Footer-Links {
-  flex-direction: row;
-  justify-content: center;
-  align-items: start;
-  overflow: hidden;
-
-  margin: 20px 0px 40px;
-}
-
-.Footer-Links h3 {
-  margin: 10px 0 0 0;
-}
-
-.Footer-Links ul {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  list-style: none;
-
-  gap: 15px;
-  max-width: 150px;
-  min-width: 120px;
-}
-
-.Footer-Links ul li {
-  background-color: var(--main-color-white);
-  font-size: var(--font-size-footer-base);
-}
-
-.Footer-Links a {
-  color: var(--main-color-black);
-  text-decoration: none;
-}
-
-.Footer-Links a:hover {
-  text-decoration: underline;
-}
-
-.Footer-Desc {
-  justify-content: center;
-  align-items: left;
-
-  color: var(--main-color-black);
-  font-size: var(--font-size-footer-base);
-  font-family: var(--font-family);
-}
-
-.Footer-Bottom {
-  flex-direction: row;
-  width: 100vw;
-  overflow: hidden;
-
-  background-color: var(--main-color-darkgray);
-}
-
-.Footer-Bottom ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
-  gap: 15px;
-  padding: 15px 0px;
-}
-
-.Footer-Bottom li {
-  border-right: 1px solid var(--main-color-lightgray);
-  font-size: var(--font-size-footer-small);
-  padding-right: 15px;
-}
-
-.Footer-Bottom li:nth-child(5) {
-  border-right: 0px solid;
-}
-
-.Footer-Bottom a {
-  color: var(--main-color-lightgray);
-  text-decoration: none;
-}
-
-/*Fine footer*/
-
-
-
-
-
-
-/* MEDIA QUERY */
-
-
-/* ALFONSO 
-
+  /* Contenuti Media Query  */
+/* 
  @media screen and (max-width: 780px) {
   .black_line {
     color: var(--main-color-black);
     position: relative;
   }
-
   #hidden_p {
     display: flex;
     text-align: center;
@@ -874,202 +208,610 @@ footer {
     justify-content: end;
     flex-wrap: nowrap;
   } 
-}   
-*/
-
-
-
-/* CRISTIAN & SILVIA 
-
-@media (max-width: 960px) {
-
-  img {
-
-    width: 100%;
-    transform: scale(1.5);
-    transform-origin: center;
-  }
-
-  .scritte-immagini {
-    position: relative;
-  }
-
-  .scritte-immagini h2 {
-    position: absolute;
-    bottom: 80px;
-    left: 80px;
-    width: max-content;
-    letter-spacing: 1px;
-    font-size: 18px;
-    padding: 10px 5px;
-    background-color: white;
-    margin: 0px;
-  }
-
-  .scritte-immagini p {
-    position: absolute;
-    bottom: 20px;
-    left: 80px;
-    letter-spacing: 1px;
-    width: max-content;
-    font-size: 15px;
-    background-color: white;
-    margin-bottom: 30px;
-    margin-top: 7px;
-    padding: 2px;
-  }
-
-  .pulsante-acquista a {
-    width: max-content;
-    font-weight: bold;
-    font-size: 15px;
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    padding: 15px 21px;
-    position: absolute;
-    bottom: -17px;
-    left: 80px;
-    z-index: 1;
-  }
-
-  .cornice-pulsante-acquista {
-    width: 138px;
-    height: 48px;
-    background-color: transparent;
-    border: 1px solid white;
-    position: absolute;
-    bottom: -21px;
-    left: 82px;
-  }
-
-  .sezione-pulsante-acquista:hover .cornice-pulsante-acquista {
-    border: 1px solid grey;
-  }
+}   */
+/* Fine Header CSS */
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/* INIZIO 1-BLOCCO-FOTO  E  INIZIO 2-BLOCCO-FOTO */
+.contenitore-grigio p {
+  margin: 0;
+}
+/* CONTENITORE GRIGIO SOTTO L'HEADER */
+.contenitore-grigio {
+  background-color: var(--main-colr-gray);
+  padding: 16px;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+/* dimensioni immagini riempire l'intera larghezza della pagina*/
+.main-img {
+  width: 100%;
+  display: block;
+  z-index: 1;
+}
+/* predisposizione del contenitore principale per far centrare e contenere le immagini in pagia */
+.container-principale {
+  max-width: 100%;
+  margin: auto;
+  position: relative;
+}
+/* modifiche della prima scritta  h2  */
+.scritte-immagini h2 {
+  position: absolute;
+  bottom: 175px;
+  left: 80px;
+  width: max-content;
+  letter-spacing: 1px;
+  font-size: 18px;
+  padding: 10px 5px;
+  background-color: var(--main-color-white);
+  margin: 0px;
+}
+/* modifiche seconda scritta paragrafo */
+.scritte-immagini p {
+  position: absolute;
+  bottom: 115px;
+  left: 80px;
+  letter-spacing: 1px;
+  width: max-content;
+  font-size: 15px;
+  background-color: var(--main-color-white);
+  margin-bottom: 30px;
+  margin-top: 7px;
+  padding: 2px;
+}
+/*modifiche link acquista terza scritta e posizionamento a solo  */
+.pulsante-acquista a {
+  width: max-content;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  background-color: var(--main-color-white);
+  padding: 15px 21px;
+  position: absolute;
+  bottom: 78px;
+  left: 80px;
+  z-index: 1;
+}
+/* modifiche cornice sotto il link acquista  */
+.cornice-pulsante-acquista {
+  width: 149px;
+  height: 48px;
+  background-color: transparent;
+  border: 1px solid var(--main-color-white);
+  position: absolute;
+  bottom: 73px;
+  left: 82px;
+}
+/* modifiche colore cornice al pasaggio del mouse sul link acquista */
+.sezione-pulsante-acquista:hover .cornice-pulsante-acquista {
+  border: 1px solid gray;
+}
+/* modifiche svg play e posizionamento sulla parte destra alta della pagina */
+.play svg {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  bottom: 90%;   /*modificare  il relative*/
+  left: 96%;
+}
+/* modifiche colore dello sfondo dell'svg al passaggio del mouse */
+.play svg:hover {
+  background-color: var(--main-colr-gray);
+}
+/* contorno bianco attorno alle lineette del play */
+.lineetta {
+  stroke: var(--main-color-white);
+  stroke-width: 1.5px;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/*Inizio css bodycontainer1*/
+.container-1 {
+  /* margin: 40px 60px ; */
+  margin-left: 110px;
+  margin-right: 110px;
+}
+.bottoni h3{
+  margin-top:40px;
+  font-size: 24px;
+  font-weight: 750;
+}
+.bottoni button {
+  border: 1px solid grey;
+  background-color: white;
+  font-size: 16px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: all 0.2s ease;
+  font-family: var(--font-family);
+}
+.bottoni button:nth-child(1) {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+}
+.bottoni button:nth-child(1):hover {
+  background-color: rgb(29, 29, 29);
+  border: 1px solid rgb(74, 74, 74);
+  color: white;
+}
+.bottoni button:nth-last-child(2):hover {
+  background-color: rgb(238, 238, 238);
+}
+.bottoni button:nth-last-child(1):hover {
+  background-color: rgb(238, 238, 238);
+}
+.container {
+  gap: 20px;
+  overflow-x: auto;
+  padding-top: 20px;
+}
+.cardcontainer {
+  border: 0.5px solid white;
+}
+.cardcontainer:hover {
+  border: 0.5px solid black;
+}
+.card1 {
+  flex-direction: column;
+  gap: 20px;
+}
+.card {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  transition: all 0.2s ease-in;
+}
+.card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 
-@media screen and (max-width:767px) {
-
-
-  .scritte-immagini {
-    position: relative;
-  }
-
-  .scritte-immagini h2 {
-    position: absolute;
-    bottom: 50px;
-    left: 40px;
-    width: max-content;
-    letter-spacing: 1px;
-    font-size: 18px;
-    padding: 10px 5px;
-    background-color: white;
-    margin: 0px;
-  }
-
-  .scritte-immagini p {
-    position: absolute;
-    bottom: -15px;
-    left: 40px;
-    letter-spacing: 1px;
-    width: max-content;
-    font-size: 15px;
-    background-color: white;
-    margin-bottom: 30px;
-    margin-top: 7px;
-    padding: 2px;
-  }
-
-  .pulsante-acquista a {
-    width: max-content;
-    font-weight: bold;
-    font-size: 15px;
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    padding: 15px 21px;
-    position: absolute;
-    bottom: -50px;
-    left: 40px;
-    z-index: 1;
-  }
-
-  .cornice-pulsante-acquista {
-    width: 138px;
-    height: 48px;
-    background-color: transparent;
-    border: 1px solid white;
-    position: absolute;
-    bottom: -55px;
-    left: 42px;
-
-  }
-
-  .sezione-pulsante-acquista:hover .cornice-pulsante-acquista {
-    border: 1px solid grey;
-  }
+.heart svg {
+  width: 25px;
+  height: 25px;
+}
+.heart svg:hover {
+  background-image: url(icons/wishlist-active.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.heart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: none;
+}
+.prezzo {
+  position: absolute;
+  top: 350px;
+  right: 230px;
+  width: 160px;
+  height: 50px;
+  border: none;
+  background-color: white;
+  transition: all 0.2s ease-in;
+}
+.prezzo p {
+  margin: 0px;
+  font-family: var(--font-family);
+  text-align: left;
+}
+.prezzo p:nth-child(1) {
+  color: red;
+  font-size: 15px;
+}
+.original {
+  text-wrap: nowrap;
+  flex-direction: row;
+  gap: 5px;
+}
+.original p:nth-child(1) {
+  text-decoration: line-through;
+  color: black;
+  font-size: 14px;
+}
+.original p:nth-child(2) {
+  color: red;
+  font-size: 11px;
+  margin-top: 2px;
+}
+.original p:nth-child(3) {
+  font-size: 11px;
+  margin-top: 2px;
+}
+.card:hover .prezzo {
+  transform: translatey(-10px);
+}
+.textdescription {
+  font-size: 13px;
+  padding-left: 10px;
+}
+.textdescription p:nth-last-child(1) {
+  color: rgb(160, 160, 160);
+}
+/*fine bodycontainer1*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/*inizio bodycontainer.2*/
+.container-card-2 {
+  gap: 10px;
+  margin-left: 110px;
+  margin-right: 110px;
+  margin-bottom: 50px;
+  overflow-x: auto;
+}
+.link {
+  transform: translateY(50%);
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+}
+.arrow svg:hover {
+  color: grey;
+}
+.header-card {
+  justify-content: space-between;
+  margin-left: 108px;
+  margin-right: 150px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+.header-card h3 {
+  font-size: 24px;
+  margin: 5px 0px 0px;
+  font-weight: 750;
+}
+.header-card .link a {
+  font-size: 15px;
+  color: black;
+}
+.header-card .link a:hover {
+  background-color: black;
+  color: white;
+  transition: all;
 }
 
-@media screen and (max-width:580px) {
-  .scritte-immagini {
-    position: relative;
-  }
+/*html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}*/
 
-  .scritte-immagini h2 {
-    position: absolute;
-    bottom: 60px;
-    left: 40px;
-    width: max-content;
-    letter-spacing: 1px;
-    font-size: 15px;
-    padding: 10px 5px;
-    background-color: white;
-    margin: 0px;
-  }
-
-  .scritte-immagini p {
-    position: absolute;
-    bottom: 6px;
-    left: 40px;
-    letter-spacing: 1px;
-    width: max-content;
-    font-size: 12px;
-    background-color: white;
-    margin-bottom: 30px;
-    margin-top: 7px;
-    padding: 2px;
-  }
-
-  .pulsante-acquista a {
-    width: max-content;
-    font-weight: bold;
-    font-size: 12px;
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    padding: 15px 21px;
-    position: absolute;
-    bottom: -30px;
-    left: 40px;
-    z-index: 1;
-  }
-
-  .cornice-pulsante-acquista {
-    width: 119px;
-    height: 44px;
-    background-color: transparent;
-    border: 1px solid white;
-    position: absolute;
-    bottom: -35px;
-    left: 42px;
-
-  }
-
+.card-2 {
+  height: 50%;
+  box-sizing: border-box;
 }
-*/
+.card-2:hover {
+  border: 1px solid rgb(0, 0, 0);
+}
+.card-2:hover .img-1 {
+  content: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_400,w_400/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_13_02_dmt_d_48446d9d29.png");
+  transition: opacity 0.3 ease;
+  width: 300px;
+  height: auto;
+}
 
-/* MATTIA 
+.card-2:hover .img-2 {
+  content: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_400,w_400/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_19_02_dmt_d_b0ce93b4bf.png");
+  transition: opacity 0.3 ease;
+  width: 300px;
+  height: auto;
+}
 
+.card-2:hover .img-3 {
+  content: url("https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_21_02_dmt_d_23ed574f7e.png");
+  transition: opacity 0.3 ease;
+  width: 300px;
+  height: auto;
+}
+
+.card-2:hover .img-4 {
+  content: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_400,w_400/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_6_02_dmt_d_b7a92ad234.png");
+  transition: opacity 0.3 ease;
+  width: 300px;
+  height: auto;
+}
+
+.card-2:hover .img-5 {
+  content: url("https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_9_02_dmt_d_b82ef01761.png");
+  transition: opacity 0.3 ease;
+  width: 300px;
+  height: auto;
+}
+
+.card-2:hover .img-6 {
+  content: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_400,w_400/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_8_02_dmt_d_50e781a407.png");
+  transition: opacity 0.3 ease;
+  width: 300px;
+  height: auto;
+}
+
+.card-2:hover .img-7 {
+  content: url("https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_17_02_dmt_d_fab494d3bc.png");
+  transition: opacity 0.3 ease;
+  width: 300px;
+  height: auto;
+}
+
+.card-2:hover .img-8 {
+  content: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_400,w_400/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_28_02_dmt_d_b900fcf87f.png");
+  transition: opacity 0.3 ease;
+  width: 300px;
+  height: auto;
+}
+.image img {
+  width: 300px;
+  height: auto;
+}
+.card-2 .footer p {
+  padding-left: 15px;
+  font-size: 14px;
+}
+/*fine bodycontainer.2*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/*Inizio bodycontainer3*/
+.prezzo3 {
+  position: absolute;
+  top: 370px;
+  right: 330px;
+  width: 60px;
+  height: 30px;
+  border: none;
+  background-color: white;
+  transition: all 0.2s ease-in;
+}
+.prezzo3 p {
+  margin: 0px;
+  font-family: var(--font-family);
+}
+.card:hover .prezzo3 {
+  transform: translatey(-10px);
+}
+/*Fine bodycontainer3*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/*inizio bodycontainer.4*/
+.container-card-4 {
+  gap: 8px;
+  margin-left: 108px;
+  margin-right: 108px;
+  margin-top: 40px;
+  margin-bottom:50px;
+  overflow-x: auto;
+  position: relative;
+}
+
+
+.card-4 {
+  box-sizing: content-box; 
+  border: 1px solid white;
+  width: 304px;
+  height: 100%;
+  
+}
+
+.card-4:hover {
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.card-4 .image-4 img {
+  width: 298px;
+  height: auto;
+  padding-left: 2px;
+}
+
+.container-video div .video{
+  width: 300px;
+  
+}
+.container-video video {
+  width: 300px;
+  height: 400px;
+}
+
+.container-video video:hover {
+  padding: 1px;
+}
+
+.card-4 .footer-card-4 {
+  height: 186px;
+  padding: 16px;
+  font-family: var(--font-family);
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-card-4 .link-sotto-p button{
+  border:none;
+  border: white;
+  background-color: white;
+  font-size: 15px;
+  margin:10px 0px 0px;
+  color:black;
+  font-weight: 700;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block; 
+  position: relative; 
+}
+.footer-card-4 .link-sotto-p button span {
+  display: inline-block;
+  font-family: var(--font-family);
+}
+.footer-card-4 .link-sotto-p span::after {
+  content:""; 
+  position: absolute;
+  bottom: 0; 
+  left: 20%;
+  width: 60%; 
+  height: 1px; 
+  background-color: black; 
+}
+
+.footer-card-4 span:hover{
+  background-color: rgb(239, 237, 237);
+}
+.footer-card-4 h4{
+  font-size: 14px;
+  margin:0;
+} 
+
+.footer-card-4 p{
+  font-size: 14px;
+}
+
+.arrow-bd4 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+}
+/*fine bodycontainer.4*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/*Inizio footer*/
+footer {
+  flex-direction: column;
+  overflow: hidden;
+  transform: translate(-50% -50%);
+  background-color: var(--main-color-white);
+  font-family: var(--font-family);
+  padding: 0;
+  margin: 0;
+}
+.Footer-Main {
+  flex-direction: column;
+  transform: translate(-50% -50%);
+  background-color: var(--main-color-black);
+  color: var(--main-color-white);
+  font-family: var(--font-family-cn);
+  padding: 80px 0px;
+  margin: 0;
+  width: 100vw;
+}
+.Footer-Main h1 {
+  text-align: center;
+  font-size: var(--font-size-footer-large);
+  width: var(--footer-width);
+  margin: 0px;
+}
+.Footer-Main p {
+  text-align: justify;
+  font-size: var(--font-size-footer-base);
+  letter-spacing: var(--letter-spacing);
+  line-height: var(--line-height);
+  width: var(--footer-width);
+}
+#Footer-Logo {
+  margin-top: 20px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+}
+.Footer-Newsletter{
+  flex-direction: row;
+  text-align: center;
+  background-color: var(--main-color-yellow);
+  color: var(--main-color-black);
+  font-family: var(--font-family);
+  font-size: var(--font-size-footer-medium);
+  font-weight: bolder;
+  gap: 30px;
+  padding: 25px 0px;
+  width: 100vw;
+}
+.Footer-Newsletter button {
+  background-color: var(--main-color-black);
+  color: var(--main-color-white);
+  font-size: var(--font-size-footer-base);
+  letter-spacing: var(--letter-spacing);
+  font-weight: bold;
+  border: 2px solid var(--main-color-black);
+  border-style: outset;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+.Footer-Newsletter button:hover {
+  color: rgb(100, 100, 100);
+  }
+.Footer-Links {
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  overflow: hidden;
+  margin: 20px 0px 40px;
+}
+.Footer-Links h3 {
+  margin: 10px 0 0 0;
+}
+.Footer-Links ul{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  list-style: none;
+  gap: 15px;
+  max-width: 150px;
+  min-width: 120px;
+}
+.Footer-Links ul li {
+  background-color: var(--main-color-white);
+  font-size: var(--font-size-footer-base);
+}
+.Footer-Links a{
+  color: var(--main-color-black);
+  text-decoration: none;
+}
+.Footer-Links a:hover{
+  text-decoration: underline;
+}
+.Footer-Desc{
+  justify-content: center;
+  align-items: left;
+  color: var(--main-color-black);
+  font-size: var(--font-size-footer-base);
+  font-family: var(--font-family);
+}
+.Footer-Bottom{
+  flex-direction: row;
+  width: 100vw;
+  overflow: hidden;
+  background-color: var(--main-color-darkgray);
+}
+.Footer-Bottom ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  padding: 15px 0px;
+}
+.Footer-Bottom li{
+  border-right: 1px solid var(--main-color-lightgray);
+  font-size: var(--font-size-footer-small);
+  padding-right: 15px;
+}
+.Footer-Bottom li:nth-child(5){
+  border-right: 0px solid;
+}
+.Footer-Bottom a{
+  color: var(--main-color-lightgray);
+  text-decoration: none;
+}
+/*
 @media screen and (max-width: 960px) {
   .Footer-Newsletter {
       display: flex;
