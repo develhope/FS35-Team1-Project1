@@ -738,11 +738,9 @@ footer {
   text-decoration: none;
 }
 
-
-
-@media screen and (max-width: 768px){
+/*ALFONSO*/
+ @media screen and (max-width: 768px){
   
-
   .black_line {
     color: var(--main-color-black);
     position: relative;
@@ -772,6 +770,7 @@ footer {
   }
   
   .hidden_container {
+    display: flex;
      gap: 100px; 
     justify-content: space-between;
     align-items: center;
@@ -779,61 +778,66 @@ footer {
   
   .hamburger {
     gap: 30px;
-    width: 48px;
-    height: 48px;
+    width: 25px;
+    height: 25px;
     margin: 20px;
     justify-content: start;
     flex-wrap: nowrap;
   }
   
   .hidden_container_logo {
-    align-content: center;
     width: 48px;
     height: 48px;
-    margin: 20px 180px;
-    justify-content: center;
+    margin-left: 23%;
+    align-content: center;
     flex-wrap: nowrap;
+    position: absolute;
+    left: 24%
   }
   
   .hidden_icon {
+    margin-left: 25px;
     gap: 30px;
-    width: 48px;
-    height: 48px;
-    margin: 20px;
+    width: 25px;
+    height: 25px;
     justify-content: end;
     flex-wrap: nowrap;
+    position: absolute;
+    left:90%;
   } 
-  }   
-  .scritte-immagini h2{
-    bottom: 120px;
-    left: 50px;
- 
-  }
- .scritte-immagini p{
-   bottom: 60px;
+/*CRISTIAN E SILVIA*/
+
+ .scritte-immagini h2{
+   bottom: 120px;
    left: 50px;
-  }
-  .pulsante-acquista a{
-    bottom: 20px;
-    left: 50px;
-  }
-  .cornice-pulsante-acquista{
-   width: 148px;
-   bottom: 16px;
-   left: 53px;
-  }
-  .Footer-Newsletter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-    margin: 0;
+
+ }
+.scritte-immagini p{
+  bottom: 60px;
+  left: 50px;
+ }
+ .pulsante-acquista a{
+   bottom: 20px;
+
+   left: 50px;
+ }
+ .cornice-pulsante-acquista{
+  width: 148px;
+  bottom: 16px;
+  left:53px;}}
+
+/*
+.Footer-Newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  margin: 0;
 }
 
-
 @media screen and (max-width: 1156px) {
-.Footer-Newsletter {
+  .Footer-Newsletter {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -848,4 +852,4 @@ footer {
     width: 45%;
 }
 }
-  
+  */
