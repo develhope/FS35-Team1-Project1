@@ -785,7 +785,6 @@ footer {
   font-family: var(--font-family);
 }
 .Footer-Bottom{
-  flex-direction: row;
   width: 100vw;
   overflow: hidden;
   background-color: var(--main-color-darkgray);
