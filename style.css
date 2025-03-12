@@ -309,6 +309,7 @@ body {
   margin-left: 110px;
   margin-right: 110px;
 }
+
 .bottoni h3 {
   margin-top: 40px;
   font-size: 24px;
@@ -451,8 +452,7 @@ body {
 .link {
   transform: translateY(50%);
 }
-.arrow {
-  /* background-color: white; */
+.arrow {  
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
