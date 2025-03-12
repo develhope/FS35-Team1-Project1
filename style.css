@@ -32,13 +32,16 @@ body {
 .display-flex {
   display: flex;
 }
+
 .align-e-justifyContent-center {
   justify-content: center;
   align-items: center;
 }
+
 .nowrap {
   flex-wrap: nowrap;
 }
+
 .p-relative {
   position: relative;
 }
@@ -106,7 +109,7 @@ body {
   background-color: var(--main-colr-gray);
   border: none;
   height: 30px;
-  width: 260px;
+  width: 280px;
   margin: auto;
   background-image: url(icons/search.svg);
   background-repeat: no-repeat;
@@ -137,6 +140,7 @@ body {
 /* Contenuti nascosti */
 .hidden_container {
   display: none;
+  width: 100vw;
   width: 100vw;
 }
 #hidden_p {
@@ -222,6 +226,7 @@ body {
 }
 /* dimensioni immagini riempire l'intera larghezza della pagina*/
 .main-img {
+.main-img {
   width: 100%;
   display: block;
   z-index: 1;
@@ -305,8 +310,10 @@ body {
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
 /*Inizio css bodycontainer1*/
 .container-1 {
+.container-1 {
   /* margin: 40px 60px ; */
   margin-left: 110px;
+  margin-right: 110px;
   margin-right: 110px;
 }
 
@@ -505,42 +512,49 @@ body {
   width: 300px;
   height: auto;
 }
+
 .card-2:hover .img-2 {
   content: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_400,w_400/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_19_02_dmt_d_b0ce93b4bf.png");
   transition: opacity 0.3 ease;
   width: 300px;
   height: auto;
 }
+
 .card-2:hover .img-3 {
   content: url("https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_21_02_dmt_d_23ed574f7e.png");
   transition: opacity 0.3 ease;
   width: 300px;
   height: auto;
 }
+
 .card-2:hover .img-4 {
   content: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_400,w_400/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_6_02_dmt_d_b7a92ad234.png");
   transition: opacity 0.3 ease;
   width: 300px;
   height: auto;
 }
+
 .card-2:hover .img-5 {
   content: url("https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_9_02_dmt_d_b82ef01761.png");
   transition: opacity 0.3 ease;
   width: 300px;
   height: auto;
 }
+
 .card-2:hover .img-6 {
   content: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_400,w_400/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_8_02_dmt_d_50e781a407.png");
   transition: opacity 0.3 ease;
   width: 300px;
   height: auto;
 }
+
 .card-2:hover .img-7 {
   content: url("https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_17_02_dmt_d_fab494d3bc.png");
   transition: opacity 0.3 ease;
   width: 300px;
   height: auto;
 }
+
 .card-2:hover .img-8 {
   content: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_400,w_400/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_28_02_dmt_d_b900fcf87f.png");
   transition: opacity 0.3 ease;
@@ -679,6 +693,7 @@ footer {
   color: var(--main-color-white);
   font-family: var(--font-family-cn);
   padding: 80px 0px;
+  padding: 80px 0px;
   margin: 0;
   width: 100vw;
 }
@@ -721,6 +736,7 @@ footer {
   font-weight: bold;
   border: 2px solid var(--main-color-black);
   border-style: outset;
+  padding: 15px 20px;
   padding: 15px 20px;
   cursor: pointer;
   transition: all 200ms ease;
@@ -765,8 +781,7 @@ footer {
   font-size: var(--font-size-footer-base);
   font-family: var(--font-family);
 }
-.Footer-Bottom {
-  flex-direction: row;
+.Footer-Bottom{
   width: 100vw;
   overflow: hidden;
   background-color: var(--main-color-darkgray);
@@ -821,4 +836,3 @@ footer {
   }
 }
 */
-/*Fine footer*/
