@@ -226,7 +226,6 @@ body {
 }
 /* dimensioni immagini riempire l'intera larghezza della pagina*/
 .main-img {
-.main-img {
   width: 100%;
   display: block;
   z-index: 1;
