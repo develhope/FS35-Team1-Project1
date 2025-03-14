@@ -32,20 +32,16 @@ body {
 .display-flex {
   display: flex;
 }
-
 .align-e-justifyContent-center {
   justify-content: center;
   align-items: center;
 }
-
 .nowrap {
   flex-wrap: nowrap;
 }
-
 .p-relative {
   position: relative;
 }
-
 /* Sviluppo del Header */
 .header {
   cursor: pointer;
@@ -312,9 +308,7 @@ body {
   /* margin: 40px 60px ; */
   margin-left: 110px;
   margin-right: 110px;
-  margin-right: 110px;
 }
-
 .bottoni h3 {
   margin-top: 40px;
   font-size: 24px;
@@ -358,7 +352,6 @@ body {
   border: 0.5px solid black;
 }
 .card1 {
-  flex-direction: column;
   gap: 20px;
 }
 .card {
@@ -372,7 +365,6 @@ body {
   height: 400px;
   object-fit: cover;
 }
-
 .heart svg {
   width: 25px;
   height: 25px;
@@ -444,11 +436,6 @@ body {
 .container-card-2 {
   overflow-x: auto;
 }
-.wrapper-card-2 {
-  margin-left: 110px;
-  margin-right: 110px;
-  margin-bottom: 50px;
-}
 .card-2 {
   height: 50%;
   box-sizing: content-box;
@@ -457,22 +444,22 @@ body {
 .link {
   transform: translateY(50%);
 }
-.arrow {  
+.arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   border: 1px solid black;
   width: 45px;
   height: 45px;
-
+  z-index: 10;
 }
-.arrow:hover{
+.arrow:hover {
   background-color: rgb(238, 235, 235);
 }
 .arrow-left {
   left: 0;
 }
-.arrow-right{
+.arrow-right {
   right: 0;
 }
 .arrow svg {
@@ -502,7 +489,7 @@ body {
 }
 .card-2:hover {
   border: 1px solid rgb(0, 0, 0);
-  transform:none;
+  transform: none;
 }
 .card-2:hover .img-1 {
   content: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_400,w_400/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_13_02_dmt_d_48446d9d29.png");
@@ -510,28 +497,24 @@ body {
   width: 300px;
   height: auto;
 }
-
 .card-2:hover .img-2 {
   content: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_400,w_400/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_19_02_dmt_d_b0ce93b4bf.png");
   transition: opacity 0.3 ease;
   width: 300px;
   height: auto;
 }
-
 .card-2:hover .img-3 {
   content: url("https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_21_02_dmt_d_23ed574f7e.png");
   transition: opacity 0.3 ease;
   width: 300px;
   height: auto;
 }
-
 .card-2:hover .img-4 {
   content: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_400,w_400/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_6_02_dmt_d_b7a92ad234.png");
   transition: opacity 0.3 ease;
   width: 300px;
   height: auto;
 }
-
 .card-2:hover .img-5 {
   content: url("https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_9_02_dmt_d_b82ef01761.png");
   transition: opacity 0.3 ease;
@@ -545,14 +528,12 @@ body {
   width: 300px;
   height: auto;
 }
-
 .card-2:hover .img-7 {
   content: url("https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_17_02_dmt_d_fab494d3bc.png");
   transition: opacity 0.3 ease;
   width: 300px;
   height: auto;
 }
-
 .card-2:hover .img-8 {
   content: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_400,w_400/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_28_02_dmt_d_b900fcf87f.png");
   transition: opacity 0.3 ease;
@@ -591,17 +572,16 @@ body {
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
 /*inizio bodycontainer.4*/
 .container-card-4 {
-  gap:8px;
+  gap: 8px;
   overflow-x: auto;
 }
-.wrapper-card-4 {
-  margin-left: 108px;
-  margin-right: 108px;
+.wrapper-card {
+  margin-left: 110px;
+  margin-right: 110px;
   margin-top: 40px;
   margin-bottom: 50px;
 }
 .card-4 {
-  
   box-sizing: content-box;
   border: 1px solid white;
   width: 304px;
@@ -622,7 +602,6 @@ body {
   width: 300px;
   height: 400px;
 }
-
 .card-4 .footer-card-4 {
   height: 186px;
   padding: 16px;
@@ -631,7 +610,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-
 .footer-card-4 .link-sotto-p button {
   border: none;
   border: white;
@@ -659,7 +637,6 @@ body {
   height: 1px;
   background-color: black;
 }
-
 .footer-card-4 span:hover {
   background-color: rgb(239, 237, 237);
 }
@@ -667,11 +644,9 @@ body {
   font-size: 14px;
   margin: 0;
 }
-
 .footer-card-4 p {
   font-size: 14px;
 }
-
 /*fine bodycontainer.4*/
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
 /*Inizio footer*/
@@ -779,7 +754,7 @@ footer {
   font-size: var(--font-size-footer-base);
   font-family: var(--font-family);
 }
-.Footer-Bottom{
+.Footer-Bottom {
   width: 100vw;
   overflow: hidden;
   background-color: var(--main-color-darkgray);
