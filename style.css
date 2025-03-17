@@ -832,30 +832,15 @@ footer {
  .play svg{
   margin-left: 93%;
 }  
-/*
+/* MATTIA  */
+
+.Footer-Main h1,
+.Footer-Main p {
+  width: 60%;
+}
+
 .Footer-Newsletter {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 0;
-  margin: 0;
 }
 
-@media screen and (max-width: 1156px) {
-  .Footer-Newsletter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-    margin: 0;
-}
-}
-
-@media screen and (min-width: 1365px) {
-.Footer-Main p, .Footer-Main h1{
-    width: 45%;
-}
-}
-  */
