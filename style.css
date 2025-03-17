@@ -221,8 +221,8 @@ body {
   letter-spacing: 1px;
 }
 /* dimensioni immagini riempire l'intera larghezza della pagina*/
-.main-img {
-  width: 100%;
+ .main-img {
+   width: 100%;
   display: block;
   z-index: 1;
 }
@@ -235,8 +235,8 @@ body {
 /* modifiche della prima scritta  h2  */
 .scritte-immagini h2 {
   position: absolute;
-  bottom: 175px;
-  left: 80px;
+  bottom: 135px;
+  left: 40px;
   width: max-content;
   letter-spacing: 1px;
   font-size: 18px;
@@ -247,8 +247,8 @@ body {
 /* modifiche seconda scritta paragrafo */
 .scritte-immagini p {
   position: absolute;
-  bottom: 115px;
-  left: 80px;
+  bottom: 75px;
+  left: 40px;
   letter-spacing: 1px;
   width: max-content;
   font-size: 15px;
@@ -267,8 +267,8 @@ body {
   background-color: var(--main-color-white);
   padding: 15px 21px;
   position: absolute;
-  bottom: 78px;
-  left: 80px;
+  bottom: 30px;
+  left: 40px;
   z-index: 1;
 }
 /* modifiche cornice sotto il link acquista  */
@@ -278,8 +278,8 @@ body {
   background-color: transparent;
   border: 1px solid var(--main-color-white);
   position: absolute;
-  bottom: 73px;
-  left: 82px;
+  bottom: 25px;
+  left: 42px;
 }
 /* modifiche colore cornice al pasaggio del mouse sul link acquista */
 .sezione-pulsante-acquista:hover .cornice-pulsante-acquista {
@@ -290,8 +290,8 @@ body {
   width: 32px;
   height: 32px;
   position: absolute;
-  bottom: 90%; /*modificare  il relative*/
-  left: 96%;
+  bottom: 89%;  
+ margin-left: 95%;
 }
 /* modifiche colore dello sfondo dell'svg al passaggio del mouse */
 .play svg:hover {
@@ -717,6 +717,7 @@ footer {
 .Footer-Newsletter button:hover {
   color: rgb(100, 100, 100);
 }
+}
 .Footer-Links {
   flex-direction: row;
   justify-content: center;
@@ -780,32 +781,110 @@ footer {
   color: var(--main-color-lightgray);
   text-decoration: none;
 }
-/*
-@media screen and (max-width: 960px) {
-  .Footer-Newsletter {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 0;
-      margin: 0;
+
+/*ALFONSO*/
+
+
+ @media screen and (max-width: 768px){
+  
+  .black_line {
+    color: var(--main-color-black);
+    position: relative;
   }
+  #hidden_p {
+    display: flex;
+    text-align: center;
+    flex-wrap: nowrap;
+    color: var(--main-color-white);
+    position: absolute;
+  }
+  
+  .lista_link_1 {
+    display: none;
+  }
+  
+  .lista_link_2 {
+    display: none;
+  }
+  
+  .container_logo {
+    display: none;
+  }
+  
+  .icon_container {
+    display: none;
+  }
+  
+  .hidden_container {
+    display: flex;
+     gap: 100px; 
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .hamburger {
+    gap: 30px;
+    width: 25px;
+    height: 25px;
+    margin: 20px;
+    justify-content: start;
+    flex-wrap: nowrap;
+  }
+  
+  .hidden_container_logo {
+    width: 48px;
+    height: 48px;
+    margin-left: 23%;
+    align-content: center;
+    flex-wrap: nowrap;
+    position: absolute;
+    left: 24%
+  }
+  
+  .hidden_icon {
+    margin-left: 25px;
+    gap: 30px;
+    width: 25px;
+    height: 25px;
+    justify-content: end;
+    flex-wrap: nowrap;
+    position: absolute;
+    left:90%;
+  } 
+/*CRISTIAN E SILVIA*/
+ .scritte-immagini h2{
+   bottom: 120px;
+   left: 50px;
+   font-size: 12px;
+ }
+.scritte-immagini p{
+  bottom: 60px;
+  left: 50px;
+  font-size: 12px;
+ }
+ .pulsante-acquista a{
+   bottom: 20px;
+  font-size: 12px;
+   left: 50px;
+ }
+ .cornice-pulsante-acquista{
+  width: 129px;
+  height: 44px;
+  bottom: 16px;
+  left:53px;
+}}
+ .play svg{
+  margin-left: 93%;
+}  
+/* MATTIA  */
+
+.Footer-Main h1,
+.Footer-Main p {
+  width: 60%;
 }
 
-@media screen and (max-width: 1156px) {
-  .Footer-Newsletter {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 0;
-      margin: 0;
-  }
+.Footer-Newsletter {
+  flex-direction: column;
+  gap: 0;
 }
 
-@media screen and (min-width: 1365px) {
-  .Footer-Main p, .Footer-Main h1{
-      width: 45%;
-  }
-}
-*/
