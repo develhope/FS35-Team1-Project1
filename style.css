@@ -717,7 +717,7 @@ footer {
 .Footer-Newsletter button:hover {
   color: rgb(100, 100, 100);
 }
-}
+
 .Footer-Links {
   flex-direction: row;
   justify-content: center;
