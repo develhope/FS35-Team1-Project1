@@ -74,7 +74,7 @@ body {
 }
 .last_container {
   display: grid;
-  grid-template-columns: 2fr 3fr 2fr;
+  grid-template-columns: 1fr 3fr 2fr;
 }
 .container_logo {
   width: 60px;
@@ -124,7 +124,7 @@ body {
   width: 30px;
   height: 30px;
   padding: 5px;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 /* Contenuti Hover */
 .link1:hover {
@@ -887,4 +887,37 @@ footer {
   flex-direction: column;
   gap: 0;
 }
-
+@media screen and (max-width: 650px) {
+  .play svg{
+    bottom: 80%;
+  }
+}
+@media screen and (max-width: 412px) {
+  .play svg{
+    display: none;
+  }
+  .scritte-immagini h2{
+    bottom: 75px;
+    left: 20px;
+    font-size: 8px;
+    padding: 9px 3px;
+  }
+ .scritte-immagini p{
+   bottom: 25px;
+   left: 20px;
+   font-size: 8px;
+  }
+  .pulsante-acquista a{
+    bottom: 10px;
+   font-size: 8px;
+    left: 20px;
+    padding: 10px 8px;
+  }
+  .cornice-pulsante-acquista{
+   width: 78px;
+   height: 29px;
+   bottom: 7px;
+   left:22px;
+   
+ }
+}
