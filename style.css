@@ -221,8 +221,8 @@ body {
   letter-spacing: 1px;
 }
 /* dimensioni immagini riempire l'intera larghezza della pagina*/
- .main-img {
-   width: 100%;
+.main-img {
+  width: 100%;
   display: block;
   z-index: 1;
 }
@@ -290,8 +290,8 @@ body {
   width: 32px;
   height: 32px;
   position: absolute;
-  bottom: 89%;  
- margin-left: 95%;
+  bottom: 89%;
+  margin-left: 95%;
 }
 /* modifiche colore dello sfondo dell'svg al passaggio del mouse */
 .play svg:hover {
@@ -426,6 +426,7 @@ body {
 .textdescription {
   font-size: 13px;
   padding-left: 10px;
+  letter-spacing: normal;
 }
 .textdescription p:nth-last-child(1) {
   color: rgb(160, 160, 160);
@@ -547,6 +548,7 @@ body {
 .card-2 .footer p {
   padding-left: 15px;
   font-size: 14px;
+  letter-spacing: normal;
 }
 /*fine bodycontainer.2*/
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
@@ -568,6 +570,12 @@ body {
 .card:hover .prezzo3 {
   transform: translatey(-10px);
 }
+.wrapper-card {
+  margin-left: 110px;
+  margin-right: 110px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
 /*Fine bodycontainer3*/
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
 /*inizio bodycontainer.4*/
@@ -575,7 +583,7 @@ body {
   gap: 8px;
   overflow-x: auto;
 }
-.wrapper-card {
+.wrapper-card-2-4 {
   margin-left: 110px;
   margin-right: 110px;
   margin-top: 40px;
@@ -643,9 +651,11 @@ body {
 .footer-card-4 h4 {
   font-size: 14px;
   margin: 0;
+  letter-spacing: normal;
 }
 .footer-card-4 p {
   font-size: 14px;
+  letter-spacing: normal;
 }
 /*fine bodycontainer.4*/
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
@@ -784,9 +794,7 @@ footer {
 
 /*ALFONSO*/
 
-
- @media screen and (max-width: 768px){
-  
+@media screen and (max-width: 768px) {
   .black_line {
     color: var(--main-color-black);
     position: relative;
@@ -798,30 +806,24 @@ footer {
     color: var(--main-color-white);
     position: absolute;
   }
-  
   .lista_link_1 {
     display: none;
   }
-  
   .lista_link_2 {
     display: none;
   }
-  
   .container_logo {
     display: none;
   }
-  
   .icon_container {
     display: none;
   }
-  
   .hidden_container {
     display: flex;
-     gap: 100px; 
+    gap: 100px;
     justify-content: space-between;
     align-items: center;
   }
-  
   .hamburger {
     gap: 30px;
     width: 25px;
@@ -830,7 +832,6 @@ footer {
     justify-content: start;
     flex-wrap: nowrap;
   }
-  
   .hidden_container_logo {
     width: 48px;
     height: 48px;
@@ -838,9 +839,8 @@ footer {
     align-content: center;
     flex-wrap: nowrap;
     position: absolute;
-    left: 24%
+    left: 24%;
   }
-  
   .hidden_icon {
     margin-left: 25px;
     gap: 30px;
@@ -849,42 +849,91 @@ footer {
     justify-content: end;
     flex-wrap: nowrap;
     position: absolute;
-    left:90%;
-  } 
-/*CRISTIAN E SILVIA*/
- .scritte-immagini h2{
-   bottom: 120px;
-   left: 50px;
-   font-size: 12px;
- }
-.scritte-immagini p{
-  bottom: 60px;
-  left: 50px;
-  font-size: 12px;
- }
- .pulsante-acquista a{
-   bottom: 20px;
-  font-size: 12px;
-   left: 50px;
- }
- .cornice-pulsante-acquista{
-  width: 129px;
-  height: 44px;
-  bottom: 16px;
-  left:53px;
-}}
- .play svg{
-  margin-left: 93%;
-}  
-/* MATTIA  */
+    left: 90%;
+  }
+  /*CRISTIAN E SILVIA*/
+  .scritte-immagini h2 {
+    bottom: 120px;
+    left: 50px;
+    font-size: 12px;
+  }
+  .scritte-immagini p {
+    bottom: 60px;
+    left: 50px;
+    font-size: 12px;
+  }
+  .pulsante-acquista a {
+    bottom: 20px;
+    font-size: 12px;
+    left: 50px;
+  }
+  .cornice-pulsante-acquista {
+    width: 129px;
+    height: 44px;
+    bottom: 16px;
+    left: 53px;
+  }
 
-.Footer-Main h1,
-.Footer-Main p {
-  width: 60%;
+  .play svg {
+    margin-left: 93%;
+  }
+  /*MONICA */
+  .container-1 {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .wrapper-card {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .card {
+    width: 200px;
+    height: 200px;
+  }
+  .card img {
+    height: 200px;
+  }
+  .prezzo {
+    top: 165px;
+    left: 10px;
+    width: 135px;
+    height: 35px;
+  }
+  .prezzo p:nth-child(1) {
+    font-size: 13px;
+  }
+  .original p:nth-child(1) {
+    font-size: 11px;
+  }
+  .original p:nth-child(2) {
+    font-size: 9px;
+  }
+  .original p:nth-child(3) {
+    font-size: 9px;
+  }
+  .prezzo3 {
+    top: 170px;
+    left: 10px;
+  }
+  /* MORENA */
+  .wrapper-card-2-4 {
+    margin-right: 0;
+    margin-left: 50px;
+  }
+
+  .header-card {
+    margin-left: 50px;
+  }
+
+  /* MATTIA  */
+  .Footer-Main h1,
+  .Footer-Main p {
+    width: 60%;
+  }
+  .Footer-Newsletter {
+    flex-direction: column;
+    gap: 0;
+  }
 }
-
-.Footer-Newsletter {
-  flex-direction: column;
-  gap: 0;
-}
-
