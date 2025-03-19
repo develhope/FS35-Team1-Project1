@@ -380,7 +380,7 @@ body {
   right: 10px;
   cursor: pointer;
   border: none;
-  background-color: none;
+  background-color: transparent;
 }
 .prezzo {
   position: absolute;
@@ -441,6 +441,7 @@ body {
   height: 50%;
   box-sizing: content-box;
   margin-right: 10px;
+  border: 1px solid transparent;
 }
 .link {
   transform: translateY(50%);
