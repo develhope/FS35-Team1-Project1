@@ -166,16 +166,34 @@ body {
   display: none;
 }
 
-.tooltip {
+#tooltip {
   position: absolute;
-  background-color:var(--main-color-black);
-  color: var(--main-color-white);
-  border-radius: 4px;
-  font-size: 12px;
-  visibility: hidden;
-  left: 30px;
+  color:var(--main-color-black);
+  background-color: var(--main-color-white);
+  padding: 20px;
+  margin-right: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  left: 80%;
+  top: 140px;
   transition: opacity 0.2s ease-in-out;
   z-index: 10;
+  display: none;
+}
+
+#tooltip2 {
+  position: absolute;
+  color:var(--main-color-black);
+  background-color: var(--main-color-white);
+  padding: 15px;
+  margin-right: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  left: 70%;
+  top: 110px;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 10;
+  display: none;
 }
 
 /* Fine Header CSS */
