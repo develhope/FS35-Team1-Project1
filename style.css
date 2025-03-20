@@ -875,6 +875,7 @@ footer {
 }}
  .play svg{
   margin-left: 93%;
+
 }  
 /* MATTIA  */
 
@@ -889,7 +890,7 @@ footer {
 }
 @media screen and (max-width: 650px) {
   .play svg{
-    bottom: 80%;
+    bottom: 83%;
   }
 }
 @media screen and (max-width: 412px) {
