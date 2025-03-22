@@ -1,118 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Progetto Adidas</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="shortcut icon"
-      href="icons/favicon adidas.ico"
-      type="image/x-icon"
-    />
-  </head>
 
-  <body>
-    <!-- Inizio Header -->
-    <header>
-      <div class="header">
-        <!-- Banner con la spedizione gratuita -->
-        <div
-          class="black_line nowrap display-flex align-e-justifyContent-center"
-        >
-          SPEDIZIONE STANDARD GRATUITA CON ADICLUB
-          <p id="hidden_p">RESO E CAMBIO MERCE GRATUITI</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Progetto Adidas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="icons/favicon adidas.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- Inizio Header -->
+  <header>
+    <div class="header">
+      <!-- Banner con la spedizione gratuita -->
+      <div class="black_line nowrap display-flex align-e-justifyContent-center" id="barraNascosta">
+        SPEDIZIONE STANDARD GRATUITA CON ADICLUB
+        <p id="hidden_p">RESO E CAMBIO MERCE GRATUITI</p>
+      </div>
+
+      <!-- Lista superiore -->
+      <div class="half_container nowrap display-flex">
+        <ul class="lista_link_1 nowrap display-flex">
+          <li><a href="#" class="link1">aiuto</a></li>
+          <li><a href="#" class="link1">ordini e resi</a></li>
+          <li><a href="#" class="link1">iscriviti</a></li>
+          <li><a href="#" class="link1">adiclub</a></li>
+          <li><a href="#" class="link1">accedi</a></li>
+        </ul>
+      </div>
+
+      <div class="last_container align-e-justifyContent-center">
+        <!-- Logo del sito -->
+        <div class="container_logo">
+          <svg viewBox="100 100 50 32" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M 150.07 131.439 L 131.925 100 L 122.206 105.606 L 137.112 131.439 L 150.07 131.439 Z M 132.781 131.439 L 120.797 110.692 L 111.078 116.298 L 119.823 131.439 L 132.781 131.439 Z M 109.718 121.401 L 115.509 131.439 L 102.551 131.439 L 100 127.007 L 109.718 121.401 Z"
+              fill="black"></path>
+          </svg>
         </div>
 
-        <!-- Lista superiore -->
-        <div class="half_container nowrap display-flex">
-          <ul class="lista_link_1 nowrap display-flex">
-            <li><a href="#" class="link1">aiuto</a></li>
-            <li><a href="#" class="link1">ordini e resi</a></li>
-            <li><a href="#" class="link1">iscriviti</a></li>
-            <li><a href="#" class="link1">adiclub</a></li>
-            <li><a href="#" class="link1">accedi</a></li>
-          </ul>
-        </div>
+        <!-- Navigazione principale -->
+        <ul class="lista_link_2 align-e-justifyContent-center display-flex">
+          <li><a href="#" class="link2 bold">SCARPE</a></li>
+          <li><a href="#" class="link2 bold">UOMO</a></li>
+          <li><a href="#" class="link2 bold">DONNA</a></li>
+          <li><a href="#" class="link2 bold">BAMBINI</a></li>
+          <li><a href="#" class="link2">SPORT</a></li>
+          <li><a href="#" class="link2">LIFESTYLE</a></li>
+        </ul>
 
-        <div class="last_container align-e-justifyContent-center">
-          <!-- Logo del sito -->
-          <div class="container_logo">
-            <svg viewBox="100 100 50 32" xmlns="http://www.w3.org/2000/svg">
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+        <!-- Barra di ricerca e icone -->
+        <div class="icon_container display-flex align-e-justifyContent-center">
+          <input type="search" name="cerca" placeholder="Cerca" id="cerca" />
+          <a href="#"><img src="icons/profile.svg" alt="Profilo" class="svg" /></a>
+          <a href="#"><img src="icons/wishlist-inactive.svg" alt="Wishlist" class="svg" /></a>
+
+          <a href="#"><img src="icons/bag-inactive.svg" alt="Carrello" class="svg" id="target" /></a>
+        </div>
+        <div id="tooltip">IL TUO CARRELLO È VUOTO</div>
+
+        <!-- Elementi visibili solo al restringimento della pagina  -->
+        <div class="hidden_container display-flex">
+          <div class="hamburger display-flex">
+            <img src="icons/hamburger.svg" alt="hamburger" id="menuHamburger" />
+            <img src="icons/wishlist-inactive.svg" alt="whishlist" id="wn" />
+          </div>
+
+          <div class="hidden_container_logo">
+            <svg viewBox="100 100 50 32" xmlns="http://www.w3.org/2000/svg" id="ln">
+              <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M 150.07 131.439 L 131.925 100 L 122.206 105.606 L 137.112 131.439 L 150.07 131.439 Z M 132.781 131.439 L 120.797 110.692 L 111.078 116.298 L 119.823 131.439 L 132.781 131.439 Z M 109.718 121.401 L 115.509 131.439 L 102.551 131.439 L 100 127.007 L 109.718 121.401 Z"
-                fill="black"
-              ></path>
+                fill="black"></path>
             </svg>
           </div>
 
-          <!-- Navigazione principale -->
-          <ul class="lista_link_2 align-e-justifyContent-center display-flex">
-            <li><a href="#" class="link2 bold">SCARPE</a></li>
-            <li><a href="#" class="link2 bold">UOMO</a></li>
-            <li><a href="#" class="link2 bold">DONNA</a></li>
-            <li><a href="#" class="link2 bold">BAMBINI</a></li>
-            <li><a href="#" class="link2">SPORT</a></li>
-            <li><a href="#" class="link2">LIFESTYLE</a></li>
-          </ul>
-
-          <!-- Barra di ricerca e icone -->
-          <div
-            class="icon_container display-flex align-e-justifyContent-center"
-          >
-            <input type="search" name="cerca" placeholder="Cerca" id="cerca" />
-            <a href="#"
-              ><img src="icons/profile.svg" alt="Profilo" class="svg"
-            /></a>
-            <a href="#"
-              ><img
-                src="icons/wishlist-inactive.svg"
-                alt="Wishlist"
-                class="svg"
-            /></a>
-            <a href="#"
-              ><img src="icons/bag-inactive.svg" alt="Carrello" class="svg"
-            /></a>
+          <div class="hidden_icon display-flex">
+            <img src="icons/profile.svg" alt="profile_hidden" id="pn" />
+            <img src="icons/search.svg" alt="search_hidden" id="sn" />
+            <img src="icons/bag-inactive.svg" alt="bag_hidden" />
           </div>
 
-          <!-- Elementi visibili solo al restringimento della pagina  -->
-          <div class="hidden_container display-flex">
-            <div class="hamburger display-flex">
-              <img src="icons/hamburger.svg" alt="hamburger" />
-              <img src="icons/wishlist-inactive.svg" alt="whishlist" />
-            </div>
+          <!-- Menu nascosto -->
 
-            <div class="hidden_container_logo">
-              <svg viewBox="100 100 50 32" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M 150.07 131.439 L 131.925 100 L 122.206 105.606 L 137.112 131.439 L 150.07 131.439 Z M 132.781 131.439 L 120.797 110.692 L 111.078 116.298 L 119.823 131.439 L 132.781 131.439 Z M 109.718 121.401 L 115.509 131.439 L 102.551 131.439 L 100 127.007 L 109.718 121.401 Z"
-                  fill="black"
-                ></path>
-              </svg>
-            </div>
+          <div id="menu" class="menuNascosto">
 
-            <div class="hidden_icon display-flex">
-              <img src="icons/profile.svg" alt="profile_hidden" />
-              <img src="icons/search.svg" alt="search_hidden" />
-              <img src="icons/bag-inactive.svg" alt="bag_hidden" />
-            </div>
+            <svg viewBox="100 100 50 32" xmlns="http://www.w3.org/2000/svg" id="logoNascosto">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M 150.07 131.439 L 131.925 100 L 122.206 105.606 L 137.112 131.439 L 150.07 131.439 Z M 132.781 131.439 L 120.797 110.692 L 111.078 116.298 L 119.823 131.439 L 132.781 131.439 Z M 109.718 121.401 L 115.509 131.439 L 102.551 131.439 L 100 127.007 L 109.718 121.401 Z"
+                fill="black"></path>
+            </svg>
+            <img src="icons/close.svg" alt="closer" id="closer">
+            <ul id="listaNascosta">
+              <li class="link_hmb_grassetto"><a href="#" class="link_hmb_grassetto">SCARPE</a></li>
+              <li class="link_hmb_grassetto"><a href="#" class="link_hmb_grassetto">UOMO</a></li>
+              <li class="link_hmb_grassetto"><a href="#" class="link_hmb_grassetto">DONNA</a></li>
+              <li class="link_hmb_grassetto"><a href="#" class="link_hmb_grassetto">BAMBINI</a></li>
+              <li class="link_hmb"><a href="#" class="link_hmb">SPORT</a></li>
+              <li class="link_hmb"><a href="#" class="link_hmb">LIFESTYLE</a></li>
+              <li class="link_hmb_grassetto"><a href="#" class="link_hmb_grassetto_red">PROMO</a></li>
+              <hr class="break">
+              <br>
+              <li class="link_hmb_corsivo"><a href="#" class="link_hmb_corsivo">Tracking ordine</a></li>
+              <li class="link_hmb_corsivo"><a href="#" class="link_hmb_corsivo">Il mio profilo</a></li>
+              <li class="link_hmb_corsivo"><a href="#" class="link_hmb_corsivo">Trova negozio</a></li>
+              <li class="link_hmb_corsivo"><a href="#" class="link_hmb_corsivo">Aiuto e Servizio clienti</a></li>
+              <li class="link_hmb_corsivo"><a href="#" class="link_hmb_corsivo">RESI</a></li>
+              <li class="link_hmb_corsivo"><a href="#" class="link_hmb_corsivo">Iscriviti ad adiClub</a></li>
+              <li class="link_hmb_corsivo"><a href="#" class="link_hmb_corsivo">COMMENTI</a></li>
+            </ul>
+            <hr class="break">
+            <img alt="it flag" title="it flag" aria-label="it flag"
+              src="https://adl-foundation.adidas.com/flags/1-2-1/it.svg" class="gl-flag" id="lingua">
+            <a href="#" class="link_hmb_corsivo" id="italy">Italy</a>
           </div>
         </div>
       </div>
-    </header>
-    <!-- Fine Header -->
-
-    <!-- inizio 1-blocco-foto -->
-    <div class="contenitore-grigio">
-      <p>
-        Il freddo non potrà più fermarti.con la nostra nuova collezione
-        invernale sarai sempre al caldo.
-      </p>
     </div>
+    </div>
+  </header>
+  <!-- Fine Header -->
+
+  <!-- inizio 1-blocco-foto -->
+  <div class="contenitore-grigio">
+    <p>
+      Il freddo non potrà più fermarti.con la nostra nuova collezione
+      invernale sarai sempre al caldo.
+    </p>
+  </div>
 
     <div class="container-principale">
       <img
@@ -123,90 +138,74 @@
         fetchpriority="high"
       />
 
-      <div class="scritte-immagini p-relative">
-        <div>
-          <h2>ADIDAS ESSENTIALS</h2>
-        </div>
-        <div>
-          <p>Design essenziali,infinite possibilità per i tuoi look.</p>
-        </div>
+    <div class="scritte-immagini p-relative">
+      <div>
+        <h2>ADIDAS ESSENTIALS</h2>
       </div>
-
-      <section class="sezione-pulsante-acquista">
-        <div class="pulsante-acquista">
-          <a href="https://www.adidas.it/sportswear-essentials">ACQUISTA →</a>
-        </div>
-        <div class="cornice-pulsante-acquista"></div>
-      </section>
-
-      <div class="play">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-          <title>pause-outline</title>
-          <path
-            d="M9 4H7v16h2V4Zm8 0h-2v16h2V4Z"
-            fill="currentColor"
-            class="lineetta"
-          />
-        </svg>
+      <div>
+        <p>Design essenziali,infinite possibilità per i tuoi look.</p>
       </div>
     </div>
-    <!-- fine 1-blocco-foto -->
 
-    <!-- inizio blocco foto 2-->
-
-    <div class="container-principale">
-      <img class="main-img" src="img/img-adidas.avif" />
-
-      <div class="scritte-immagini">
-        <div>
-          <h2>ADIDAS SPORT</h2>
-        </div>
-        <div>
-          <p>Un look unico per ogni occasione!</p>
-        </div>
+    <section class="sezione-pulsante-acquista">
+      <div class="pulsante-acquista">
+        <a href="https://www.adidas.it/sportswear-essentials">ACQUISTA →</a>
       </div>
+      <div class="cornice-pulsante-acquista"></div>
+    </section>
 
-      <section class="sezione-pulsante-acquista">
-        <div class="pulsante-acquista">
-          <a href="https://www.adidas.it/sportswear-essentials">ACQUISTA →</a>
-        </div>
-        <div class="cornice-pulsante-acquista"></div>
-      </section>
+    <div class="play">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <title>pause-outline</title>
+        <path d="M9 4H7v16h2V4Zm8 0h-2v16h2V4Z" fill="currentColor" class="lineetta" />
+      </svg>
     </div>
-    <!-- fine blocco foto 2-->
+  </div>
+  <!-- fine 1-blocco-foto -->
 
-    <!--Inizio bodycontainer1-->
-    <div>
-      <section class="container-1 bottoni">
-        <h3>LE MIGLIORI OFFERTE PER TE</h3>
-      </section>
+  <!-- inizio blocco foto 2-->
 
-      <div class="wrapper-card p-relative">
-        <div class="container display-flex">
-          <button class="arrow arrow-left">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 24">
-              <title>arrow-left</title>
-              <path
-                fill="none"
-                stroke="currentColor"
-                stroke-miterlimit="10"
-                stroke-width="1"
-                d="M8 5.5 1.5 12 8 18.5"
-              />
-            </svg>
-          </button>
-          <button class="arrow arrow-right">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 24">
-              <title>arrow-right</title>
-              <path
-                fill="none"
-                stroke="currentColor"
-                stroke-miterlimit="10"
-                stroke-width="1"
-                d="M2 5.5 8.5 12 2 18.5"
-              />
-            </svg>
-          </button>
+  <div class="container-principale">
+    <img class="main-img" src="img/img-adidas.avif" />
+
+    <div class="scritte-immagini">
+      <div>
+        <h2>ADIDAS SPORT</h2>
+      </div>
+      <div>
+        <p>Un look unico per ogni occasione!</p>
+      </div>
+    </div>
+
+    <section class="sezione-pulsante-acquista">
+      <div class="pulsante-acquista">
+        <a href="https://www.adidas.it/sportswear-essentials">ACQUISTA →</a>
+      </div>
+      <div class="cornice-pulsante-acquista"></div>
+    </section>
+  </div>
+  <!-- fine blocco foto 2-->
+
+  <!--Inizio bodycontainer1-->
+  <div>
+    <section class="container-1 bottoni">
+      <h3>LE MIGLIORI OFFERTE PER TE</h3>
+    </section>
+
+    <div class="wrapper-card p-relative">
+      <div class="container display-flex">
+        <button class="arrow arrow-left">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 24">
+            <title>arrow-left</title>
+            <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="1" d="M8 5.5 1.5 12 8 18.5" />
+          </svg>
+        </button>
+        <button class="arrow arrow-right">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 24">
+            <title>arrow-right</title>
+            <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="1" d="M2 5.5 8.5 12 2 18.5" />
+          </svg>
+        </button>
 
           <div class="card1 display-flex">
             <section class="cardcontainer">
@@ -660,113 +659,106 @@
                 />
               </div>
 
-              <div class="footer">
-                <p>3 articoli</p>
-              </div>
-            </section>
-          </div>
+            <div class="footer">
+              <p>3 articoli</p>
+            </div>
+          </section>
+        </div>
 
-          <div class="card-2">
-            <section class="image">
-              <div class="img-2">
-                <img
-                  src="https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_19_01_dmt_d_3c6e0c8828.png"
-                />
-              </div>
+        <div class="card-2">
+          <section class="image">
+            <div class="img-2">
+              <img
+                src="https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_19_01_dmt_d_3c6e0c8828.png" />
+            </div>
 
-              <div class="footer">
-                <p>3 articoli</p>
-              </div>
-            </section>
-          </div>
+            <div class="footer">
+              <p>3 articoli</p>
+            </div>
+          </section>
+        </div>
 
-          <div class="card-2">
-            <section class="image">
-              <div class="img-3">
-                <img
-                  src="https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_21_01_dmt_d_eccaf5d047.png"
-                />
-              </div>
+        <div class="card-2">
+          <section class="image">
+            <div class="img-3">
+              <img
+                src="https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_21_01_dmt_d_eccaf5d047.png" />
+            </div>
 
-              <div class="footer">
-                <p>2 articoli</p>
-              </div>
-            </section>
-          </div>
+            <div class="footer">
+              <p>2 articoli</p>
+            </div>
+          </section>
+        </div>
 
-          <div class="card-2">
-            <section class="image">
-              <div class="img-4">
-                <img
-                  src="https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_6_01_dmt_d_c5fb0489ba.png"
-                />
-              </div>
+        <div class="card-2">
+          <section class="image">
+            <div class="img-4">
+              <img
+                src="https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_6_01_dmt_d_c5fb0489ba.png" />
+            </div>
 
-              <div class="footer">
-                <p>3 articoli</p>
-              </div>
-            </section>
-          </div>
+            <div class="footer">
+              <p>3 articoli</p>
+            </div>
+          </section>
+        </div>
 
-          <div class="card-2">
-            <section class="image">
-              <div class="img-5">
-                <img
-                  src="https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_9_01_dmt_d_8762c42694.png"
-                />
-              </div>
+        <div class="card-2">
+          <section class="image">
+            <div class="img-5">
+              <img
+                src="https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_9_01_dmt_d_8762c42694.png" />
+            </div>
 
-              <div class="footer">
-                <p>2 articoli</p>
-              </div>
-            </section>
-          </div>
+            <div class="footer">
+              <p>2 articoli</p>
+            </div>
+          </section>
+        </div>
 
-          <div class="card-2">
-            <section class="image">
-              <div class="img-6">
-                <img
-                  src="https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_8_01_dmt_d_22cbd863cd.png"
-                />
-              </div>
+        <div class="card-2">
+          <section class="image">
+            <div class="img-6">
+              <img
+                src="https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_8_01_dmt_d_22cbd863cd.png" />
+            </div>
 
-              <div class="footer">
-                <p>2 articoli</p>
-              </div>
-            </section>
-          </div>
+            <div class="footer">
+              <p>2 articoli</p>
+            </div>
+          </section>
+        </div>
 
-          <div class="card-2">
-            <section class="image">
-              <div class="img-7">
-                <img
-                  src="https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_17_01_dmt_d_813a50d81a.png"
-                />
-              </div>
+        <div class="card-2">
+          <section class="image">
+            <div class="img-7">
+              <img
+                src="https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_17_01_dmt_d_813a50d81a.png" />
+            </div>
 
-              <div class="footer">
-                <p>3 articoli</p>
-              </div>
-            </section>
-          </div>
+            <div class="footer">
+              <p>3 articoli</p>
+            </div>
+          </section>
+        </div>
 
-          <div class="card-2">
-            <section class="image">
-              <div class="img-8">
-                <img
-                  src="https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_28_01_dmt_d_f3939011f3.png"
-                />
-              </div>
+        <div class="card-2">
+          <section class="image">
+            <div class="img-8">
+              <img
+                src="https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_28_01_dmt_d_f3939011f3.png" />
+            </div>
 
-              <div class="footer">
-                <p>3 articoli</p>
-              </div>
-            </section>
-          </div>
+            <div class="footer">
+              <p>3 articoli</p>
+            </div>
+          </section>
         </div>
       </div>
     </div>
-    <!--Fine body-container-2-->
+  </div>
+  <!--Fine body-container-2-->
 
     <!--Inizio bodycontainer3-->
     <div>
@@ -1211,403 +1203,352 @@
                 </video>
               </div>
 
-              <div class="footer-card-4">
-                <div>
-                  <h4>Copa Pure 3</h4>
-                </div>
-                <p>Creata per un possesso palla impeccabile.</p>
-
-                <div class="link-sotto-p">
-                  <button>
-                    <span>Acquista</span>
-                  </button>
-                </div>
+            <div class="footer-card-4">
+              <div>
+                <h4>Copa Pure 3</h4>
               </div>
-            </section>
-          </div>
+              <p>Creata per un possesso palla impeccabile.</p>
 
-          <!-- Seconda Card -->
-          <div class="card-4">
-            <section class="container-video">
-              <div class="video">
-                <video loop autoplay muted>
-                  <source
-                    src="https://brand.assets.adidas.com/video/upload/f_auto:video,q_auto/if_w_gt_800,w_800/global_UWCL_Final_OMB_football_ss25_launch_onsite_tc_o_60920a4113.mp4"
-                    type="video/mp4"
-                    width="600"
-                    height="800"
-                    media="(min-width: 960px)"
-                  />
-                  <source
-                    src="https://brand.assets.adidas.com/video/upload/f_auto:video,q_auto/if_w_gt_600,w_600/global_UWCL_Final_OMB_football_ss25_launch_onsite_tc_o_a386528f97.mp4"
-                    type="video/mp4"
-                    width="600"
-                    height="800"
-                    media="(min-width: 768px)"
-                  />
-                  <source
-                    src="https://brand.assets.adidas.com/video/upload/f_auto:video,q_auto/if_w_gt_600,w_600/global_UWCL_Final_OMB_football_ss25_launch_onsite_tc_o_ac1d7fd829.mp4"
-                    type="video/mp4"
-                    width="600"
-                    height="800"
-                    media="(max-width: 767px)"
-                  />
-                </video>
+              <div class="link-sotto-p">
+                <button>
+                  <span>Acquista</span>
+                </button>
               </div>
+            </div>
+          </section>
+        </div>
 
-              <div class="footer-card-4">
-                <div>
-                  <h4>Pallone ufficiale UWCL Lisbon</h4>
-                </div>
-                <p>
-                  Ispirato al ricco patrimonio della città ospitante della
-                  finale, Lisbona.
-                </p>
+        <!-- Seconda Card -->
+        <div class="card-4">
+          <section class="container-video">
+            <div class="video">
+              <video loop autoplay muted>
+                <source
+                  src="https://brand.assets.adidas.com/video/upload/f_auto:video,q_auto/if_w_gt_800,w_800/global_UWCL_Final_OMB_football_ss25_launch_onsite_tc_o_60920a4113.mp4"
+                  type="video/mp4" width="600" height="800" media="(min-width: 960px)" />
+                <source
+                  src="https://brand.assets.adidas.com/video/upload/f_auto:video,q_auto/if_w_gt_600,w_600/global_UWCL_Final_OMB_football_ss25_launch_onsite_tc_o_a386528f97.mp4"
+                  type="video/mp4" width="600" height="800" media="(min-width: 768px)" />
+                <source
+                  src="https://brand.assets.adidas.com/video/upload/f_auto:video,q_auto/if_w_gt_600,w_600/global_UWCL_Final_OMB_football_ss25_launch_onsite_tc_o_ac1d7fd829.mp4"
+                  type="video/mp4" width="600" height="800" media="(max-width: 767px)" />
+              </video>
+            </div>
 
-                <div class="link-sotto-p">
-                  <button>
-                    <span>Acquista</span>
-                  </button>
-                </div>
+            <div class="footer-card-4">
+              <div>
+                <h4>Pallone ufficiale UWCL Lisbon</h4>
               </div>
-            </section>
-          </div>
+              <p>
+                Ispirato al ricco patrimonio della città ospitante della
+                finale, Lisbona.
+              </p>
 
-          <!-- Terza Card -->
-          <div class="card-4">
-            <section class="container-video">
-              <div class="video">
-                <video loop autoplay muted>
-                  <source
-                    src="https://brand.assets.adidas.com/video/upload/f_auto:video,q_auto/if_w_gt_800,w_800/afterburnerxlux_rugby_ss25_launch_hp_navigationcardteaser_d_8a484df0f3.mp4"
-                    type="video/mp4"
-                    width="600"
-                    height="800"
-                    media="(min-width: 960px)"
-                  />
-                  <source
-                    src="https://brand.assets.adidas.com/video/upload/f_auto:video,q_auto/if_w_gt_600,w_600/afterburnerxlux_rugby_ss25_launch_hp_navigationcardteaser_t_540d9fbe8c.mp4"
-                    type="video/mp4"
-                    width="600"
-                    height="800"
-                    media="(min-width: 768px)"
-                  />
-                  <source
-                    src="https://brand.assets.adidas.com/video/upload/f_auto:video,q_auto/if_w_gt_600,w_600/afterburnerxlux_rugby_ss25_launch_hp_navigationcardteaser_m_d24b0fbe6a.mp4"
-                    type="video/mp4"
-                    width="600"
-                    height="800"
-                    media="(max-width: 767px)"
-                  />
-                </video>
+              <div class="link-sotto-p">
+                <button>
+                  <span>Acquista</span>
+                </button>
               </div>
+            </div>
+          </section>
+        </div>
 
-              <div class="footer-card-4">
-                <div>
-                  <h4>adizero RS15</h4>
-                </div>
-                <p>La scarpa da rugby creata per seguire il tuo istinto.</p>
+        <!-- Terza Card -->
+        <div class="card-4">
+          <section class="container-video">
+            <div class="video">
+              <video loop autoplay muted>
+                <source
+                  src="https://brand.assets.adidas.com/video/upload/f_auto:video,q_auto/if_w_gt_800,w_800/afterburnerxlux_rugby_ss25_launch_hp_navigationcardteaser_d_8a484df0f3.mp4"
+                  type="video/mp4" width="600" height="800" media="(min-width: 960px)" />
+                <source
+                  src="https://brand.assets.adidas.com/video/upload/f_auto:video,q_auto/if_w_gt_600,w_600/afterburnerxlux_rugby_ss25_launch_hp_navigationcardteaser_t_540d9fbe8c.mp4"
+                  type="video/mp4" width="600" height="800" media="(min-width: 768px)" />
+                <source
+                  src="https://brand.assets.adidas.com/video/upload/f_auto:video,q_auto/if_w_gt_600,w_600/afterburnerxlux_rugby_ss25_launch_hp_navigationcardteaser_m_d24b0fbe6a.mp4"
+                  type="video/mp4" width="600" height="800" media="(max-width: 767px)" />
+              </video>
+            </div>
 
-                <div class="link-sotto-p">
-                  <button>
-                    <span>Acquista</span>
-                  </button>
-                </div>
+            <div class="footer-card-4">
+              <div>
+                <h4>adizero RS15</h4>
               </div>
-            </section>
-          </div>
+              <p>La scarpa da rugby creata per seguire il tuo istinto.</p>
 
-          <!-- Quarta Card -->
-          <div class="card-4">
-            <section class="container-video">
-              <div class="video">
-                <video loop autoplay muted>
-                  <source
-                    src="https://brand.assets.adidas.com/video/upload/f_auto:video,q_auto/if_w_gt_800,w_800/4904877_CAM_EU_DAT_Main_Phase_Dual_Valentines_Day_FW_24_Teaser_Carousel_DUAL_62dc999598.mp4"
-                    type="video/mp4"
-                    width="1050"
-                    height="1400"
-                    media="(min-width: 960px)"
-                  />
-                  <source
-                    src="https://brand.assets.adidas.com/video/upload/f_auto:video,q_auto/if_w_gt_600,w_600/4904877_CAM_EU_DAT_Main_Phase_Dual_Valentines_Day_FW_24_Teaser_Carousel_DUAL_7c132511a8.mp4"
-                    type="video/mp4"
-                    width="1050"
-                    height="1400"
-                    media="(min-width: 768px)"
-                  />
-                  <source
-                    src="https://brand.assets.adidas.com/video/upload/f_auto:video,q_auto/if_w_gt_600,w_600/4904877_CAM_EU_DAT_Main_Phase_Dual_Valentines_Day_FW_24_Teaser_Carousel_DUAL_922ba539f1.mp4"
-                    type="video/mp4"
-                    width="1050"
-                    height="1400"
-                    media="(max-width: 767px)"
-                  />
-                </video>
+              <div class="link-sotto-p">
+                <button>
+                  <span>Acquista</span>
+                </button>
               </div>
+            </div>
+          </section>
+        </div>
 
-              <div class="footer-card-4">
-                <div>
-                  <h4>A San Valentino esprimi tutto il tuo amore.</h4>
-                </div>
-                <p>
-                  Festeggia la stagione dell'amore con i regali a 3 Strisce.
-                </p>
+        <!-- Quarta Card -->
+        <div class="card-4">
+          <section class="container-video">
+            <div class="video">
+              <video loop autoplay muted>
+                <source
+                  src="https://brand.assets.adidas.com/video/upload/f_auto:video,q_auto/if_w_gt_800,w_800/4904877_CAM_EU_DAT_Main_Phase_Dual_Valentines_Day_FW_24_Teaser_Carousel_DUAL_62dc999598.mp4"
+                  type="video/mp4" width="1050" height="1400" media="(min-width: 960px)" />
+                <source
+                  src="https://brand.assets.adidas.com/video/upload/f_auto:video,q_auto/if_w_gt_600,w_600/4904877_CAM_EU_DAT_Main_Phase_Dual_Valentines_Day_FW_24_Teaser_Carousel_DUAL_7c132511a8.mp4"
+                  type="video/mp4" width="1050" height="1400" media="(min-width: 768px)" />
+                <source
+                  src="https://brand.assets.adidas.com/video/upload/f_auto:video,q_auto/if_w_gt_600,w_600/4904877_CAM_EU_DAT_Main_Phase_Dual_Valentines_Day_FW_24_Teaser_Carousel_DUAL_922ba539f1.mp4"
+                  type="video/mp4" width="1050" height="1400" media="(max-width: 767px)" />
+              </video>
+            </div>
 
-                <div class="link-sotto-p">
-                  <button>
-                    <span>Acquista</span>
-                  </button>
-                </div>
+            <div class="footer-card-4">
+              <div>
+                <h4>A San Valentino esprimi tutto il tuo amore.</h4>
               </div>
-            </section>
-          </div>
+              <p>
+                Festeggia la stagione dell'amore con i regali a 3 Strisce.
+              </p>
 
-          <!-- Quinta Card -->
-          <div class="card-4">
-            <section class="image-4">
-              <div class="img-5">
-                <img
-                  src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_800,w_800/02_ss25_anthony_edwards_1_best_of_adi_launch_catlp_mta_tc_d_383b69c967.jpg"
-                  alt="Anthony Edwards holding basketball, Anthony Edwards 1 shoe superimposed"
-                  loading="lazy"
-                  fetchpriority="auto"
-                />
+              <div class="link-sotto-p">
+                <button>
+                  <span>Acquista</span>
+                </button>
               </div>
+            </div>
+          </section>
+        </div>
 
-              <div class="footer-card-4">
-                <div>
-                  <h4>Anthony Edwards 1</h4>
-                </div>
-                <p>Nessun avversario potrà fermarti.</p>
+        <!-- Quinta Card -->
+        <div class="card-4">
+          <section class="image-4">
+            <div class="img-5">
+              <img
+                src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_800,w_800/02_ss25_anthony_edwards_1_best_of_adi_launch_catlp_mta_tc_d_383b69c967.jpg"
+                alt="Anthony Edwards holding basketball, Anthony Edwards 1 shoe superimposed" loading="lazy"
+                fetchpriority="auto" />
+            </div>
 
-                <div class="link-sotto-p">
-                  <button>
-                    <span>Acquista</span>
-                  </button>
-                </div>
+            <div class="footer-card-4">
+              <div>
+                <h4>Anthony Edwards 1</h4>
               </div>
-            </section>
-          </div>
-          <!--Sesta Card-->
-          <div class="card-4">
-            <section class="image-4">
-              <div class="img-5">
-                <img
-                  src="https://brand.assets.adidas.com/image/upload/f_gif,fl_lossy,q_auto/ss25_adidas_equipment_launch_confirmed_catlp_tc_d_d7e4958bdf.gif"
-                  alt="Close up of model wearing Equipment."
-                  loading="lazy"
-                  fetchpriority="auto"
-                />
+              <p>Nessun avversario potrà fermarti.</p>
+
+              <div class="link-sotto-p">
+                <button>
+                  <span>Acquista</span>
+                </button>
               </div>
+            </div>
+          </section>
+        </div>
+        <!--Sesta Card-->
+        <div class="card-4">
+          <section class="image-4">
+            <div class="img-5">
+              <img
+                src="https://brand.assets.adidas.com/image/upload/f_gif,fl_lossy,q_auto/ss25_adidas_equipment_launch_confirmed_catlp_tc_d_d7e4958bdf.gif"
+                alt="Close up of model wearing Equipment." loading="lazy" fetchpriority="auto" />
+            </div>
 
-              <div class="footer-card-4">
-                <div>
-                  <h4>adidas. Equipment</h4>
-                </div>
-                <p>Everything that is essential. Nothing that is not.</p>
-
-                <div class="link-sotto-p">
-                  <button>
-                    <span>Acquista</span>
-                  </button>
-                </div>
+            <div class="footer-card-4">
+              <div>
+                <h4>adidas. Equipment</h4>
               </div>
-            </section>
-          </div>
+              <p>Everything that is essential. Nothing that is not.</p>
 
-          <!--Settima card-->
-          <div class="card-4">
-            <section class="image-4">
-              <div class="img-5">
-                <img
-                  src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_800,w_800/global_mystic_victory_football_ss25_launch_glp_catlp_navigation_card_teaser_d_7443b856cc.jpg"
-                />
+              <div class="link-sotto-p">
+                <button>
+                  <span>Acquista</span>
+                </button>
               </div>
+            </div>
+          </section>
+        </div>
 
-              <div class="footer-card-4">
-                <div>
-                  <h4>Mystic Victory Pack</h4>
-                </div>
-                <p>
-                  Per goal da fuoriclasse, possesso palla impeccabile e massima
-                  velocità
-                </p>
+        <!--Settima card-->
+        <div class="card-4">
+          <section class="image-4">
+            <div class="img-5">
+              <img
+                src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_800,w_800/global_mystic_victory_football_ss25_launch_glp_catlp_navigation_card_teaser_d_7443b856cc.jpg" />
+            </div>
 
-                <div class="link-sotto-p">
-                  <button>
-                    <span>Acquista</span>
-                  </button>
-                </div>
+            <div class="footer-card-4">
+              <div>
+                <h4>Mystic Victory Pack</h4>
               </div>
-            </section>
-          </div>
+              <p>
+                Per goal da fuoriclasse, possesso palla impeccabile e massima
+                velocità
+              </p>
+
+              <div class="link-sotto-p">
+                <button>
+                  <span>Acquista</span>
+                </button>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </div>
-    <!--Fine body-container-4-->
+  </div>
+  <!--Fine body-container-4-->
 
-    <!--Inizio footer-->
-    <footer>
-      <div class="Footer-Main align-e-justifyContent-center display-flex">
-        <h1>ADIDAS: ARTICOLI SPORTIVI, STILE E STORIE DAL 1949</h1>
-        <p>
-          Lo sport ci mantiene in forma. Nel corpo e nello spirito. Ci unisce.
-          Ha il potere di cambiare la vita delle persone. Attraverso storie di
-          atleti di successo, ispirazione e suggerimenti per l'allenamento.
-          Articoli sportivi dotati delle tecnologie più sofisticate per
-          migliorare le tue performance. Migliora i tuoi record personali.
-          Adidas è la casa degli amanti di ogni sport, dal running al calcio.
-          Per chi vuole fuggire dal caos della città e dedicarsi all'hiking. Per
-          l'appassionata di yoga che vuole eseguire pose perfette. Le 3 Strisce
-          sono protagoniste della scena musicale. Sul palcoscenico dei festival.
-          In un negozio di articoli sportivi adidas trovi prodotti che ti
-          permettono di mantenere la concentrazione fino al fischio finale.
-          Durante una gara. Fino al traguardo. Siamo qui per sostenere ogni
-          creator. Migliorare le loro performance, le loro vite, e cambiare il
-          mondo.
-          <br /><br />
-          Adidas è molto più che abbigliamento per fare sport e per allenarsi.
-          Collaboriamo con i migliori del settore per co-creare. In questo modo
-          offriamo ai nostri fan gli abiti per lo sport e lo stile che
-          corrispondono alle loro esigenze atletiche, tenendo conto della
-          sostenibilità. Siamo qui per supportare i creatori. Migliorare il loro
-          gioco. Dar vita ai cambiamenti. E pensiamo agli effetti di tutto
-          quello che facciamo sul nostro mondo.
-        </p>
-        <img id="Footer-Logo" src="img/logo adidas.png" alt="Logo Adidas" />
-      </div>
-      <div class="Footer-Newsletter align-e-justifyContent-center display-flex">
-        <h2>RISPARMIA IL 10% SUL TUO PROSSIMO ACQUISTO*</h2>
-        <button>ISCRIVITI GRATUITAMENTE →</button>
-      </div>
-      <div class="Footer-Links display-flex">
-        <ul>
-          <h3>PRODOTTI</h3>
-          <li><a href="#">Scarpe</a></li>
-          <li><a href="#">Abbigliamento</a></li>
-          <li><a href="#">Accessori</a></li>
-          <li><a href="#">Nuovi arrivi</a></li>
-          <li><a href="#">Calendario lanci</a></li>
-          <li><a href="#">Outlet</a></li>
-        </ul>
-        <ul>
-          <h3>SPORT</h3>
-          <li><a href="#">Calcio</a></li>
-          <li><a href="#">Basket</a></li>
-          <li><a href="#">Golf</a></li>
-          <li><a href="#">Allenamento e palestra</a></li>
-          <li><a href="#">Outdoor</a></li>
-          <li><a href="#">Rugby</a></li>
-          <li><a href="#">Running</a></li>
-          <li><a href="#">Tennis</a></li>
-        </ul>
-        <ul>
-          <h3>COLLEZIONI</h3>
-          <li><a href="#">Originals</a></li>
-          <li><a href="#">Spezial</a></li>
-          <li><a href="#">SL72</a></li>
-          <li><a href="#">Campus</a></li>
-          <li><a href="#">Adizero</a></li>
-          <li><a href="#">Samba</a></li>
-          <li><a href="#">Gazelle</a></li>
-          <li><a href="#">Adicolor</a></li>
-        </ul>
-        <ul>
-          <h3>IL NOSTRO MONDO</h3>
-          <li><a href="#">Impegno</a></li>
-          <li><a href="#">Persone</a></li>
-          <li><a href="#">Il nostro pianeta</a></li>
-        </ul>
-        <ul>
-          <h3>ASSISTENZA</h3>
-          <li><a href="#">Aiuto</a></li>
-          <li><a href="#">Resi e rimborsi</a></li>
-          <li><a href="#">Consegna</a></li>
-          <li><a href="#">Tabelle taglie</a></li>
-          <li><a href="#">Trova negozio</a></li>
-          <li><a href="#">Mappa del sito</a></li>
-          <li><a href="#">Sconto studenti</a></li>
-          <li>
-            <a href="#">Procedure europee di risoluzione delle controversie</a>
-          </li>
-          <li><a href="#">Imprint</a></li>
-        </ul>
-        <ul>
-          <h3>INFO SULL'AZIENDA</h3>
-          <li><a href="#">Chi siamo</a></li>
-          <li><a href="#">Lavora con noi</a></li>
-          <li><a href="#">Stampa</a></li>
-          <li><a href="#">App per smartphone</a></li>
-          <li><a href="#">Adidas Confirmed</a></li>
-          <li><a href="#">Blog Adidas</a></li>
-          <li><a href="#">Adidas News</a></li>
-          <li><a href="#">Affiliate Program</a></li>
-          <li><a href="#">Selezione Posizione</a></li>
-        </ul>
-        <ul>
-          <h3>ALTRI PRODOTTI ADIDAS</h3>
-          <li><a href="#">Attrezzatura Training</a></li>
-        </ul>
+  <!--Inizio footer-->
+  <footer>
+    <div class="Footer-Main align-e-justifyContent-center display-flex">
+      <h1>ADIDAS: ARTICOLI SPORTIVI, STILE E STORIE DAL 1949</h1>
+      <p>
+        Lo sport ci mantiene in forma. Nel corpo e nello spirito. Ci unisce.
+        Ha il potere di cambiare la vita delle persone. Attraverso storie di
+        atleti di successo, ispirazione e suggerimenti per l'allenamento.
+        Articoli sportivi dotati delle tecnologie più sofisticate per
+        migliorare le tue performance. Migliora i tuoi record personali.
+        Adidas è la casa degli amanti di ogni sport, dal running al calcio.
+        Per chi vuole fuggire dal caos della città e dedicarsi all'hiking. Per
+        l'appassionata di yoga che vuole eseguire pose perfette. Le 3 Strisce
+        sono protagoniste della scena musicale. Sul palcoscenico dei festival.
+        In un negozio di articoli sportivi adidas trovi prodotti che ti
+        permettono di mantenere la concentrazione fino al fischio finale.
+        Durante una gara. Fino al traguardo. Siamo qui per sostenere ogni
+        creator. Migliorare le loro performance, le loro vite, e cambiare il
+        mondo.
+        <br /><br />
+        Adidas è molto più che abbigliamento per fare sport e per allenarsi.
+        Collaboriamo con i migliori del settore per co-creare. In questo modo
+        offriamo ai nostri fan gli abiti per lo sport e lo stile che
+        corrispondono alle loro esigenze atletiche, tenendo conto della
+        sostenibilità. Siamo qui per supportare i creatori. Migliorare il loro
+        gioco. Dar vita ai cambiamenti. E pensiamo agli effetti di tutto
+        quello che facciamo sul nostro mondo.
+      </p>
+      <img id="Footer-Logo" src="img/logo adidas.png" alt="Logo Adidas" />
+    </div>
+    <div class="Footer-Newsletter align-e-justifyContent-center display-flex">
+      <h2>RISPARMIA IL 10% SUL TUO PROSSIMO ACQUISTO*</h2>
+      <button>ISCRIVITI GRATUITAMENTE →</button>
+    </div>
+    <div class="Footer-Links display-flex">
+      <ul>
+        <h3>PRODOTTI</h3>
+        <li><a href="#">Scarpe</a></li>
+        <li><a href="#">Abbigliamento</a></li>
+        <li><a href="#">Accessori</a></li>
+        <li><a href="#">Nuovi arrivi</a></li>
+        <li><a href="#">Calendario lanci</a></li>
+        <li><a href="#">Outlet</a></li>
+      </ul>
+      <ul>
+        <h3>SPORT</h3>
+        <li><a href="#">Calcio</a></li>
+        <li><a href="#">Basket</a></li>
+        <li><a href="#">Golf</a></li>
+        <li><a href="#">Allenamento e palestra</a></li>
+        <li><a href="#">Outdoor</a></li>
+        <li><a href="#">Rugby</a></li>
+        <li><a href="#">Running</a></li>
+        <li><a href="#">Tennis</a></li>
+      </ul>
+      <ul>
+        <h3>COLLEZIONI</h3>
+        <li><a href="#">Originals</a></li>
+        <li><a href="#">Spezial</a></li>
+        <li><a href="#">SL72</a></li>
+        <li><a href="#">Campus</a></li>
+        <li><a href="#">Adizero</a></li>
+        <li><a href="#">Samba</a></li>
+        <li><a href="#">Gazelle</a></li>
+        <li><a href="#">Adicolor</a></li>
+      </ul>
+      <ul>
+        <h3>IL NOSTRO MONDO</h3>
+        <li><a href="#">Impegno</a></li>
+        <li><a href="#">Persone</a></li>
+        <li><a href="#">Il nostro pianeta</a></li>
+      </ul>
+      <ul>
+        <h3>ASSISTENZA</h3>
+        <li><a href="#">Aiuto</a></li>
+        <li><a href="#">Resi e rimborsi</a></li>
+        <li><a href="#">Consegna</a></li>
+        <li><a href="#">Tabelle taglie</a></li>
+        <li><a href="#">Trova negozio</a></li>
+        <li><a href="#">Mappa del sito</a></li>
+        <li><a href="#">Sconto studenti</a></li>
+        <li>
+          <a href="#">Procedure europee di risoluzione delle controversie</a>
+        </li>
+        <li><a href="#">Imprint</a></li>
+      </ul>
+      <ul>
+        <h3>INFO SULL'AZIENDA</h3>
+        <li><a href="#">Chi siamo</a></li>
+        <li><a href="#">Lavora con noi</a></li>
+        <li><a href="#">Stampa</a></li>
+        <li><a href="#">App per smartphone</a></li>
+        <li><a href="#">Adidas Confirmed</a></li>
+        <li><a href="#">Blog Adidas</a></li>
+        <li><a href="#">Adidas News</a></li>
+        <li><a href="#">Affiliate Program</a></li>
+        <li><a href="#">Selezione Posizione</a></li>
+      </ul>
+      <ul>
+        <h3>ALTRI PRODOTTI ADIDAS</h3>
+        <li><a href="#">Attrezzatura Training</a></li>
+      </ul>
 
-        <ul>
-          <h3>SEGUICI</h3>
-          <li>
-            <a href="#"
-              ><img
-                src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/NE_Wfacebook_image_footer_tcm221_875964_33269327e7_a05782c909.webp"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/NE_Winstagram_logo_footer_tcm221_875968_97cba77886.png"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/NEW_Black_icon_Twitter_logo_transparent_PNG_tcm213_875966_ff503821c5.png"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/NE_Wpinterest_logo_footer_tcm221_875965_4d4fc8829f.png"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/NE_Wtiktok_black_share_icon1189_tcm213_875969_88459e4909.png"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/NE_Wyoutube_icon_footer_tcm221_875967_f2fdf538ee.png"
-            /></a>
-          </li>
-        </ul>
-      </div>
-      <div class="Footer-Desc display-flex">
-        <p>
-          I buoni sconto possono essere utilizzati su un'ampia gamma di articoli
-          adidas. Si applicano limitazioni e restrizioni di vendita. Visita
-          https://www.adidas.it/selected_items | adidas.it per scoprire gli
-          articoli idonei.
-        </p>
-      </div>
-      <div class="Footer-Bottom align-e-justifyContent-center display-flex">
-        <ul>
-          <li><a href="#">Impostazioni cookie</a></li>
-          <li><a href="#">Gestisci Dati</a></li>
-          <li><a href="#">Cookies</a></li>
-          <li><a href="#">Informativa sulla privacy</a></li>
-          <li><a href="#">Termini e Condizioni</a></li>
-        </ul>
-      </div>
-    </footer>
-    <!--Fine footer-->
-  </body>
+      <ul>
+        <h3>SEGUICI</h3>
+        <li>
+          <a href="#"><img
+              src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/NE_Wfacebook_image_footer_tcm221_875964_33269327e7_a05782c909.webp" /></a>
+        </li>
+        <li>
+          <a href="#"><img
+              src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/NE_Winstagram_logo_footer_tcm221_875968_97cba77886.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img
+              src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/NEW_Black_icon_Twitter_logo_transparent_PNG_tcm213_875966_ff503821c5.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img
+              src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/NE_Wpinterest_logo_footer_tcm221_875965_4d4fc8829f.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img
+              src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/NE_Wtiktok_black_share_icon1189_tcm213_875969_88459e4909.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img
+              src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/NE_Wyoutube_icon_footer_tcm221_875967_f2fdf538ee.png" /></a>
+        </li>
+      </ul>
+    </div>
+    <div class="Footer-Desc display-flex">
+      <p>
+        I buoni sconto possono essere utilizzati su un'ampia gamma di articoli
+        adidas. Si applicano limitazioni e restrizioni di vendita. Visita
+        https://www.adidas.it/selected_items | adidas.it per scoprire gli
+        articoli idonei.
+      </p>
+    </div>
+    <div class="Footer-Bottom align-e-justifyContent-center display-flex">
+      <ul>
+        <li><a href="#">Impostazioni cookie</a></li>
+        <li><a href="#">Gestisci Dati</a></li>
+        <li><a href="#">Cookies</a></li>
+        <li><a href="#">Informativa sulla privacy</a></li>
+        <li><a href="#">Termini e Condizioni</a></li>
+      </ul>
+    </div>
+  </footer>
+  <!--Fine footer-->
+
+  <script src="index.js"></script>
+</body>
+
 </html>

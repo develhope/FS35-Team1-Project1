@@ -20,6 +20,7 @@
   --letter-spacing: 0.1em;
   --footer-width: 90vw;
 }
+
 body {
   margin: 0;
   font-size: var(--font-size-base);
@@ -29,24 +30,30 @@ body {
   overflow-x: hidden;
   width: 100vw;
 }
+
 .display-flex {
   display: flex;
 }
+
 .align-e-justifyContent-center {
   justify-content: center;
   align-items: center;
 }
+
 .nowrap {
   flex-wrap: nowrap;
 }
+
 .p-relative {
   position: relative;
 }
+
 /* Sviluppo del Header */
 .header {
   cursor: pointer;
   overflow: hidden;
 }
+
 .black_line {
   background-color: var(--main-color-black);
   height: 45px;
@@ -54,15 +61,18 @@ body {
   color: var(--main-color-white);
   font-weight: var(--font-weight);
 }
+
 .half_container {
   justify-content: end;
 }
+
 .lista_link_1 {
   list-style: none;
   gap: 10px;
   font-weight: 12px;
   margin-right: 40px;
 }
+
 .link1 {
   text-decoration: none;
   color: var(--main-color-black);
@@ -72,21 +82,25 @@ body {
   font-family: var(--font-family);
   font-weight: 200;
 }
+
 .last_container {
   display: grid;
   grid-template-columns: 2fr 3fr 2fr;
 }
+
 .container_logo {
   width: 60px;
   height: 60px;
   margin-left: 40px;
 }
+
 .lista_link_2 {
   list-style: none;
   gap: 10px;
   height: 100%;
   padding: 10px;
 }
+
 .link2 {
   font-family: var(--font-family);
   color: var(--main-color-black);
@@ -94,13 +108,16 @@ body {
   font-size: medium;
   text-decoration: none;
 }
+
 .bold {
   font-weight: bold;
 }
+
 .icon_container {
   width: 50px;
   margin: auto;
 }
+
 #cerca {
   background-color: var(--main-colr-gray);
   border: none;
@@ -113,6 +130,7 @@ body {
   background-size: 25px;
   max-width: 260px;
 }
+
 #cerca::placeholder {
   padding: 10px;
   color: var(--main-color-black);
@@ -120,98 +138,150 @@ body {
   font-weight: lighter;
   font-size: small;
 }
+
 .svg {
   width: 30px;
   height: 30px;
   padding: 5px;
   margin-left: 10px;
 }
+
 /* Contenuti Hover */
 .link1:hover {
   text-decoration: underline;
 }
+
 .link2:hover {
   text-decoration: underline;
 }
+
 /* Contenuti nascosti */
 .hidden_container {
   display: none;
   width: 100vw;
   width: 100vw;
 }
+
 #hidden_p {
   display: none;
 }
-/* Contenuti Media Query  */
-/* 
- @media screen and (max-width: 780px) {
-  .black_line {
-    color: var(--main-color-black);
-    position: relative;
-  }
-  #hidden_p {
-    display: flex;
-    text-align: center;
-    flex-wrap: nowrap;
-    color: var(--main-color-white);
-    position: absolute;
-  }
 
-  .lista_link_1 {
-    display: none;
-  }
+#tooltip {
+  position: absolute;
+  color: var(--main-color-black);
+  background-color: var(--main-color-white);
+  padding: 20px;
+  margin-right: 20px;
+  font-size: 15px;
+  font-weight: bolder;
+  letter-spacing: 0px;
+  left: 80%;
+  top: 140px;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 10;
+  display: none;
+}
 
-  .lista_link_2 {
-    display: none;
-  }
+.menuNascosto {
+  position: fixed;
+  z-index: 100;
+  width: 100vw;
+  padding: 10px;
+  background-color: var(--main-color-white);
+  top: 0;
+  transition: all 1000ms ease;
+  left: -110vw;
+  height: 100%;
+  margin: 0;
+}
 
-  .container_logo {
-    display: none;
-  }
+#listaNascosta {
+  margin-top: 65px;
+  padding-left: 10px;
+}
 
-  .icon_container {
-    display: none;
-  }
+#logoNascosto {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 50%;
+  top: 1%;
+}
 
-  .hidden_container {
-     gap: 100px; 
-    justify-content: space-between;
-    align-items: center;
-  }
+#closer {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 5%;
+  top: 3%
+}
 
-  .hamburger {
-    gap: 30px;
-    width: 48px;
-    height: 48px;
-    margin: 20px;
-    justify-content: start;
-    flex-wrap: nowrap;
-  }
+#lingua {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  margin-top: 3px;
+  left: 25px;
+}
 
-  .hidden_container_logo {
-    align-content: center;
-    width: 48px;
-    height: 48px;
-    margin: 20px 180px;
-    justify-content: center;
-    flex-wrap: nowrap;
-  }
+#italy {
+  position: relative;
+  left: 50px;
+  top: 5px;
+}
 
-  .hidden_icon {
-    gap: 30px;
-    width: 48px;
-    height: 48px;
-    margin: 20px;
-    justify-content: end;
-    flex-wrap: nowrap;
-  } 
-}   */
+.link_hmb_grassetto {
+  list-style-type: none;
+  text-decoration: none;
+  color: var(--main-color-black);
+  font-weight: bold;
+  font-size: large;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.break {
+    border: 1px solid black; 
+    width: 100%; 
+    margin: 3px;
+    opacity: 0.1; 
+}
+
+.link_hmb {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: medium;
+  color: var(--main-color-black);
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.link_hmb_corsivo {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: small;
+  color: var(--main-color-black);
+  margin-bottom: 10px;
+}
+
+.link_hmb_grassetto_red {
+  list-style-type: none;
+  text-decoration: none;
+  color: rgba(220, 9, 9, 0.963);
+  font-weight: bold;
+  font-size: large;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+
 /* Fine Header CSS */
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
 /* INIZIO 1-BLOCCO-FOTO  E  INIZIO 2-BLOCCO-FOTO */
 .contenitore-grigio p {
   margin: 0;
 }
+
 /* CONTENITORE GRIGIO SOTTO L'HEADER */
 .contenitore-grigio {
   background-color: var(--main-colr-gray);
@@ -220,18 +290,21 @@ body {
   font-size: 12px;
   letter-spacing: 1px;
 }
+
 /* dimensioni immagini riempire l'intera larghezza della pagina*/
 .main-img {
   width: 100%;
   display: block;
   z-index: 1;
 }
+
 /* predisposizione del contenitore principale per far centrare e contenere le immagini in pagia */
 .container-principale {
   max-width: 100%;
   margin: auto;
   position: relative;
 }
+
 /* modifiche della prima scritta  h2  */
 .scritte-immagini h2 {
   position: absolute;
@@ -244,6 +317,7 @@ body {
   background-color: var(--main-color-white);
   margin: 0px;
 }
+
 /* modifiche seconda scritta paragrafo */
 .scritte-immagini p {
   position: absolute;
@@ -257,6 +331,7 @@ body {
   margin-top: 7px;
   padding: 2px;
 }
+
 /*modifiche link acquista terza scritta e posizionamento a solo  */
 .pulsante-acquista a {
   width: max-content;
@@ -271,6 +346,7 @@ body {
   left: 40px;
   z-index: 1;
 }
+
 /* modifiche cornice sotto il link acquista  */
 .cornice-pulsante-acquista {
   width: 149px;
@@ -281,10 +357,12 @@ body {
   bottom: 25px;
   left: 42px;
 }
+
 /* modifiche colore cornice al pasaggio del mouse sul link acquista */
 .sezione-pulsante-acquista:hover .cornice-pulsante-acquista {
   border: 1px solid gray;
 }
+
 /* modifiche svg play e posizionamento sulla parte destra alta della pagina */
 .play svg {
   width: 32px;
@@ -293,15 +371,18 @@ body {
   bottom: 89%;
   margin-left: 95%;
 }
+
 /* modifiche colore dello sfondo dell'svg al passaggio del mouse */
 .play svg:hover {
   background-color: var(--main-colr-gray);
 }
+
 /* contorno bianco attorno alle lineette del play */
 .lineetta {
   stroke: var(--main-color-white);
   stroke-width: 1.5px;
 }
+
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
 /*Inizio css bodycontainer1*/
 .container-1 {
@@ -309,11 +390,13 @@ body {
   margin-left: 110px;
   margin-right: 110px;
 }
+
 .bottoni h3 {
   margin-top: 40px;
   font-size: 24px;
   font-weight: 750;
 }
+
 .bottoni button {
   border: 1px solid grey;
   background-color: white;
@@ -324,56 +407,69 @@ body {
   transition: all 0.2s ease;
   font-family: var(--font-family);
 }
+
 .bottoni button:nth-child(1) {
   background-color: black;
   border: 1px solid black;
   color: white;
 }
+
 .bottoni button:nth-child(1):hover {
   background-color: rgb(29, 29, 29);
   border: 1px solid rgb(74, 74, 74);
   color: white;
 }
+
 .bottoni button:nth-last-child(2):hover {
   background-color: rgb(238, 238, 238);
 }
+
 .bottoni button:nth-last-child(1):hover {
   background-color: rgb(238, 238, 238);
 }
+
 .container {
   gap: 20px;
   overflow-x: auto;
   padding-top: 20px;
 }
+
 .cardcontainer {
   border: 0.5px solid white;
 }
+
 .cardcontainer:hover {
   border: 0.5px solid black;
 }
+
 .card1 {
   gap: 20px;
 }
+
 .card {
   position: relative;
   width: 400px;
   height: 400px;
   transition: all 0.2s ease-in;
 }
+
 .card img {
   width: 100%;
   height: 400px;
   object-fit: cover;
 }
+
 .heart svg {
   width: 25px;
   height: 25px;
 }
+
 .heart svg:hover {
   background-image: url(icons/wishlist-active.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .heart {
   position: absolute;
   top: 10px;
@@ -382,6 +478,7 @@ body {
   border: none;
   background-color: transparent;
 }
+
 .prezzo {
   position: absolute;
   top: 350px;
@@ -392,60 +489,73 @@ body {
   background-color: white;
   transition: all 0.2s ease-in;
 }
+
 .prezzo p {
   margin: 0px;
   font-family: var(--font-family);
   text-align: left;
 }
+
 .prezzo p:nth-child(1) {
   color: red;
   font-size: 15px;
 }
+
 .original {
   text-wrap: nowrap;
   flex-direction: row;
   gap: 5px;
 }
+
 .original p:nth-child(1) {
   text-decoration: line-through;
   color: black;
   font-size: 14px;
 }
+
 .original p:nth-child(2) {
   color: red;
   font-size: 11px;
   margin-top: 2px;
 }
+
 .original p:nth-child(3) {
   font-size: 11px;
   margin-top: 2px;
 }
+
 .card:hover .prezzo {
   transform: translatey(-10px);
 }
+
 .textdescription {
   font-size: 13px;
   padding-left: 10px;
   letter-spacing: normal;
 }
+
 .textdescription p:nth-last-child(1) {
   color: rgb(160, 160, 160);
 }
+
 /*fine bodycontainer1*/
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
 /*inizio bodycontainer.2*/
 .container-card-2 {
   overflow-x: auto;
 }
+
 .card-2 {
   height: 50%;
   box-sizing: content-box;
   margin-right: 10px;
   border: 1px solid transparent;
 }
+
 .link {
   transform: translateY(50%);
 }
+
 .arrow {
   position: absolute;
   top: 50%;
@@ -455,19 +565,24 @@ body {
   height: 45px;
   z-index: 10;
 }
+
 .arrow:hover {
   background-color: rgb(238, 235, 235);
 }
+
 .arrow-left {
   left: 0;
 }
+
 .arrow-right {
   right: 0;
 }
+
 .arrow svg {
   width: 30px;
   height: 30px;
 }
+
 .header-card {
   justify-content: space-between;
   margin-left: 108px;
@@ -475,48 +590,57 @@ body {
   margin-bottom: 30px;
   margin-top: 40px;
 }
+
 .header-card h3 {
   font-size: 24px;
   margin: 5px 0px 0px;
   font-weight: 750;
 }
+
 .header-card .link a {
   font-size: 15px;
   color: black;
 }
+
 .header-card .link a:hover {
   background-color: black;
   color: white;
   transition: all;
 }
+
 .card-2:hover {
   border: 1px solid rgb(0, 0, 0);
   transform: none;
 }
+
 .card-2:hover .img-1 {
   content: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_400,w_400/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_13_02_dmt_d_48446d9d29.png");
   transition: opacity 0.3 ease;
   width: 300px;
   height: auto;
 }
+
 .card-2:hover .img-2 {
   content: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_400,w_400/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_19_02_dmt_d_b0ce93b4bf.png");
   transition: opacity 0.3 ease;
   width: 300px;
   height: auto;
 }
+
 .card-2:hover .img-3 {
   content: url("https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_21_02_dmt_d_23ed574f7e.png");
   transition: opacity 0.3 ease;
   width: 300px;
   height: auto;
 }
+
 .card-2:hover .img-4 {
   content: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_400,w_400/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_6_02_dmt_d_b7a92ad234.png");
   transition: opacity 0.3 ease;
   width: 300px;
   height: auto;
 }
+
 .card-2:hover .img-5 {
   content: url("https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_9_02_dmt_d_b82ef01761.png");
   transition: opacity 0.3 ease;
@@ -530,27 +654,32 @@ body {
   width: 300px;
   height: auto;
 }
+
 .card-2:hover .img-7 {
   content: url("https://brand.assets.adidas.com/image/upload/c_fill,f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920,ar_9:16/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_17_02_dmt_d_fab494d3bc.png");
   transition: opacity 0.3 ease;
   width: 300px;
   height: auto;
 }
+
 .card-2:hover .img-8 {
   content: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_400,w_400/originals_ss25_shop_your_style_eu_launch_styling_details_page_gallery_look_look_28_02_dmt_d_b900fcf87f.png");
   transition: opacity 0.3 ease;
   width: 300px;
   height: auto;
 }
+
 .image img {
   width: 300px;
   height: auto;
 }
+
 .card-2 .footer p {
   padding-left: 15px;
   font-size: 14px;
   letter-spacing: normal;
 }
+
 /*fine bodycontainer.2*/
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
 /*Inizio bodycontainer3*/
@@ -564,10 +693,12 @@ body {
   background-color: white;
   transition: all 0.2s ease-in;
 }
+
 .prezzo3 p {
   margin: 0px;
   font-family: var(--font-family);
 }
+
 .card:hover .prezzo3 {
   transform: translatey(-10px);
 }
@@ -590,27 +721,33 @@ body {
   margin-top: 40px;
   margin-bottom: 50px;
 }
+
 .card-4 {
   box-sizing: content-box;
   border: 1px solid white;
   width: 304px;
   height: 100%;
 }
+
 .card-4:hover {
   border: 1px solid rgb(0, 0, 0);
 }
+
 .card-4 .image-4 img {
   width: 298px;
   height: auto;
   padding-left: 2px;
 }
+
 .container-video {
   width: 300px;
 }
+
 .container-video video {
   width: 300px;
   height: 400px;
 }
+
 .card-4 .footer-card-4 {
   height: 186px;
   padding: 16px;
@@ -619,6 +756,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .footer-card-4 .link-sotto-p button {
   border: none;
   border: white;
@@ -633,10 +771,12 @@ body {
   display: inline-block;
   position: relative;
 }
+
 .footer-card-4 .link-sotto-p button span {
   display: inline-block;
   font-family: var(--font-family);
 }
+
 .footer-card-4 .link-sotto-p span::after {
   content: "";
   position: absolute;
@@ -646,18 +786,22 @@ body {
   height: 1px;
   background-color: black;
 }
+
 .footer-card-4 span:hover {
   background-color: rgb(239, 237, 237);
 }
+
 .footer-card-4 h4 {
   font-size: 14px;
   margin: 0;
   letter-spacing: normal;
 }
+
 .footer-card-4 p {
   font-size: 14px;
   letter-spacing: normal;
 }
+
 /*fine bodycontainer.4*/
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
 /*Inizio footer*/
@@ -670,6 +814,7 @@ footer {
   padding: 0;
   margin: 0;
 }
+
 .Footer-Main {
   flex-direction: column;
   transform: translate(-50% -50%);
@@ -681,12 +826,14 @@ footer {
   margin: 0;
   width: 100vw;
 }
+
 .Footer-Main h1 {
   text-align: center;
   font-size: var(--font-size-footer-large);
   width: var(--footer-width);
   margin: 0px;
 }
+
 .Footer-Main p {
   text-align: justify;
   font-size: var(--font-size-footer-base);
@@ -694,12 +841,14 @@ footer {
   line-height: var(--line-height);
   width: var(--footer-width);
 }
+
 #Footer-Logo {
   margin-top: 20px;
   height: 55px;
   width: 55px;
   text-align: center;
 }
+
 .Footer-Newsletter {
   flex-direction: row;
   text-align: center;
@@ -712,6 +861,7 @@ footer {
   padding: 25px 0px;
   width: 100vw;
 }
+
 .Footer-Newsletter button {
   background-color: var(--main-color-black);
   color: var(--main-color-white);
@@ -725,6 +875,7 @@ footer {
   cursor: pointer;
   transition: all 200ms ease;
 }
+
 .Footer-Newsletter button:hover {
   color: rgb(100, 100, 100);
 }
@@ -736,9 +887,11 @@ footer {
   overflow: hidden;
   margin: 20px 0px 40px;
 }
+
 .Footer-Links h3 {
   margin: 10px 0 0 0;
 }
+
 .Footer-Links ul {
   display: flex;
   flex-direction: column;
@@ -748,17 +901,21 @@ footer {
   max-width: 150px;
   min-width: 120px;
 }
+
 .Footer-Links ul li {
   background-color: var(--main-color-white);
   font-size: var(--font-size-footer-base);
 }
+
 .Footer-Links a {
   color: var(--main-color-black);
   text-decoration: none;
 }
+
 .Footer-Links a:hover {
   text-decoration: underline;
 }
+
 .Footer-Desc {
   justify-content: center;
   align-items: left;
@@ -766,11 +923,13 @@ footer {
   font-size: var(--font-size-footer-base);
   font-family: var(--font-family);
 }
+
 .Footer-Bottom {
   width: 100vw;
   overflow: hidden;
   background-color: var(--main-color-darkgray);
 }
+
 .Footer-Bottom ul {
   list-style: none;
   display: flex;
@@ -780,26 +939,41 @@ footer {
   gap: 15px;
   padding: 15px 0px;
 }
+
 .Footer-Bottom li {
   border-right: 1px solid var(--main-color-lightgray);
   font-size: var(--font-size-footer-small);
   padding-right: 15px;
 }
+
 .Footer-Bottom li:nth-child(5) {
   border-right: 0px solid;
 }
+
 .Footer-Bottom a {
   color: var(--main-color-lightgray);
   text-decoration: none;
 }
 
-/*ALFONSO*/
 
-@media screen and (max-width: 768px) {
+
+/* MEDIA QUERY  */
+
+/*ALFONSO*/
+@media screen and (max-width:1200px) {
+  .last_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+}
+
+@media screen and (max-width: 980px) {
+
   .black_line {
     color: var(--main-color-black);
     position: relative;
   }
+
   #hidden_p {
     display: flex;
     text-align: center;
@@ -807,24 +981,31 @@ footer {
     color: var(--main-color-white);
     position: absolute;
   }
+
   .lista_link_1 {
     display: none;
   }
+
   .lista_link_2 {
     display: none;
   }
+
   .container_logo {
     display: none;
   }
+
   .icon_container {
     display: none;
   }
+
   .hidden_container {
     display: flex;
+    gap: 100px;
     gap: 100px;
     justify-content: space-between;
     align-items: center;
   }
+
   .hamburger {
     gap: 30px;
     width: 25px;
@@ -833,6 +1014,7 @@ footer {
     justify-content: start;
     flex-wrap: nowrap;
   }
+
   .hidden_container_logo {
     width: 48px;
     height: 48px;
@@ -842,6 +1024,7 @@ footer {
     position: absolute;
     left: 24%;
   }
+
   .hidden_icon {
     margin-left: 25px;
     gap: 30px;
@@ -1004,5 +1187,79 @@ footer {
   }
   .hide-on-mobile {
     display: none;
+  }
+}
+
+
+
+/*    MEDIA QUERY MOBILE    */
+
+/*ALFONSO*/
+@media screen and (max-width: 560px) {
+
+  .black_line {
+    color: var(--main-color-black);
+    position: relative;
+  }
+
+  #hidden_p {
+    display: flex;
+    text-align: center;
+    flex-wrap: nowrap;
+    color: var(--main-color-white);
+    position: absolute;
+  }
+
+  .lista_link_1 {
+    display: none;
+  }
+
+  .lista_link_2 {
+    display: none;
+  }
+
+  .container_logo {
+    display: none;
+  }
+
+  .icon_container {
+    display: none;
+  }
+
+  .hidden_container {
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger {
+    gap: 30px;
+    width: 25px;
+    height: 25px;
+    margin: 20px;
+    justify-content: start;
+    flex-wrap: nowrap;
+  }
+
+  .hidden_container_logo {
+    width: 48px;
+    height: 48px;
+    margin-left: 23%;
+    align-content: center;
+    flex-wrap: nowrap;
+    position: absolute;
+    left: 24%
+  }
+
+  .hidden_icon {
+    margin-left: 25px;
+    gap: 30px;
+    width: 25px;
+    height: 25px;
+    justify-content: end;
+    flex-wrap: nowrap;
+    position: absolute;
+    left: 90%;
   }
 }
