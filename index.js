@@ -12,19 +12,6 @@ target.addEventListener("mouseleave", () => {
   tooltip.style.display = "none";
 });
 
-// Tooltip aperto al passaggio del mouse sulla Shopbag (Mobile)
-
-const target2 = document.getElementById("target2");
-const tooltip2 = document.getElementById("tooltip2");
-
-target2.addEventListener("mouseover", () => {
-  tooltip2.style.display = "block";
-});
-target2.addEventListener("mouseleave", () => {
-  tooltip2.style.display = "none";
-});
-
-
 // Apertura del menu' Hamburger
 
 const menuHamburger = document.getElementById("menuHamburger");
@@ -35,11 +22,14 @@ const wishNascosto = document.getElementById("wn");
 const searchNascosto = document.getElementById("sn");
 const profileNascosto = document.getElementById("pn");
 const closer = document.getElementById("closer");
+const body = document.querySelector("body");
 
 // Mostra il menu nascosto e nasconde gli altri elementi
+
 menuHamburger.addEventListener("click", () => {
+  body.style.overflowY = "hidden"; // Naconde lo scorrimento della pagina
   menuHamburger.style.display = "none"; // Nasconde il menu hamburger
-  hiddenMenu.style.display = "block";  // Mostra il menu nascosto
+  hiddenMenu.style.left = "0";  // Mostra il menu nascosto
   barraNascosta.style.display = "none"; // Nasconde la barra nera
   logoNascosto.style.display = "none"; // Nasconde il logo
   wishNascosto.style.display = "none"; // Nasconde la wishlist
@@ -54,7 +44,8 @@ closer.style.height = "30px";
 closer.style.bottom = "10px";
 
 closer.addEventListener("click", () => {
-  hiddenMenu.style.display = "none"; // Nasconde il menu nascosto
+  body.style.overflowY = "auto"; // Ritorna lo scorrimento della pagina
+  hiddenMenu.style.left = "-110vw"; // Nasconde il menu nascosto
   menuHamburger.style.display = "block"; // Rende visibile il menu hamburger
   barraNascosta.style.display = "flex"; // Ripristina la barra nera
   logoNascosto.style.display = "block"; // Ripristina il logo
