@@ -938,3 +938,71 @@ footer {
     gap: 0;
   }
 }
+@media screen and (max-width: 375px) {
+  .arrow {
+    display: none;
+  }
+  .wrapper-card {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+  .container-1 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+  }
+  .card {
+    width: 170px;
+    height: 170px;
+  }
+  .card img {
+    height: 170px;
+  }
+  .heart svg {
+    width: 20px;
+    height: 20px;
+  }
+  .heart {
+    top: 5px;
+    right: 2px;
+  }
+  .prezzo {
+    top: 130px;
+    left: 0;
+    width: 60px;
+    height: 40px;
+  }
+  .original p:nth-last-child(1) {
+    display: none;
+  }
+  .textdescription {
+    display: none;
+  }
+  .prezzo3 {
+    top: 140px;
+    left: 0;
+    width: 50px;
+  }
+  .bottoni {
+    display: flex;
+    justify-content: space-between; /* Distribuisce i bottoni */
+    gap: 5px;
+    overflow-x: auto;
+  }
+  .bottoni button {
+    flex: 1;
+    width: 160px;
+    max-width: 200px;
+    white-space: nowrap;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+}
