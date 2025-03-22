@@ -476,7 +476,7 @@ body {
   right: 10px;
   cursor: pointer;
   border: none;
-  background-color: none;
+  background-color: transparent;
 }
 
 .prezzo {
@@ -531,6 +531,7 @@ body {
 .textdescription {
   font-size: 13px;
   padding-left: 10px;
+  letter-spacing: normal;
 }
 
 .textdescription p:nth-last-child(1) {
@@ -548,6 +549,7 @@ body {
   height: 50%;
   box-sizing: content-box;
   margin-right: 10px;
+  border: 1px solid transparent;
 }
 
 .link {
@@ -675,6 +677,7 @@ body {
 .card-2 .footer p {
   padding-left: 15px;
   font-size: 14px;
+  letter-spacing: normal;
 }
 
 /*fine bodycontainer.2*/
@@ -699,7 +702,12 @@ body {
 .card:hover .prezzo3 {
   transform: translatey(-10px);
 }
-
+.wrapper-card {
+  margin-left: 110px;
+  margin-right: 110px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
 /*Fine bodycontainer3*/
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
 /*inizio bodycontainer.4*/
@@ -707,8 +715,7 @@ body {
   gap: 8px;
   overflow-x: auto;
 }
-
-.wrapper-card {
+.wrapper-card-2-4 {
   margin-left: 110px;
   margin-right: 110px;
   margin-top: 40px;
@@ -787,10 +794,12 @@ body {
 .footer-card-4 h4 {
   font-size: 14px;
   margin: 0;
+  letter-spacing: normal;
 }
 
 .footer-card-4 p {
   font-size: 14px;
+  letter-spacing: normal;
 }
 
 /*fine bodycontainer.4*/
@@ -992,6 +1001,7 @@ footer {
   .hidden_container {
     display: flex;
     gap: 100px;
+    gap: 100px;
     justify-content: space-between;
     align-items: center;
   }
@@ -1012,7 +1022,7 @@ footer {
     align-content: center;
     flex-wrap: nowrap;
     position: absolute;
-    left: 24%
+    left: 24%;
   }
 
   .hidden_icon {
@@ -1025,49 +1035,160 @@ footer {
     position: absolute;
     left: 90%;
   }
-
   /*CRISTIAN E SILVIA*/
   .scritte-immagini h2 {
     bottom: 120px;
     left: 50px;
     font-size: 12px;
   }
-
   .scritte-immagini p {
     bottom: 60px;
     left: 50px;
     font-size: 12px;
   }
-
   .pulsante-acquista a {
     bottom: 20px;
     font-size: 12px;
     left: 50px;
   }
-
   .cornice-pulsante-acquista {
     width: 129px;
     height: 44px;
     bottom: 16px;
     left: 53px;
   }
-}
 
-.play svg {
-  margin-left: 93%;
-}
+  .play svg {
+    margin-left: 93%;
+  }
+  /*MONICA */
+  .container-1 {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .wrapper-card {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .card {
+    width: 200px;
+    height: 200px;
+  }
+  .card img {
+    height: 200px;
+  }
+  .prezzo {
+    top: 165px;
+    left: 10px;
+    width: 135px;
+    height: 35px;
+  }
+  .prezzo p:nth-child(1) {
+    font-size: 13px;
+  }
+  .original p:nth-child(1) {
+    font-size: 11px;
+  }
+  .original p:nth-child(2) {
+    font-size: 9px;
+  }
+  .original p:nth-child(3) {
+    font-size: 9px;
+  }
+  .prezzo3 {
+    top: 170px;
+    left: 10px;
+  }
+  /* MORENA */
+  .wrapper-card-2-4 {
+    margin-right: 0;
+    margin-left: 50px;
+  }
 
-/*MATTIA*/
-.Footer-Main h1,
-.Footer-Main p {
-  width: 60%;
-}
+  .header-card {
+    margin-left: 50px;
+  }
 
-.Footer-Newsletter {
-  flex-direction: column;
-  gap: 0;
+  /* MATTIA  */
+  .Footer-Main h1,
+  .Footer-Main p {
+    width: 60%;
+  }
+  .Footer-Newsletter {
+    flex-direction: column;
+    gap: 0;
+  }
 }
-
+@media screen and (max-width: 375px) {
+  .arrow {
+    display: none;
+  }
+  .wrapper-card {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+  .container-1 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+  }
+  .card {
+    width: 170px;
+    height: 170px;
+  }
+  .card img {
+    height: 170px;
+  }
+  .heart svg {
+    width: 20px;
+    height: 20px;
+  }
+  .heart {
+    top: 5px;
+    right: 2px;
+  }
+  .prezzo {
+    top: 130px;
+    left: 0;
+    width: 60px;
+    height: 40px;
+  }
+  .original p:nth-last-child(1) {
+    display: none;
+  }
+  .textdescription {
+    display: none;
+  }
+  .prezzo3 {
+    top: 140px;
+    left: 0;
+    width: 50px;
+  }
+  .bottoni {
+    display: flex;
+    justify-content: space-between; /* Distribuisce i bottoni */
+    gap: 5px;
+    overflow-x: auto;
+  }
+  .bottoni button {
+    flex: 1;
+    width: 160px;
+    max-width: 200px;
+    white-space: nowrap;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+}
 
 
 
