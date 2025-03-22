@@ -35,7 +35,6 @@ menuHamburger.addEventListener("click", () => {
   wishNascosto.style.display = "none"; // Nasconde la wishlist
   searchNascosto.style.display = "none"; // Nasconde la ricerca
   profileNascosto.style.display = "none"; // Nasconde il profilo
-  target2.style.display = "none"; // Nasconde la shopbag
 });
 
 // Chiude il menu nascosto e ripristina gli altri elementi
@@ -52,5 +51,4 @@ closer.addEventListener("click", () => {
   wishNascosto.style.display = "block"; // Ripristina la wishlist
   searchNascosto.style.display = "block"; // Ripristina la ricerca
   profileNascosto.style.display = "block"; // Ripristina il profilo
-  target2.style.display = "block"; // Ripristina la shopbag
 });
