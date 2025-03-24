@@ -213,7 +213,7 @@ body {
   height: 10px;
   position: absolute;
   right: 5%;
-  top: 3%
+  top: 3%;
 }
 
 #lingua {
@@ -241,10 +241,10 @@ body {
 }
 
 .break {
-    border: 1px solid black; 
-    width: 100%; 
-    margin: 3px;
-    opacity: 0.1; 
+  border: 1px solid black;
+  width: 100%;
+  margin: 3px;
+  opacity: 0.1;
 }
 
 .link_hmb {
@@ -273,7 +273,6 @@ body {
   margin-bottom: 15px;
   letter-spacing: 2px;
 }
-
 
 /* Fine Header CSS */
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
@@ -955,12 +954,10 @@ footer {
   text-decoration: none;
 }
 
-
-
 /* MEDIA QUERY  */
 
 /*ALFONSO*/
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 1200px) {
   .last_container {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
@@ -968,7 +965,6 @@ footer {
 }
 
 @media screen and (max-width: 980px) {
-
   .black_line {
     color: var(--main-color-black);
     position: relative;
@@ -1104,30 +1100,29 @@ footer {
   /* MORENA */
   .wrapper-card-2-4 {
     margin-right: 0;
-    margin-left:0;
+    margin-left: 0;
   }
- .arrow{
-  display:none;
+  .arrow {
+    display: none;
   }
-  .container-card-2 .card-2:first-child{
+  .container-card-2 .card-2:first-child {
     margin-left: 50px;
   }
-  .container-card-2 .card-2:last-child{
+  .container-card-2 .card-2:last-child {
     margin-right: 50px;
   }
 
-  .container-card-4{
-    padding-left:50px;
-    padding-right:50px;
+  .container-card-4 {
+    padding-left: 50px;
+    padding-right: 50px;
   }
-  
+
   .header-card {
     margin-left: 50px;
     margin-right: 50px;
-
   }
 
-  .header-card h3{
+  .header-card h3 {
     font-style: var(--font-family-bold);
   }
 
@@ -1210,41 +1205,37 @@ footer {
   }
 
   .header-card {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left:15px;
+    margin-left: 15px;
   }
-  
-  .header-card h3{
-    font-size: 24px;;
+
+  .header-card h3 {
+    font-size: 24px;
     padding-bottom: 10px;
   }
 
-  .wrapper-card-2-4{
-    
+  .wrapper-card-2-4 {
     margin-top: 5px;
   }
-  .container-card-2 .card-2:first-child{
+  .container-card-2 .card-2:first-child {
     margin-left: 15px;
   }
-  .container-card-2 .card-2:last-child{
+  .container-card-2 .card-2:last-child {
     margin-right: 20px;
   }
 
-  .container-card-4{
-    padding-left:50px;
-    padding-right:50px;
+  .container-card-4 {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
-
-
 
 /*    MEDIA QUERY MOBILE    */
 
 /*ALFONSO*/
 @media screen and (max-width: 560px) {
-
   .black_line {
     color: var(--main-color-black);
     position: relative;
@@ -1297,7 +1288,7 @@ footer {
     align-content: center;
     flex-wrap: nowrap;
     position: absolute;
-    left: 24%
+    left: 24%;
   }
 
   .hidden_icon {
