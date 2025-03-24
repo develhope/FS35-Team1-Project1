@@ -1209,13 +1209,11 @@ footer {
     display: none;
   }
 
-  /*Morena*/
-
   .header-card {
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    margin:0;
+    margin-left:15px;
   }
   
   .header-card h3{
@@ -1224,12 +1222,19 @@ footer {
   }
 
   .wrapper-card-2-4{
-    margin-left: 15px;
+    
     margin-top: 5px;
   }
-  .container-card-2{
-    width: 100%;
-    height:auto;
+  .container-card-2 .card-2:first-child{
+    margin-left: 15px;
+  }
+  .container-card-2 .card-2:last-child{
+    margin-right: 20px;
+  }
+
+  .container-card-4{
+    padding-left:50px;
+    padding-right:50px;
   }
 }
 
