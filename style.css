@@ -1141,7 +1141,7 @@ footer {
     gap: 0;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .arrow {
     display: none;
   }
