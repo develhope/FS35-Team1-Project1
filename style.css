@@ -695,12 +695,10 @@ body {
 }
 .arrow-left-3 {
   left: 0;
- 
 }
 
 .arrow-right-3 {
   right: 0;
- 
 }
 .prezzo3 {
   position: absolute;
@@ -1130,8 +1128,8 @@ footer {
     left: 10px;
   }
   /* MORENA */
-  .arrow{
-    display:none;
+  .arrow {
+    display: none;
   }
   .wrapper-card-2-4 {
     margin-left: 0px;
@@ -1171,105 +1169,12 @@ footer {
     gap: 0;
   }
 }
-@media screen and (max-width: 375px) {
-  .arrow{
-    display:none;
-  }
-  .wrapper-card {
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 0px;
-    margin-bottom: 30px;
-  }
-  .container-1 {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .container {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 10px;
-  }
-  .card {
-    width: 170px;
-    height: 170px;
-  }
-  .card img {
-    height: 170px;
-  }
-  .heart svg {
-    width: 20px;
-    height: 20px;
-  }
-  .heart {
-    top: 5px;
-    right: 2px;
-  }
-  .prezzo {
-    top: 130px;
-    left: 0;
-    width: 60px;
-    height: 40px;
-  }
-  .original p:nth-last-child(1) {
-    display: none;
-  }
-  .textdescription {
-    display: none;
-  }
-  .prezzo3 {
-    top: 140px;
-    left: 0;
-    width: 50px;
-  }
-  .bottoni {
-    display: flex;
-    justify-content: space-between; /* Distribuisce i bottoni */
-    gap: 5px;
-    overflow-x: auto;
-  }
-  .bottoni button {
-    flex: 1;
-    width: 160px;
-    max-width: 200px;
-    white-space: nowrap;
-  }
-  .hide-on-mobile {
-    display: none;
+/*media query silvia e cristian*/
+@media screen and (max-width: 650px) {
+  .play svg {
+    bottom: 83%;
   }
 }
-@media screen and (max-width: 375px) {
-  .header-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 15px;
-  }
-
-  .header-card h3 {
-    font-size: 24px;
-    padding-bottom: 10px;
-  }
-
-  .wrapper-card-2-4 {
-    margin-top: 5px;
-  }
-  .container-card-2 .card-2:first-child {
-    margin-left: 15px;
-  }
-  .container-card-2 .card-2:last-child {
-    margin-right: 20px;
-  }
-
-  .container-card-4 {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-
-/*    MEDIA QUERY MOBILE    */
-
 /*ALFONSO*/
 @media screen and (max-width: 560px) {
   .black_line {
@@ -1338,71 +1243,162 @@ footer {
     left: 90%;
   }
 }
-/*media query silvia e cristian*/
-@media screen and (max-width: 650px) {
-  .play svg{
-    bottom:83%;
-  }
-}
-/* cristian e silvia */ 
+/* cristian e silvia */
 @media screen and (max-width: 412px) {
-  .play svg{
-        bottom: 75%
+  .play svg {
+    bottom: 75%;
   }
-  .scritte-immagini h2{
+  .scritte-immagini h2 {
     bottom: 75px;
     left: 20px;
     font-size: 8px;
     padding: 9px 3px;
   }
- .scritte-immagini p{
-   bottom: 25px;
-   left: 20px;
-   font-size: 8px;
+  .scritte-immagini p {
+    bottom: 25px;
+    left: 20px;
+    font-size: 8px;
   }
-  .pulsante-acquista a{
+  .pulsante-acquista a {
     bottom: 10px;
-   font-size: 8px;
+    font-size: 8px;
     left: 20px;
     padding: 10px 8px;
   }
-  .cornice-pulsante-acquista{
-   width: 78px;
-   height: 29px;
-   bottom: 7px;
-   left:22px;
-   
- }
+  .cornice-pulsante-acquista {
+    width: 78px;
+    height: 29px;
+    bottom: 7px;
+    left: 22px;
+  }
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
+  .arrow {
+    display: none;
+  }
+  .wrapper-card {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+  .container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .container-1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    overflow-x: unset;
+  }
+  .container-3 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    overflow-x: unset;
+  }
+  .card {
+    width: 170px;
+    height: 170px;
+  }
+  .card img {
+    height: 170px;
+  }
+  .heart svg {
+    width: 20px;
+    height: 20px;
+  }
+  .heart {
+    top: 5px;
+    right: 2px;
+  }
+  .prezzo {
+    top: 130px;
+    left: 0;
+    width: 60px;
+    height: 40px;
+  }
+  .original p:nth-last-child(1) {
+    display: none;
+  }
+  .textdescription {
+    display: none;
+  }
+  .prezzo3 {
+    top: 140px;
+    left: 0;
+    width: 50px;
+  }
+  .bottoni {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    overflow-x: auto;
+  }
+  .bottoni button {
+    flex: 1;
+    width: 160px;
+    max-width: 200px;
+    white-space: nowrap;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
 
-  .play svg{
+  .header-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 15px;
+  }
+
+  .header-card h3 {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+
+  .wrapper-card-2-4 {
+    margin-top: 5px;
+  }
+  .container-card-2 .card-2:first-child {
+    padding-left: 10px;
+  }
+  .container-card-2 .card-2:last-child {
+    padding-right: 10px;
+  }
+
+  .container-card-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .play svg {
     bottom: 75%;
-}
-.scritte-immagini h2{
-bottom: 59px;
-left: 20px;
-font-size: 6px;
-padding: 7px 3px;
-}
-.scritte-immagini p{
-bottom: 12px;
-left: 20px;
-font-size: 6px;
-}
-.pulsante-acquista a{
-bottom: 8px;
-font-size: 6px;
-left: 20px;
-padding: 8px 8px;
-}
-.cornice-pulsante-acquista{
-width: 64px;
-height: 22px;
-bottom: 6px;
-left:22px;
-
-}
-
+  }
+  .scritte-immagini h2 {
+    bottom: 59px;
+    left: 20px;
+    font-size: 6px;
+    padding: 7px 3px;
+  }
+  .scritte-immagini p {
+    bottom: 12px;
+    left: 20px;
+    font-size: 6px;
+  }
+  .pulsante-acquista a {
+    bottom: 8px;
+    font-size: 6px;
+    left: 20px;
+    padding: 8px 8px;
+  }
+  .cornice-pulsante-acquista {
+    width: 64px;
+    height: 22px;
+    bottom: 6px;
+    left: 22px;
+  }
 }
