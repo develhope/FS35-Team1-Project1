@@ -1,35 +1,5 @@
+//----------------P R I M O   B L O C C O ---------------------------
 
-// setTimeout(()=>{
-//     const img= document.querySelector(".main-img")
-//     img.src= "img/img-adidas.avif"
-   
-// },4000)
-
-
-// setTimeout(()=>{
-//     const img= document.querySelector(".main-img")
-//     img.src= src="https://brand.assets.adidas.com/video/upload/f_auto,q_auto/if_w_gt_1920,w_1920/global_main_pack_1_pure_victory_football_ss25_launch_hp_banner_hero_d_05b272a381.jpg"
-   
- 
-// },8000)
-
-// setTimeout(()=>{
-//     const img= document.querySelector(".main-img")
-//     img.src= "img/Scarpe_Campus_00s_Blu_JR8163_01_00_standard.avif"
-//    img.style.height = "650px"
- 
-// },12000)
-
-// setInterval(() => {
-//     const img = document.querySelector(".main-img");
-//     img.src = "img/img-adidas.avif";
-// }, 4000);
-
-// setInterval(() => {
-//     const img = document.querySelector(".main-img");
-//     img.src = "https://brand.assets.adidas.com/video/upload/f_auto,q_auto/if_w_gt_1920,w_1920/global_main_pack_1_pure_victory_football_ss25_launch_hp_banner_hero_d_05b272a381.jpg";
-// }, 8000);
-// JavaScript
 let idInterval; // Variabile per il setInterval
 let valorePause = false; // Stato iniziale
 let currentImage = 0; // Stato iniziale delle immagini
@@ -51,17 +21,17 @@ const images = [
     /*2 foto*/"https://brand.assets.adidas.com/video/upload/f_auto,q_auto/if_w_gt_1920,w_1920/global_the_original_originals_ss25_launch_hp_mh_all_franchises_d_1e3fc8baf5.jpg",
     
     /*3 foto*/"https://brand.assets.adidas.com/video/upload/f_auto,q_auto/if_w_gt_1920,w_1920/europe_EOSS_commercial_ss25_Mid_Season_Sale_Phase1_Onsite_AB_Test_d_b6d129ac96.jpg", 
-    /*4 foto*/ "img/img-adidas.avif" 
+    /*4 foto*/ "https://brand.assets.adidas.com/video/upload/f_auto,q_auto/if_w_gt_1920,w_1920/europe_EOSS_commercial_ss25_Mid_Season_Sale_Phase1_Onsite_GL_Pf_MH_d_7f75a634bb.jpg" 
 ];
 
 // Funzione per alternare le immagini
 function changeImage() {
     img.src = images[currentImage]; // Cambia immagine in base all'indice currentImage
     currentImage = (currentImage + 1) % images.length; // L'operazione modulo % impedisce che currentImage superi la lunghezza dell'array
-}
+}// quindi tutto significa che Incrementa l'indice  e utilizza l'operatore modulo  per farlo tornare a zero quando raggiunge la fine dell'array, creando un ciclo infinito
 
 // Avvia il setInterval iniziale al caricamento della pagina
-idInterval = setInterval(changeImage, 2000); // Cambia immagine ogni 4 secondi
+idInterval = setInterval(changeImage, 2000); // Cambia immagine ogni 2 sexnodo
 
 // Aggiungi l'evento click sull'SVG
 svg.addEventListener("click", () => {
@@ -83,10 +53,11 @@ svg.addEventListener("click", () => {
         svg.style.strokeWidth = "1px";
     }
 
-    valorePause = !valorePause ; // Alterna lo stato
+    valorePause = !valorePause ; //al click  Alterna lo stato da falso a vero e viceversa 
 });
 
 
+//-------------------- S E C O N D O   B L O C C O  -------------------------
 const img1 = document.getElementById("imgover");
 
 img1.addEventListener("mouseover", () => {
