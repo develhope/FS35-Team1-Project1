@@ -897,9 +897,7 @@ footer {
 /* cristian e silvia */ 
 @media screen and (max-width: 412px) {
   .play svg{
-        bottom: 75%;
-        font-size: 
-
+        bottom: 75%
   }
   .scritte-immagini h2{
     bottom: 75px;
