@@ -61,13 +61,13 @@ function changeImage() {
 }
 
 // Avvia il setInterval iniziale al caricamento della pagina
-idInterval = setInterval(changeImage, 4000); // Cambia immagine ogni 4 secondi
+idInterval = setInterval(changeImage, 2000); // Cambia immagine ogni 4 secondi
 
 // Aggiungi l'evento click sull'SVG
 svg.addEventListener("click", () => {
     if (valorePause) {
         // Se è in play, riavvia il setInterval e mostra l'icona "pause"
-        idInterval = setInterval(changeImage, 4000);
+        idInterval = setInterval(changeImage, 2000);
 
         svg.innerHTML = `
             <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4H7v16h2V4Zm8 0h-2v16h2V4Z" fill="currentColor"></path>`;
