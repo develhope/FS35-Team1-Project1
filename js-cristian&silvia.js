@@ -87,10 +87,37 @@ svg.addEventListener("click", () => {
 });
 
 
+const img1 = document.getElementById("imgover");
 
+img1.addEventListener("mouseover", () => {
+  // Graduale scomparsa dell'immagine attuale
+  img1.style.transition = "opacity 0.5s ease-in-out"; // Imposta la transizione
+  img1.style.opacity = "0"; // Nascondi l'immagine con un effetto morbido
+  
+  // Cambia immagine dopo il tempo necessario per la scomparsa
+  setTimeout(() => {
+    img1.setAttribute(
+      "src",
+      "https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_1920,w_1920/hc_ss25_springbreakfestival_day_bnr_1_head_to_toe_mw_d_45864a6331.jpg"
+    );
+    img1.style.opacity = "1"; // Rendi visibile la nuova immagine
+  }, 250); // Attendi che l'opacità finisca
+});
 
+img1.addEventListener("mouseout", () => {
+  // Graduale scomparsa dell'immagine attuale
+  img1.style.transition = "opacity 0.5s ease-in-out";
+  img1.style.opacity = "0"; // Nascondi l'immagine
 
-
+  // Cambia immagine dopo il tempo necessario per la scomparsa
+  setTimeout(() => {
+    img1.setAttribute(
+      "src",
+      "img/img-adidas.avif"
+    );
+    img1.style.opacity = "1"; // Rendi visibile la nuova immagine
+  }, 250);
+});
 
 
 
