@@ -384,7 +384,7 @@ body {
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
 /*Inizio css bodycontainer1*/
-.container-1 {
+.container {
   /* margin: 40px 60px ; */
   margin-left: 110px;
   margin-right: 110px;
@@ -426,8 +426,14 @@ body {
 .bottoni button:nth-last-child(1):hover {
   background-color: rgb(238, 238, 238);
 }
+.arrow-left-1 {
+  left: 0;
+}
 
-.container {
+.arrow-right-1 {
+  right: 0;
+}
+.container-1 {
   gap: 20px;
   overflow-x: auto;
   padding-top: 20px;
@@ -569,11 +575,11 @@ body {
   background-color: rgb(238, 235, 235);
 }
 
-.arrow-left {
+.arrow-left-2 {
   left: 0;
 }
 
-.arrow-right {
+.arrow-right-2 {
   right: 0;
 }
 
@@ -682,6 +688,20 @@ body {
 /*fine bodycontainer.2*/
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
 /*Inizio bodycontainer3*/
+.container-3 {
+  gap: 20px;
+  overflow-x: auto;
+  padding-top: 20px;
+}
+.arrow-left-3 {
+  left: 0;
+ 
+}
+
+.arrow-right-3 {
+  right: 0;
+ 
+}
 .prezzo3 {
   position: absolute;
   top: 370px;
@@ -719,6 +739,14 @@ body {
   margin-right: 110px;
   margin-top: 40px;
   margin-bottom: 50px;
+}
+
+.arrow-left-4 {
+  left: 0;
+}
+
+.arrow-right-4 {
+  right: 0;
 }
 
 .card-4 {
@@ -1031,6 +1059,7 @@ footer {
     position: absolute;
     left: 90%;
   }
+
   /*CRISTIAN E SILVIA*/
   .scritte-immagini h2 {
     bottom: 120px;
@@ -1058,7 +1087,7 @@ footer {
     margin-left: 93%;
   }
   /*MONICA */
-  .container-1 {
+  .container {
     margin-left: 50px;
     margin-right: 50px;
   }
@@ -1098,18 +1127,21 @@ footer {
     left: 10px;
   }
   /* MORENA */
+  .arrow{
+    display:none;
+  }
   .wrapper-card-2-4 {
-    margin-right: 0;
-    margin-left: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 40px;
+    margin-bottom: 50px;
   }
-  .arrow {
-    display: none;
-  }
+
   .container-card-2 .card-2:first-child {
-    margin-left: 50px;
+    padding-left: 50px;
   }
   .container-card-2 .card-2:last-child {
-    margin-right: 50px;
+    padding-right: 50px;
   }
 
   .container-card-4 {
@@ -1136,9 +1168,9 @@ footer {
     gap: 0;
   }
 }
-@media screen and (max-width: 376px) {
-  .arrow {
-    display: none;
+@media screen and (max-width: 375px) {
+  .arrow{
+    display:none;
   }
   .wrapper-card {
     margin-left: 10px;
@@ -1203,7 +1235,8 @@ footer {
   .hide-on-mobile {
     display: none;
   }
-
+}
+@media screen and (max-width: 375px) {
   .header-card {
     display: flex;
     flex-direction: column;
