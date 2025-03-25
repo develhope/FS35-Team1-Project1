@@ -213,7 +213,7 @@ body {
   height: 10px;
   position: absolute;
   right: 5%;
-  top: 3%
+  top: 3%;
 }
 
 #lingua {
@@ -241,10 +241,10 @@ body {
 }
 
 .break {
-    border: 1px solid black; 
-    width: 100%; 
-    margin: 3px;
-    opacity: 0.1; 
+  border: 1px solid black;
+  width: 100%;
+  margin: 3px;
+  opacity: 0.1;
 }
 
 .link_hmb {
@@ -273,7 +273,6 @@ body {
   margin-bottom: 15px;
   letter-spacing: 2px;
 }
-
 
 /* Fine Header CSS */
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
@@ -385,7 +384,7 @@ body {
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
 /*Inizio css bodycontainer1*/
-.container-1 {
+.container {
   /* margin: 40px 60px ; */
   margin-left: 110px;
   margin-right: 110px;
@@ -427,8 +426,14 @@ body {
 .bottoni button:nth-last-child(1):hover {
   background-color: rgb(238, 238, 238);
 }
+.arrow-left-1 {
+  left: 0;
+}
 
-.container {
+.arrow-right-1 {
+  right: 0;
+}
+.container-1 {
   gap: 20px;
   overflow-x: auto;
   padding-top: 20px;
@@ -570,11 +575,11 @@ body {
   background-color: rgb(238, 235, 235);
 }
 
-.arrow-left {
+.arrow-left-2 {
   left: 0;
 }
 
-.arrow-right {
+.arrow-right-2 {
   right: 0;
 }
 
@@ -683,6 +688,20 @@ body {
 /*fine bodycontainer.2*/
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
 /*Inizio bodycontainer3*/
+.container-3 {
+  gap: 20px;
+  overflow-x: auto;
+  padding-top: 20px;
+}
+.arrow-left-3 {
+  left: 0;
+ 
+}
+
+.arrow-right-3 {
+  right: 0;
+ 
+}
 .prezzo3 {
   position: absolute;
   top: 370px;
@@ -720,6 +739,14 @@ body {
   margin-right: 110px;
   margin-top: 40px;
   margin-bottom: 50px;
+}
+
+.arrow-left-4 {
+  left: 0;
+}
+
+.arrow-right-4 {
+  right: 0;
 }
 
 .card-4 {
@@ -955,12 +982,10 @@ footer {
   text-decoration: none;
 }
 
-
-
 /* MEDIA QUERY  */
 
 /*ALFONSO*/
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 1200px) {
   .last_container {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
@@ -968,7 +993,6 @@ footer {
 }
 
 @media screen and (max-width: 980px) {
-
   .black_line {
     color: var(--main-color-black);
     position: relative;
@@ -1035,6 +1059,7 @@ footer {
     position: absolute;
     left: 90%;
   }
+
   /*CRISTIAN E SILVIA*/
   .scritte-immagini h2 {
     bottom: 120px;
@@ -1065,7 +1090,7 @@ footer {
     content: url("img/img-adidas-mobile.avif");
   }
   /*MONICA */
-  .container-1 {
+  .container {
     margin-left: 50px;
     margin-right: 50px;
   }
@@ -1105,13 +1130,35 @@ footer {
     left: 10px;
   }
   /* MORENA */
+  .arrow{
+    display:none;
+  }
   .wrapper-card-2-4 {
-    margin-right: 0;
-    margin-left: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  .container-card-2 .card-2:first-child {
+    padding-left: 50px;
+  }
+  .container-card-2 .card-2:last-child {
+    padding-right: 50px;
+  }
+
+  .container-card-4 {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .header-card {
     margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .header-card h3 {
+    font-style: var(--font-family-bold);
   }
 
   /* MATTIA  */
@@ -1125,8 +1172,8 @@ footer {
   }
 }
 @media screen and (max-width: 375px) {
-  .arrow {
-    display: none;
+  .arrow{
+    display:none;
   }
   .wrapper-card {
     margin-left: 10px;
@@ -1192,14 +1239,39 @@ footer {
     display: none;
   }
 }
+@media screen and (max-width: 375px) {
+  .header-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 15px;
+  }
 
+  .header-card h3 {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
 
+  .wrapper-card-2-4 {
+    margin-top: 5px;
+  }
+  .container-card-2 .card-2:first-child {
+    margin-left: 15px;
+  }
+  .container-card-2 .card-2:last-child {
+    margin-right: 20px;
+  }
+
+  .container-card-4 {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
 
 /*    MEDIA QUERY MOBILE    */
 
 /*ALFONSO*/
 @media screen and (max-width: 560px) {
-
   .black_line {
     color: var(--main-color-black);
     position: relative;
@@ -1252,7 +1324,7 @@ footer {
     align-content: center;
     flex-wrap: nowrap;
     position: absolute;
-    left: 24%
+    left: 24%;
   }
 
   .hidden_icon {
