@@ -85,7 +85,7 @@ body {
 
 .last_container {
   display: grid;
-  grid-template-columns: 2fr 3fr 2fr;
+  grid-template-columns: 1fr 3fr 2fr;
 }
 
 .container_logo {
@@ -143,7 +143,7 @@ body {
   width: 30px;
   height: 30px;
   padding: 5px;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 /* Contenuti Hover */
@@ -379,7 +379,7 @@ body {
 /* contorno bianco attorno alle lineette del play */
 .lineetta {
   stroke: var(--main-color-white);
-  stroke-width: 1.5px;
+  stroke-width: 1px;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
@@ -1334,4 +1334,72 @@ footer {
     position: absolute;
     left: 90%;
   }
+}
+/*media query silvia e cristian*/
+@media screen and (max-width: 650px) {
+  .play svg{
+    bottom:83%;
+  }
+}
+/* cristian e silvia */ 
+@media screen and (max-width: 412px) {
+  .play svg{
+        bottom: 75%
+  }
+  .scritte-immagini h2{
+    bottom: 75px;
+    left: 20px;
+    font-size: 8px;
+    padding: 9px 3px;
+  }
+ .scritte-immagini p{
+   bottom: 25px;
+   left: 20px;
+   font-size: 8px;
+  }
+  .pulsante-acquista a{
+    bottom: 10px;
+   font-size: 8px;
+    left: 20px;
+    padding: 10px 8px;
+  }
+  .cornice-pulsante-acquista{
+   width: 78px;
+   height: 29px;
+   bottom: 7px;
+   left:22px;
+   
+ }
+}
+
+@media screen and (max-width: 375px){
+
+  .play svg{
+    bottom: 75%;
+}
+.scritte-immagini h2{
+bottom: 59px;
+left: 20px;
+font-size: 6px;
+padding: 7px 3px;
+}
+.scritte-immagini p{
+bottom: 12px;
+left: 20px;
+font-size: 6px;
+}
+.pulsante-acquista a{
+bottom: 8px;
+font-size: 6px;
+left: 20px;
+padding: 8px 8px;
+}
+.cornice-pulsante-acquista{
+width: 64px;
+height: 22px;
+bottom: 6px;
+left:22px;
+
+}
+
 }
