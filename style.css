@@ -1061,6 +1061,9 @@ footer {
   .play svg {
     margin-left: 93%;
   }
+  #imgover {
+    content: url("img/img-adidas-mobile.avif");
+  }
   /*MONICA */
   .container-1 {
     margin-left: 50px;
