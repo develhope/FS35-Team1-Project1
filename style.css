@@ -897,7 +897,7 @@ footer {
 /* cristian e silvia */ 
 @media screen and (max-width: 412px) {
   .play svg{
-        bottom: 75%
+        bottom: 75%;
   }
   .scritte-immagini h2{
     bottom: 75px;
@@ -932,27 +932,22 @@ footer {
 }
 .scritte-immagini h2{
 bottom: 59px;
-left: 20px;
 font-size: 6px;
 padding: 7px 3px;
 }
 .scritte-immagini p{
 bottom: 12px;
-left: 20px;
 font-size: 6px;
 }
 .pulsante-acquista a{
 bottom: 8px;
 font-size: 6px;
-left: 20px;
 padding: 8px 8px;
 }
 .cornice-pulsante-acquista{
 width: 64px;
 height: 22px;
 bottom: 6px;
-left:22px;
-
 }
 
 }
