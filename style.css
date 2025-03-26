@@ -437,6 +437,20 @@ body {
   gap: 20px;
   overflow-x: auto;
   padding-top: 20px;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.container-1::-webkit-scrollbar{
+  display: none;
+}
+.container-1 .arrow{
+  display: none;
+}
+
+.container-1:hover .arrow{
+  display: block;
 }
 
 .cardcontainer {
@@ -547,7 +561,13 @@ body {
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
 /*inizio bodycontainer.2*/
 .container-card-2 {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
   overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.container-card-2::-webkit-scrollbar{
+  display: none;
 }
 
 .card-2 {
@@ -692,7 +712,22 @@ body {
   gap: 20px;
   overflow-x: auto;
   padding-top: 20px;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+  overflow-x: auto;
+  scroll-behavior: smooth;
 }
+.container-3::-webkit-scrollbar{
+  display: none;
+}
+.container-3 .arrow{
+  display: none;
+}
+
+.container-3:hover .arrow{
+  display: block;
+}
+
 .arrow-left-3 {
   left: 0;
 }
@@ -731,12 +766,24 @@ body {
 .container-card-4 {
   gap: 8px;
   overflow-x: auto;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+  overflow-x: auto;
+  scroll-behavior: smooth;
 }
 .wrapper-card-2-4 {
   margin-left: 110px;
   margin-right: 110px;
   margin-top: 40px;
   margin-bottom: 50px;
+}
+
+.wrapper-card-2-4 .arrow{
+  display: none;
+}
+
+.wrapper-card-2-4:hover .arrow{
+  display: block;
 }
 
 .arrow-left-4 {
@@ -782,6 +829,7 @@ body {
   justify-content: space-between;
 }
 
+
 .footer-card-4 .link-sotto-p button {
   border: none;
   border: white;
@@ -826,6 +874,7 @@ body {
   font-size: 14px;
   letter-spacing: normal;
 }
+
 
 /*fine bodycontainer.4*/
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
@@ -1107,6 +1156,14 @@ footer {
     margin-left: 50px;
     margin-right: 50px;
   }
+  .container-1:hover .arrow{
+    display: none;
+
+  }
+  .container-3:hover .arrow{
+    display: none;
+
+  }
   .wrapper-card {
     margin-left: 50px;
     margin-right: 50px;
@@ -1146,6 +1203,10 @@ footer {
   .arrow {
     display: none;
   }
+  .wrapper-card-2-4:hover .arrow{
+    display: none;
+  }
+  
   .wrapper-card-2-4 {
     margin-left: 0px;
     margin-right: 0px;
@@ -1153,12 +1214,10 @@ footer {
     margin-bottom: 50px;
   }
 
-  .container-card-2 .card-2:first-child {
-    padding-left: 50px;
-  }
-  .container-card-2 .card-2:last-child {
+  .container-card-2{
+    padding-left:50px;
     padding-right: 50px;
-  }
+  } 
 
   .container-card-4 {
     padding-left: 50px;
@@ -1173,6 +1232,27 @@ footer {
   .header-card h3 {
     font-style: var(--font-family-bold);
   }
+  .card-4 .footer-card-4{
+    height: 120px;
+  }
+
+  .card-4 .footer-card-4 .media-query{
+    justify-content: flex-end;
+  }
+
+  .card-4 .footer-card-4 .link-sotto-p button{
+    padding: 0;
+    width: 100%;
+    height: auto;
+    margin:0;
+    text-align:left;
+  }
+
+  .footer-card-4 .link-sotto-p span::after {
+    left: 0%;
+    width: 25%;
+  }
+ 
 
   /* MATTIA  */
   .Footer-Main h1,
@@ -1225,6 +1305,7 @@ footer {
     text-decoration: none;
     letter-spacing: 0;
   }
+  
   .Footer-Links-Tablet{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1253,8 +1334,19 @@ footer {
     padding: 20px 15px 15px;
   }
   .Footer-Bottom{
+    margin:0;
+  }
+  .Footer-Bottom ul{
+    margin:0;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 15px;
+  }
+  .Footer-Bottom li{
+    width:40%;
+    margin:15px 0;
+    border-right: none;
   }
 }
 /*media query silvia e cristian*/
@@ -1361,7 +1453,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .arrow {
     display: none;
   }
@@ -1452,10 +1544,8 @@ footer {
   .wrapper-card-2-4 {
     margin-top: 5px;
   }
-  .container-card-2 .card-2:first-child {
+  .container-card-2 {
     padding-left: 10px;
-  }
-  .container-card-2 .card-2:last-child {
     padding-right: 10px;
   }
 

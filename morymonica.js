@@ -16,9 +16,8 @@ const containers = {
   
   function startScrolling(containerId, direction) {
     stopScrolling();
-    scrollInterval = setInterval(() => {
-      containers[containerId].scrollLeft += direction * 10;
-    }, 50); 
+      containers[containerId].scrollLeft += direction * 320;
+     
   }
   
   function stopScrolling() {
@@ -30,9 +29,7 @@ const containers = {
     const buttonLeft = document.querySelector(left);
     const buttonRight = document.querySelector(right);
   
-    buttonLeft.addEventListener("mouseenter", () => startScrolling(container, -1));
-    buttonLeft.addEventListener("mouseleave", stopScrolling);
+    buttonLeft.addEventListener("click", () => startScrolling(container, -1));
   
-    buttonRight.addEventListener("mouseenter", () => startScrolling(container, 1));
-    buttonRight.addEventListener("mouseleave", stopScrolling);
+    buttonRight.addEventListener("click", () => startScrolling(container, 1));
   });
