@@ -1347,6 +1347,9 @@ footer {
   .cornice-pulsante-acquista {
     left: 22px;
   }
+  .play svg{
+    margin-left: 90%;
+  }
 }
 
 @media screen and (max-width: 376px) {
@@ -1456,5 +1459,8 @@ footer {
     object-position: center center; /* Assicura il focus centrale */
     width: 100vw; /* Occupa tutta la larghezza dello schermo */
     height: 100vh; /* Occupa tutta l'altezza visibile */
+}
+.play svg{
+  margin-left: 90%;
 }
 }
