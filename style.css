@@ -1155,6 +1155,12 @@ footer {
   }
 
   /*CRISTIAN E SILVIA*/
+  .main-img {
+    object-fit: cover;
+    object-position: center;
+    height: 600px; /* Adatta in base alle tue necessità */
+  }
+
   .scritte-immagini h2 {
     bottom: 120px;
     left: 50px;
@@ -1381,12 +1387,7 @@ footer {
     border-right: none;
   }
 }
-/*media query silvia e cristian*/
-@media screen and (max-width: 650px) {
-  .play svg {
-    bottom: 83%;
-  }
-}
+
 /*ALFONSO*/
 @media screen and (max-width: 560px) {
   .black_line {
@@ -1443,31 +1444,21 @@ footer {
 }
 /* cristian e silvia */
 @media screen and (max-width: 412px) {
-  .play svg {
-    bottom: 75%;
-  }
+
   .scritte-immagini h2 {
-    bottom: 75px;
-    left: 20px;
-    font-size: 8px;
-    padding: 9px 3px;
+  left: 20px;
   }
   .scritte-immagini p {
-    bottom: 25px;
     left: 20px;
-    font-size: 8px;
   }
   .pulsante-acquista a {
-    bottom: 10px;
-    font-size: 8px;
     left: 20px;
-    padding: 10px 8px;
   }
   .cornice-pulsante-acquista {
-    width: 78px;
-    height: 29px;
-    bottom: 7px;
     left: 22px;
+  }
+  .play svg{
+    margin-left: 90%;
   }
 }
 
@@ -1571,30 +1562,13 @@ footer {
     padding-left: 10px;
     padding-right: 10px;
   }
-  .play svg {
-    bottom: 75%;
-  }
-  .scritte-immagini h2 {
-    bottom: 59px;
-    left: 20px;
-    font-size: 6px;
-    padding: 7px 3px;
-  }
-  .scritte-immagini p {
-    bottom: 12px;
-    left: 20px;
-    font-size: 6px;
-  }
-  .pulsante-acquista a {
-    bottom: 8px;
-    font-size: 6px;
-    left: 20px;
-    padding: 8px 8px;
-  }
-  .cornice-pulsante-acquista {
-    width: 64px;
-    height: 22px;
-    bottom: 6px;
-    left: 22px;
-  }
+  .main-img {
+    object-fit: cover;
+    object-position: center center; /* Assicura il focus centrale */
+    width: 100vw; /* Occupa tutta la larghezza dello schermo */
+    height: 100vh; /* Occupa tutta l'altezza visibile */
+}
+.play svg{
+  margin-left: 90%;
+}
 }
