@@ -869,13 +869,13 @@ body {
 
 .card-4 .footer-card-4 {
   padding: 16px;
-  font-family: var(--font-family);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 120px;
-  font-size: 14px;
-  letter-spacing:var(--letter-spacing);
+  font-size: 13px;
+  letter-spacing:normal;
+  
 }
 
 
@@ -883,7 +883,7 @@ body {
   border: none;
   border: white;
   background-color: white;
-  font-size: 15px;
+  font-size: 14px;
   margin: 10px 0px 0px;
   color: black;
   font-weight: 700;
