@@ -16,7 +16,7 @@ const containers = {
   
   function startScrolling(containerId, direction) {
     stopScrolling();
-      containers[containerId].scrollLeft += direction * 320;
+      containers[containerId].scrollLeft += direction * 310;
      
   }
   
