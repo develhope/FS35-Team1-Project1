@@ -209,10 +209,6 @@ body {
   width: 100vw;
 }
 
-#hidden_p {
-  display: none;
-}
-
 #tooltip {
   position: absolute;
   color: var(--main-color-black);
@@ -233,7 +229,7 @@ body {
   position: fixed;
   z-index: 100;
   width: 100vw;
-  padding: 10px;
+  padding: 0px;
   background-color: var(--main-color-white);
   top: 0;
   transition: all 1000ms ease;
@@ -243,24 +239,34 @@ body {
 }
 
 #listaNascosta {
-  margin-top: 65px;
-  padding-left: 10px;
+  margin-top: 0px;
+  padding: 0px;
 }
 
 #logoNascosto {
   width: 50px;
   height: 50px;
   position: absolute;
-  right: 50%;
-  top: 1%;
+  right: 45%;
+  top: 3%;
 }
 
 #closer {
-  width: 10px;
-  height: 10px;
   position: absolute;
-  right: 5%;
-  top: 3%;
+  right: 8%;
+  top: 5%;
+}
+
+.separatore {
+  border-color: var(--main-colr-gray);
+  margin: 0px 0 10px 0;
+  border-style: solid;
+  border-width: 1px ;
+  
+}
+
+#separatore2 {
+  margin: 80px;
 }
 
 #lingua {
@@ -281,44 +287,49 @@ body {
   list-style-type: none;
   text-decoration: none;
   color: var(--main-color-black);
-  font-weight: bold;
-  font-size: large;
-  margin-bottom: 15px;
-  letter-spacing: 2px;
-}
-
-.break {
-  border: 1px solid black;
-  width: 100%;
-  margin: 3px;
-  opacity: 0.1;
+  font-size: var(--font-size-base);
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  padding: 10px 10px 10px 10px;
+  font-weight: 700;
+  font-size: larger;
 }
 
 .link_hmb {
   list-style-type: none;
   text-decoration: none;
-  font-size: medium;
+  font-size: var(--font-size-base);
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
   color: var(--main-color-black);
-  margin-bottom: 15px;
-  letter-spacing: 2px;
+  padding: 10px 10px 10px 10px;
+  font-size: medium;
 }
 
 .link_hmb_corsivo {
   list-style-type: none;
   text-decoration: none;
-  font-size: small;
+  font-size: var(--font-size-base);
+  font-family: var(--font-family);
+  line-height: var(--line-height);
   color: var(--main-color-black);
-  margin-bottom: 10px;
+  padding: 10px 10px 10px 10px;
+  font-size: small;
 }
 
 .link_hmb_grassetto_red {
   list-style-type: none;
   text-decoration: none;
   color: rgba(220, 9, 9, 0.963);
-  font-weight: bold;
-  font-size: large;
-  margin-bottom: 15px;
-  letter-spacing: 2px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  padding: 10px 10px 10px 10px;
+  font-weight: 700;
+  font-size: larger;
 }
 
 /* Fine Header CSS */
@@ -1102,17 +1113,9 @@ footer {
 
 @media screen and (max-width: 768px) {
   .black_line {
-    color: var(--main-color-black);
-    position: relative;
+    color: var(--main-color-white);
   }
 
-  #hidden_p {
-    display: flex;
-    text-align: center;
-    flex-wrap: nowrap;
-    color: var(--main-color-white);
-    position: absolute;
-  }
 
   .lista_link_1 {
     display: none;
@@ -1369,8 +1372,7 @@ footer {
 /*ALFONSO*/
 @media screen and (max-width: 560px) {
   .black_line {
-    color: var(--main-color-black);
-    position: relative;
+    color: var(--main-color-white);
   }
 
   #hidden_p {
