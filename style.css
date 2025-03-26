@@ -248,13 +248,13 @@ body {
   height: 50px;
   position: absolute;
   right: 45%;
-  top: 3%;
+  top: 1%;
 }
 
 #closer {
   position: absolute;
-  right: 8%;
-  top: 5%;
+  right: 10%;
+  top: 3%;
 }
 
 .separatore {
@@ -266,7 +266,7 @@ body {
 }
 
 #separatore2 {
-  margin: 80px;
+  margin: 60px;
 }
 
 #lingua {
