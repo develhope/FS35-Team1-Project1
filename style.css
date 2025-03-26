@@ -73,6 +73,53 @@ body {
   margin-right: 40px;
 }
 
+.hamburger {
+  flex-grow: 1;
+}
+
+#menuHamburger {
+  display: block;
+  height: 24px;
+  width: auto;
+  margin: 0 25px 0 10px;
+}
+
+#pn {
+  display: block;
+  height: 24px;
+  width: auto;
+}
+
+#sn {
+  display: block;
+  height: 24px;
+  width: auto;
+}
+
+#bag_hidden {
+  display: block;
+  height: 24px;
+  width: auto;
+  margin-right: 10px;
+}
+
+#wn {
+  display: block;
+  height: 24px;
+  width: auto;
+}
+
+#ln {
+  display: block;
+  height: 24px;
+  width: auto;
+}
+
+
+.hidden_icon {
+  flex-grow: 1;
+}
+
 .link1 {
   text-decoration: none;
   color: var(--main-color-black);
@@ -1037,40 +1084,25 @@ footer {
 
   .hidden_container {
     display: flex;
-    gap: 100px;
-    gap: 100px;
     justify-content: space-between;
     align-items: center;
   }
 
   .hamburger {
-    gap: 30px;
-    width: 25px;
-    height: 25px;
-    margin: 20px;
     justify-content: start;
     flex-wrap: nowrap;
   }
 
   .hidden_container_logo {
-    width: 48px;
     height: 48px;
-    margin-left: 23%;
     align-content: center;
     flex-wrap: nowrap;
-    position: absolute;
-    left: 24%;
   }
 
   .hidden_icon {
-    margin-left: 25px;
-    gap: 30px;
-    width: 25px;
-    height: 25px;
+    gap: 25px;
     justify-content: end;
     flex-wrap: nowrap;
-    position: absolute;
-    left: 90%;
   }
 
   /*CRISTIAN E SILVIA*/
@@ -1296,39 +1328,25 @@ footer {
 
   .hidden_container {
     display: flex;
-    gap: 100px;
     justify-content: space-between;
     align-items: center;
   }
 
   .hamburger {
-    gap: 30px;
-    width: 25px;
-    height: 25px;
-    margin: 20px;
     justify-content: start;
     flex-wrap: nowrap;
   }
 
   .hidden_container_logo {
-    width: 48px;
     height: 48px;
-    margin-left: 23%;
     align-content: center;
     flex-wrap: nowrap;
-    position: absolute;
-    left: 24%;
   }
 
   .hidden_icon {
-    margin-left: 25px;
-    gap: 30px;
-    width: 25px;
-    height: 25px;
+    gap: 25px;
     justify-content: end;
     flex-wrap: nowrap;
-    position: absolute;
-    left: 90%;
   }
 }
 /* cristian e silvia */
