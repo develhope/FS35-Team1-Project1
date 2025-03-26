@@ -69,7 +69,7 @@ img1.addEventListener("mouseover", () => {
   setTimeout(() => {
     img1.setAttribute(
       "src",
-      "https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_1920,w_1920/hc_ss25_springbreakfestival_day_bnr_1_head_to_toe_mw_d_45864a6331.jpg"
+      "img/img-silvia per js.avif"
     );
     img1.style.opacity = "1"; // Rendi visibile la nuova immagine
   }, 250); // Attendi che l'opacità finisca
