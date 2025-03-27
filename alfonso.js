@@ -38,6 +38,7 @@ menuHamburger.addEventListener("click", () => {
 });
 
 // Chiude il menu nascosto e ripristina gli altri elementi
+
 closer.style.width = "30px";
 closer.style.height = "30px";
 closer.style.bottom = "10px";
@@ -52,3 +53,23 @@ closer.addEventListener("click", () => {
   searchNascosto.style.display = "block"; // Ripristina la ricerca
   profileNascosto.style.display = "block"; // Ripristina il profilo
 });
+
+
+// Cambio Titolo 
+
+const titolo = document.getElementById("barraNascosta");
+const messaggi = ["FINO AL 40% DI SCONTO", "RESO E CAMBIO MERCE GRATUITI", "SPEDIZIONE STANDARD GRATUITA CON ADICLUB"];
+let index = 0;
+
+
+function cambiaTesto() {
+  titolo.style.transition = "opacity 1s ease-in-out";
+  titolo.style.opacity = 0.9;
+  setTimeout(() => {
+    titolo.innerText = messaggi[index];     // Cambia il testo
+    titolo.style.opacity = 1;               // Ripristina l'opacità a 1
+    index = (index + 1) % messaggi.length;  // Incrementa l'indice per passare al prossimo messaggio
+  }, 1000);                                 // Torna al primo messaggio dopo aver raggiunto l'ultimo
+}
+
+setInterval(cambiaTesto, 5000);             // Imposta l'intervallo per cambiare il testo ogni 5 secondi
